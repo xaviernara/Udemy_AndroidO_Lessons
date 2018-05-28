@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Remember to make a id for both you buttons and pictures before doing this in activity.main.xml
         /*
-        THis lines of code will switch the image on the app with anthoer image thats in the drawable folder (ie mineta1)
+        THis lines of code will switch the image on the app with another image that's in the drawable folder (ie mineta1)
         when the button is pressed
         */
         ImageView image = (ImageView) findViewById(R.id.EmmaImageView);
