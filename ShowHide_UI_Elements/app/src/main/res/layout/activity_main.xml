@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/visibleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="194dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="76dp"
+        android:onClick="visibleText"
+        android:text="Visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/invisibleButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/invisibleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="194dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginRight="71dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="76dp"
+        android:onClick="invisibleText"
+        android:text="Invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/visibleButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="186dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginRight="104dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="146dp"
+        android:lineSpacingExtra="14sp"
+        android:text="Visible"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:fontFamily="serif-monospace"
+        app:layout_constraintBottom_toTopOf="@+id/visibleButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
