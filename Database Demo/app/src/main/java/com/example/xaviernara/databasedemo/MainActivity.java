@@ -29,9 +29,10 @@ public class MainActivity extends AppCompatActivity {
             //myDatabase.execSQL("CREATE TABLE IF NOT EXISTS users(name  VARCHAR, age INT(3))");
 
 
-            //this line say create a new table if a table doesn't exists create a new table called users
+            //this line says create a new table if a table doesn't exists create a new table called users
             //and we want to make the properties(columns) of the users table (ie name and age)
             //this also adds a primary key id to each entry of the table (YOU DON'T NEED TO UPDATE THIS FOR THIS TO UPDATE)
+            //if you want a specific primary key you'll have to update with similar code as below
             myDatabase.execSQL("CREATE TABLE IF NOT EXISTS users(name  VARCHAR, age INT(3), id INTEGER PRIMARY KEY)");
 
             //this line says that insert into the users table for the name and age
