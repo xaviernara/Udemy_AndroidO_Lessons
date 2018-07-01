@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         try{
             //SQLiteDatabase has methods to create, delete, execute SQL commands, and perform other common database management tasks.
+           //THIS line creates the database Users
             SQLiteDatabase myDatabase = this.openOrCreateDatabase("Users",MODE_PRIVATE,null);
 
             //this line say create a new table if a table doesn't exists create a new table called users
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             //myDatabase.execSQL("CREATE TABLE IF NOT EXISTS users(name  VARCHAR, age INT(3))");
 
 
-            //this line says create a new table if a table doesn't exists create a new table called users
+            //this line says create a new table if a table doesn't exists create a new table called users in the Users db
             //and we want to make the properties(columns) of the users table (ie name and age)
             //this also adds a primary key id to each entry of the table (YOU DON'T NEED TO UPDATE THIS FOR THIS TO UPDATE)
             //if you want a specific primary key you'll have to update with similar code as below
