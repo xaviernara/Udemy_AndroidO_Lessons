@@ -10,7 +10,7 @@ public class HelloWorld {
 //Pattern p = Pattern.compile("img src=\"(.*?)\""); & 
 //Matcher m = p.matcher(html);
 /*
-basically looks for the begining part:(img src=\) part of the string:(html) and looks for everything in between: (/"), by using the: (.*?) in the middle and returns it back by using the matcher (ie it finds this pattern and returns it)
+basically looks for the begining part:(img src=\) part of the string:(html) and looks for everything in between: (\"), by using the: (.*?) in the middle and returns it back by using the matcher (ie it finds this pattern and returns it)
 */ and these are called a Pattern and Match regex
 
 /*
