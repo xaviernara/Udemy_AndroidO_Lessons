@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         activityListView.setAdapter(arrayAdapter);
 
 
-        //remember to habe something happen when a list item is clicked then you need this line of code
+        //remember to have something happen when a list item is clicked then you need this line of code
         activityListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             //this lines of code will log the name of the family memeber thats listed on the screen when clicked
