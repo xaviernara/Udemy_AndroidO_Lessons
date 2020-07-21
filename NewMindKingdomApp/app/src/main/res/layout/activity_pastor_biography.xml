@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:weightSum="8"
+    android:orientation="vertical"
     tools:context=".PastorBiography">
 
-    <TextView
-        android:id="@+id/pastorBio"
-        android:layout_width="0dp"
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="8"
+        android:orientation="vertical"
+        tools:context=".PastorBiography">
+
+    <ImageView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Prophet Frederick E. Ward was born in Chicago, IL at Mount Sinai Hospital (There is a spiritual
+        android:layout_weight="2"
+        android:src="@drawable/pastor"
+        android:scaleType="fitXY"
+
+
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+        <TextView
+            android:id="@+id/pastorBio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:text="Prophet Frederick E. Ward was born in Chicago, IL at Mount Sinai Hospital (There is a spiritual
 significance) on July 7 th 1966 to the proud parents of Mary L. Ward and the late Raymond Ward.
 Raised on the far Southside of Chicago, moving from the Englewood neighborhood, he primarily
 grew up in the Altgeld Gardens (Chicago Housing Projects) “Block 8 for Life”.
@@ -34,14 +55,12 @@ later began Power Ministries Baptist Church and World Outreach Ministries then R
 Mind Ministries. This planted the seed for New Mind Kingdom Ministries.
 His quiver is full with 6 beautiful children; Antoine, Christopher, Jessica, Frederick Jr, Roben,
 and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD be all Glory!"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-        android:textAlignment="textStart"
-        android:textColor="@android:color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="121dp" />
+</LinearLayout>
 
-
-
-
-</android.support.constraint.ConstraintLayout>
+</ScrollView>

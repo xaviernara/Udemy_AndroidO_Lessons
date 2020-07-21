@@ -16,7 +16,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PastorBiography"></activity>
+        <activity android:name=".PastorBiography" />
+        <activity
+            android:name=".CrestInfo"
+            android:label="@string/title_activity_crest_info" />
+        <activity
+            android:name=".SevenRConcept"
+            android:label="@string/title_activity_seven_rconcept" />
+        <activity
+            android:name=".PreviousMessages"
+            android:label="@string/title_activity_previous_messages" />
+        <activity
+            android:name=".Website"
+            android:label="@string/title_activity_website"></activity>
     </application>
 
 </manifest>

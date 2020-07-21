@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         activityListView = findViewById(R.id.church_list);
 
         final Intent intent = new Intent(getApplicationContext(),PastorBiography.class);
+        //Intent intent;
         //startActivity(intent);
 
 
@@ -91,12 +92,54 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+
+                switch(position){
+
+                    case 0 :
+                        Intent intent = new Intent(getApplicationContext(),PastorBiography.class);
+                        startActivity(intent);
+                        break;
+
+                    case 1 :
+                        intent = new Intent(getApplicationContext(), PreviousMessages.class);
+                        startActivity(intent);
+                        break;
+
+                    case 6 :
+                        intent = new Intent(getApplicationContext(), CrestInfo.class);
+                        startActivity(intent);
+                        break;
+
+                    case 10 :
+                        intent = new Intent(getApplicationContext(), SevenRConcept.class);
+                        startActivity(intent);
+                        break;
+
+
+                }
+
+
+                /*
+                if(position == 0 ){
+                    //intent = new Intent(getApplicationContext(),PastorBiography.class);
+                    startActivity(intent);
+                }
+                */
+
                 Log.i("Family Name: ",churchList.get(position));
                 //Toast.makeText(this,names.get(position),Toast.LENGTH_LONG)
                 //Toast.makeText(getApplicationContext(), "Hello "+names.get(position),Toast.LENGTH_LONG).show();
 
-                intent.putExtra("churchList", churchList.get(position));
-                startActivity(intent);
+                //intent.putExtra("churchList", churchList.get(position));
+                //startActivity(intent);
+
+
+
+
+
+
+
 
             }
         });
