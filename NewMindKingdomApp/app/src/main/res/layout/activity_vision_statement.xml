@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".VisionStatement">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:src="@drawable/crest"
+            android:scaleType="fitEnd"
+            android:alpha=".8"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="The Vision of New Mind Kingdom Ministries is to minister to the Whole man, body, soul and spirit.
+        Through various ministries set in place; focusing on specific needs through: systematic teachings from the Word of God.
+
+        We will accomplish this by promoting an I.C.C.E (Integrity-Character -Compassion -Excellence) Culture.
+
+            a. Integrity - presenting things honest, establishing a base of trust whereby the believer can be sure.
+
+            b. Character - exemplifying Christ in our lives; even while people are not watching, being who we say that we are.
+
+            c. Compassion- genuine love and concern exemplifying that Christ like passion.
+
+            d. Excellence - having an eye giving to detail, always doing our best in all things so that God may be glorified.
+
+        This will be an environment free from special interest groups.
+
+        Our objective is to help guide the believer to discover their “Purpose” and “Destiny”.  This mandate is our 7Rs concept.
+
+        It is a check and balance system set in place to edify the believer.
+
+        1) Reconcile- bring man back to God to discover their purpose.
+        2) Relate- being a believable example, relating with people from where they are and from whence the come.
+        3) Restore- working to get them healthy, building them up in their faith by the Word of God, offering healing for the body, soul and spirit.
+        4) Renew-transforming the mind to a full understanding of what is God’s plan for their lives. We are changing the “church mentality to Kingdom (all inclusive), a mentality enriching them through the message of hope, faith and salvation.
+        5) Reinforce- Through systematic strategic teaching of the Word, offering information, instruction and insight, relative to their vocation where they have were called.
+        6) Release- Our main goal is to get the believer to the point of release, pushing them out of the nest, encouraging them to go forth and perform God’s purpose for their lives.
+        7) Rejoice- rejoicing with them when they are carrying out their God given purpose, seeing them excel in their profession.
+
+        We will “Renew the Mind” by establishing; shelters for people that have been battered and abused.
+        Opening rehabilitation center for substance dependency, assisting former convicts to reconnect to society, a social center, a safe haven for youth and young adults, offering tutoring, assistance in obtaining G.E.D, building a family support system aiding in enhancing spousal role, parenting skills, and how to run a efficient and productive households.
+        We will create a “Pathway to Purpose” so that the believer will be in a culture that is purpose driven.
+"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

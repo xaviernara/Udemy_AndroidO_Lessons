@@ -1,6 +1,7 @@
 package com.example.xaviernara.newmindapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         churchList.add("Sign Up");
         churchList.add("Website");
         churchList.add("Church Location");
-        churchList.add("Ways to give");
+        churchList.add("Ways to Give");
         churchList.add("Our Crest");
         churchList.add("Church Location");
         churchList.add("Vision Statement ");
@@ -106,8 +107,22 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
 
+                    case 3 :
+                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://newmindkingdom.org"));
+                        startActivity(intent);
+                        break;
+
+                    case 5 :
+                        intent = new Intent(getApplicationContext(), GivingWays.class);
+                        startActivity(intent);
+                        break;
                     case 6 :
                         intent = new Intent(getApplicationContext(), CrestInfo.class);
+                        startActivity(intent);
+                        break;
+
+                    case 8 :
+                        intent = new Intent(getApplicationContext(), VisionStatement.class);
                         startActivity(intent);
                         break;
 

@@ -3,12 +3,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".SevenRConcept">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:src="@drawable/crest"
+        android:scaleType="fitEnd"
+
+        android:alpha=".8"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="0dp" />
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+        android:text="Our Mandate: The 7R’s-It Is What We Do
+
+The Spirit of God has given us a vision/assignment with our 7R Concept.
+
+1. Reconcile - Speaks toward Outreach.
+
+2. Relate - Geared toward identifying with people where they are.
+
+3. Restore - Speaks toward getting a person to spiritual health.
+
+4. Renew - Training the mind of the “Believer” to that of a Kingdom Mindset, Advancing the Kingdom of God.
+
+5. Reinforce - Specifically training for the area where God has called and chosen you for, given them the teaching, instruction and training needed to carry out their God assignment;
+
+6. Release - This is the ultimate goal of our ministry, getting you to the point where you are mature and informed enough to go out and “DO” what God want you to do.
+
+7. Rejoice - We are ”Excited” when we here the reports of success and accomplishment.
+"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/text_margin"
+        android:textStyle="normal"
+        tools:ignore="HardcodedText" />
+
+    </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

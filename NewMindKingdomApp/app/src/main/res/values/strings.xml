@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">NewMindApp</string>
     <string name="title_activity_crest_info">CrestInfo</string>
+    <color name ="white">#FFFFFF</color>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
@@ -93,4 +94,5 @@
     <string name="title_activity_seven_rconcept">SevenRConcept</string>
     <string name="title_activity_previous_messages">PreviousMessages</string>
     <string name="title_activity_website">Website</string>
+    <string name="title_activity_vision_statement">VisionStatement</string>
 </resources>

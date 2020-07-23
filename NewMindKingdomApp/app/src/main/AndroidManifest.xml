@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/crest"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -19,16 +19,20 @@
         <activity android:name=".PastorBiography" />
         <activity
             android:name=".CrestInfo"
-            android:label="@string/title_activity_crest_info" />
+            android:label="Crest" />
         <activity
             android:name=".SevenRConcept"
-            android:label="@string/title_activity_seven_rconcept" />
+            android:label="7R Concept" />
         <activity
             android:name=".PreviousMessages"
-            android:label="@string/title_activity_previous_messages" />
+            android:label="Previous Messages" />
         <activity
             android:name=".Website"
-            android:label="@string/title_activity_website"></activity>
+            android:label="@string/title_activity_website" />
+        <activity android:name=".GivingWays" />
+        <activity
+            android:name=".VisionStatement"
+            android:label="Vision Statement"></activity>
     </application>
 
 </manifest>
