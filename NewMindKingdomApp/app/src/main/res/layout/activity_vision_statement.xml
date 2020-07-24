@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/crest"
+    android:alpha=".9"
     tools:context=".VisionStatement">
 
 
@@ -14,20 +15,9 @@
         >
 
 
-    <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:src="@drawable/crest"
-            android:scaleType="fitEnd"
-            android:alpha=".8"
-            tools:layout_editor_absoluteX="23dp"
-            tools:layout_editor_absoluteY="0dp" />
-
-
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_margin="@dimen/text_margin"
             android:text="The Vision of New Mind Kingdom Ministries is to minister to the Whole man, body, soul and spirit.
         Through various ministries set in place; focusing on specific needs through: systematic teachings from the Word of God.

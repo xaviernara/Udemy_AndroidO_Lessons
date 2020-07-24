@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         final ArrayList<String> churchList = new ArrayList<>();
         churchList.add("Meet Prophet Frederick E. Ward Sr.");
         churchList.add("Previous Messages");
+        churchList.add("Social Media");
         churchList.add("Sign Up");
         churchList.add("Website");
         churchList.add("Church Location");
@@ -107,26 +108,36 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
 
+                    case 2 :
+                        intent = new Intent(getApplicationContext(), SocialMedia.class);
+                        startActivity(intent);
+                        break;
+
                     case 3 :
+                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/17AShdI3lj8vwOfxkhBoLcv_YRCqf4KOTY03Wq2guQCE/viewform?edit_requested=true"));
+                        startActivity(intent);
+                        break;
+
+                    case 4 :
                         intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://newmindkingdom.org"));
                         startActivity(intent);
                         break;
 
-                    case 5 :
+                    case 6 :
                         intent = new Intent(getApplicationContext(), GivingWays.class);
                         startActivity(intent);
                         break;
-                    case 6 :
+                    case 7 :
                         intent = new Intent(getApplicationContext(), CrestInfo.class);
                         startActivity(intent);
                         break;
 
-                    case 8 :
+                    case 9 :
                         intent = new Intent(getApplicationContext(), VisionStatement.class);
                         startActivity(intent);
                         break;
 
-                    case 10 :
+                    case 11 :
                         intent = new Intent(getApplicationContext(), SevenRConcept.class);
                         startActivity(intent);
                         break;

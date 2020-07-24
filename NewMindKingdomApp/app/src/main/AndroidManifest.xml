@@ -32,7 +32,10 @@
         <activity android:name=".GivingWays" />
         <activity
             android:name=".VisionStatement"
-            android:label="Vision Statement"></activity>
+            android:label="Vision Statement" />
+        <activity
+            android:name=".SocialMedia"
+            android:label="@string/title_activity_social_media"></activity>
     </application>
 
 </manifest>

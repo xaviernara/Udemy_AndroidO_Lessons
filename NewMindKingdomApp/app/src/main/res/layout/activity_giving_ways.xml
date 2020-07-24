@@ -9,37 +9,54 @@
 
     <ImageButton
         android:id="@+id/paypalButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="192dp"
+        android:layout_height="171dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/white"
         android:onClick="paypalWebsiteLink"
         android:padding="@dimen/text_margin"
         android:paddingStart="@dimen/text_margin"
-        android:src="@drawable/paypal"
-        app:layout_constraintTop_toBottomOf="@+id/cashAppButton" />
+        android:src="@drawable/paypal-240"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cashAppButton"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
         android:id="@+id/cashAppButton"
-        android:layout_width="391dp"
-        android:layout_height="105pt"
+        android:layout_width="195dp"
+        android:layout_height="147dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="44dp"
         android:onClick="cashAppWebsiteLink"
         android:padding="@dimen/text_margin"
         android:paddingStart="@dimen/text_margin"
-        android:src="@drawable/cashapp"
+        android:src="@drawable/cash-app-240"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/zelleButton" />
 
 
     <ImageButton
         android:id="@+id/zelleButton"
-        android:layout_width="385dp"
-        android:layout_height="268dp"
+        android:layout_width="205dp"
+        android:layout_height="132dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
         android:onClick="zelleWebsiteLink"
         android:padding="@dimen/text_margin"
-        android:src="@drawable/zelle"
+        android:src="@drawable/zelle-240"
+        app:layout_constraintBottom_toTopOf="@+id/cashAppButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 

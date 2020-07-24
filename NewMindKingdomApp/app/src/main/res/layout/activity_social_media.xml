@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SocialMedia">
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        >
+
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:background="@color/white"
+            android:onClick="facebookWebsiteLink"
+            android:src="@drawable/facebook" />
+
+        <ImageButton
+            android:layout_width="1in"
+            android:layout_height="1in"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:onClick="youtubeWebsiteLink"
+            android:scaleType="fitXY"
+            android:src="@drawable/youtube-200" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="199dp"
+            android:background="@color/white"
+            android:onClick="twitterWebsiteLink"
+            android:src="@drawable/twitter" />
+
+        <ImageButton
+            android:layout_width="210dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:onClick="instagramWebsiteLink"
+            android:padding="@dimen/text_margin"
+            android:src="@drawable/instagram" />
+
+
+    </GridLayout>
+</android.support.v4.widget.NestedScrollView>
