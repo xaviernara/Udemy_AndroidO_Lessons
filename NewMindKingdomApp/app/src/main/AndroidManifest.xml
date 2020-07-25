@@ -27,7 +27,7 @@
             android:name=".PreviousMessages"
             android:label="Previous Messages" />
         <activity
-            android:name=".Website"
+            android:name=".AboutUs"
             android:label="@string/title_activity_website" />
         <activity android:name=".GivingWays" />
         <activity
@@ -35,7 +35,10 @@
             android:label="Vision Statement" />
         <activity
             android:name=".SocialMedia"
-            android:label="@string/title_activity_social_media"></activity>
+            android:label="@string/title_activity_social_media" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"></activity>
     </application>
 
 </manifest>

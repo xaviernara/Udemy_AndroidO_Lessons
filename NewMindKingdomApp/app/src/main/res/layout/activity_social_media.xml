@@ -28,7 +28,7 @@
             android:background="@color/white"
             android:onClick="youtubeWebsiteLink"
             android:scaleType="fitXY"
-            android:src="@drawable/youtube-200" />
+            android:src="@drawable/youtube200" />
 
         <ImageButton
             android:layout_width="80dp"

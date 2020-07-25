@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         churchList.add("Previous Messages");
         churchList.add("Social Media");
         churchList.add("Sign Up");
-        churchList.add("Website");
+        churchList.add("AboutUs");
         churchList.add("Church Location");
         churchList.add("Ways to Give");
         churchList.add("Our Crest");

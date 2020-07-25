@@ -96,4 +96,5 @@
     <string name="title_activity_website">Website</string>
     <string name="title_activity_vision_statement">VisionStatement</string>
     <string name="title_activity_social_media">SocialMedia</string>
+    <string name="title_activity_home">Home</string>
 </resources>
