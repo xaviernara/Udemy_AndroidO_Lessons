@@ -1,9 +1,12 @@
 package com.example.xaviernara.newmindapp;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
+import android.support.v4.app.ActivityCompat;
 import android.view.View;
 
 public class Home extends Activity {
@@ -67,50 +70,68 @@ public class Home extends Activity {
 
     */
 
-    public void aboutOnClick(View view){
-        Intent intent = new Intent(getApplicationContext(),AboutUs.class);
+    public void aboutOnClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), AboutUs.class);
         startActivity(intent);
     }
 
-    public void socialMediaOnClick(View view){
+    public void socialMediaOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), SocialMedia.class);
         startActivity(intent);
     }
 
 
-    public void websiteOnClick(View view){
+    public void websiteOnClick(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://newmindkingdom.org"));
         startActivity(intent);
     }
 
-    public void sevenROnClick(View view){
+    public void sevenROnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), SevenRConcept.class);
         startActivity(intent);
     }
 
-    public void visionOnClick(View view){
+    public void visionOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), VisionStatement.class);
         startActivity(intent);
     }
 
-    public void crestOnClick(View view){
+    public void crestOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), CrestInfo.class);
         startActivity(intent);
     }
 
-    public void givingOnClick(View view){
+    public void givingOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), GivingWays.class);
         startActivity(intent);
     }
 
-    public void signUpOnClick(View view){
+    public void signUpOnClick(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/17AShdI3lj8vwOfxkhBoLcv_YRCqf4KOTY03Wq2guQCE/viewform?edit_requested=true"));
         startActivity(intent);
     }
 
-    public void pastorOnClick(View view){
-        Intent intent = new Intent(getApplicationContext(),PastorBiography.class);
+    public void pastorOnClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), PastorBiography.class);
         startActivity(intent);
+    }
+
+
+    //https://www.tutorialspoint.com/android/android_phone_calls.htm
+    public void phoneOnClick(View view) {
+        Intent callIntent = new Intent(Intent.ACTION_CALL);
+        callIntent.setData(Uri.parse("tel: + 8802177690"));
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        startActivity(callIntent);
     }
 
 

@@ -587,6 +587,7 @@
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/phone96"
                         android:background="@color/white"
+                        android:onClick="phoneOnClick"
                         />
 
                     <TextView
