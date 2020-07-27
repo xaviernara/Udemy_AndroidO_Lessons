@@ -1,195 +1,91 @@
 package com.example.xaviernara.newmindapp;
 
+import android.app.IntentService;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.Toast;
+import android.app.Activity;
+import android.os.Handler;
+import android.support.annotation.Nullable;
+import android.support.v4.app.NotificationManagerCompat;
+import android.view.WindowManager;
 
-import java.util.ArrayList;
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
 
-    ListView activityListView;
-
-    /*
-    //onClick method for previous button that would switch the screen to the next activity
-    public void nextActivity(View view){
-
-        //Intent is for what you WANT to do when you move to the another activity
-        //Intent intent = new Intent(application Context, class you want to move to);
-        Intent intent = new Intent(getApplicationContext(),SecondActivity.class);
-
-        //this moves the screen to the activity that the intent above says to
-        //this basically stacks the activities on top of each other
-        //(ie when the back button on the users device the screen will cycle back and forth thru the activities screens)
-        //**THIS IS MANDATORY WHEN YOUR MOVING TO THE NEXT ACTIVITY IF ITS USED IN THE FIRST ACTIVITY
-        startActivity(intent);
-
-        //this passes things to the class that activity that the intent tells it to
-        //intent.putExtra("name of the variable",value of the variable);
-        //Ex:  intent.putExtra("age",78); your sending a int to the another activity
-        intent.putExtra("age",29);
-    }
-    */
-
-
-
-
+    //After completion of 3000 ms, the next activity will get started.
+    private static int SPLASH_SCREEN_TIME_OUT=3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+        //This method is used so that your splash activity
+        //can cover the entire screen.
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
         setContentView(R.layout.activity_main);
+        //this will bind your MainActivity.class file with activity_main.
 
-        activityListView = findViewById(R.id.church_list);
-
-        final Intent intent = new Intent(getApplicationContext(),PastorBiography.class);
-        //Intent intent;
-        //startActivity(intent);
-
-
-
-        final ListView list = findViewById(R.id.church_list);
-        final ArrayList<String> churchList = new ArrayList<>();
-        churchList.add("Meet Prophet Frederick E. Ward Sr.");
-        churchList.add("Previous Messages");
-        churchList.add("Social Media");
-        churchList.add("Sign Up");
-        churchList.add("AboutUs");
-        churchList.add("Church Location");
-        churchList.add("Ways to Give");
-        churchList.add("Our Crest");
-        churchList.add("Church Location");
-        churchList.add("Vision Statement ");
-        churchList.add("Mission Statement");
-        churchList.add("Our 7Rs Concept (Our Mandate)");
-        churchList.add("Pathway to Purpose");
-        churchList.add("What We Believe");
-        churchList.add("Our Culture (I.C.C.E)");
-
-
-        //a ArrayAdapter communicates with a array/arraylist to get the contents of the array/arraylist and also how it will be displayed on the screen
-        // the setAdapter places the contents in the array/arraylist  into the listview variable so it can be displayed (i.e.to list it on the screen)
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, churchList);
-
-
-        activityListView.setAdapter(arrayAdapter);
-
-
-        //remember to have something happen when a list item is clicked then you need this line of code
-        activityListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-            //this lines of code will log the name of the family memeber thats listed on the screen when clicked
-            //and create a toast when a list item is clicked
-            //AdapterView<?> parent = a type of adapter in the <gridLayout,string, etc...>
-            //View view= itmes being viewed on screen
-            //int position = position of the items on the list (for example: positions of the items in the array )
-
-
+        new Handler().postDelayed(new Runnable() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void run() {
+                //Intent is used to switch from one activity to another.
+                Intent i=new Intent(MainActivity.this,
+                        Home.class);
 
+                //invoke the SecondActivity.
+                startActivity(i);
 
-                switch(position){
-
-                    case 0 :
-                        Intent intent = new Intent(getApplicationContext(),PastorBiography.class);
-                        startActivity(intent);
-                        break;
-
-                    case 1 :
-                        intent = new Intent(getApplicationContext(), PreviousMessages.class);
-                        startActivity(intent);
-                        break;
-
-                    case 2 :
-                        intent = new Intent(getApplicationContext(), SocialMedia.class);
-                        startActivity(intent);
-                        break;
-
-                    case 3 :
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/17AShdI3lj8vwOfxkhBoLcv_YRCqf4KOTY03Wq2guQCE/viewform?edit_requested=true"));
-                        startActivity(intent);
-                        break;
-
-                    case 4 :
-                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://newmindkingdom.org"));
-                        startActivity(intent);
-                        break;
-
-                    case 6 :
-                        intent = new Intent(getApplicationContext(), GivingWays.class);
-                        startActivity(intent);
-                        break;
-                    case 7 :
-                        intent = new Intent(getApplicationContext(), CrestInfo.class);
-                        startActivity(intent);
-                        break;
-
-                    case 9 :
-                        intent = new Intent(getApplicationContext(), VisionStatement.class);
-                        startActivity(intent);
-                        break;
-
-                    case 11 :
-                        intent = new Intent(getApplicationContext(), SevenRConcept.class);
-                        startActivity(intent);
-                        break;
-
-
-                }
-
-
-                /*
-                if(position == 0 ){
-                    //intent = new Intent(getApplicationContext(),PastorBiography.class);
-                    startActivity(intent);
-                }
-                */
-
-                Log.i("Family Name: ",churchList.get(position));
-                //Toast.makeText(this,names.get(position),Toast.LENGTH_LONG)
-                //Toast.makeText(getApplicationContext(), "Hello "+names.get(position),Toast.LENGTH_LONG).show();
-
-                //intent.putExtra("churchList", churchList.get(position));
-                //startActivity(intent);
-
-
-
-
-
-
-
+                //the current activity will get finished.
+                finish();
 
             }
-        });
+        }, SPLASH_SCREEN_TIME_OUT);
+    }
+
+}
+
+class MyReceiver extends BroadcastReceiver{
 
 
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        Intent notifyIntent = new Intent(context, MyNewIntentService.class);
+        context.startService(notifyIntent);
+    }
+}
 
 
+class MyNewIntentService extends IntentService {
 
-        /*
-        list.setAdapter(arrayAdapter);
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+    public MyNewIntentService(String name) {
+        super("MyNewIntentService");
+    }
 
+    @Override
+    protected void onHandleIntent(@Nullable Intent intent) {
+        Notification.Builder builder = new Notification.Builder(this);
+        builder.setContentTitle("Tuesday Morning Prayer");
+        builder.setContentText("Come join us as we usher in the day with prayer!");
+        builder.setSmallIcon(R.drawable.crest);
 
+        Intent noftifyIntent = new Intent(this,MainActivity.class);
 
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String clickedItem=(String) list.getItemAtPosition(position);
-                Toast.makeText(MainActivity.this,clickedItem,Toast.LENGTH_LONG).show();
-            }
-        });*/
-
-
-
+        //to be able to launch the app from the notification
+        PendingIntent pendingIntent = PendingIntent.getActivity(this,2,noftifyIntent,PendingIntent.FLAG_UPDATE_CURRENT);
+        builder.setContentIntent(pendingIntent);
+        Notification notificationCompat = builder.build();
+        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(this);
+        managerCompat.notify(NOTIFICATION_ID, notificationCompat);
 
 
     }
+
 }

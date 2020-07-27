@@ -15,7 +15,7 @@ public class PastorBiography extends AppCompatActivity {
 
         //Intent is for what you WANT to do when you move to the another activity
         //Intent intent = new Intent(application Context, class you want to move to);
-        //Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+        //Intent intent = new Intent(getApplicationContext(),ListNotUsedActivity.class);
 
         //this moves the screen to the activity that the intent above says to
         //this basically stacks the activities on top of each other

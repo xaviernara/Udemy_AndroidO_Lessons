@@ -9,8 +9,8 @@
 
     <ImageButton
         android:id="@+id/paypalButton"
-        android:layout_width="192dp"
-        android:layout_height="171dp"
+        android:layout_width="185dp"
+        android:layout_height="158dp"
         android:layout_marginEnd="97dp"
         android:layout_marginStart="98dp"
         android:layout_marginTop="48dp"
