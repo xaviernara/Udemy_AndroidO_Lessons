@@ -52,6 +52,8 @@ public class MainActivity extends Activity {
 
 }
 
+
+//link to notification code: https://stackoverflow.com/questions/34517520/how-to-give-notifications-on-android-on-specific-time
 class MyReceiver extends BroadcastReceiver{
 
 
@@ -64,6 +66,8 @@ class MyReceiver extends BroadcastReceiver{
 
 
 class MyNewIntentService extends IntentService {
+
+    private static int NOTIFICATION_ID = 1;
 
     public MyNewIntentService(String name) {
         super("MyNewIntentService");

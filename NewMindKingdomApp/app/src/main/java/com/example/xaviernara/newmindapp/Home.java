@@ -116,6 +116,16 @@ public class Home extends Activity {
         startActivity(intent);
     }
 
+    public void beliefsOnClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), BeliefsActivity.class);
+        startActivity(intent);
+    }
+
+    public void locationOnClick(View view){
+        Intent intent = new Intent(getApplicationContext(), LocationActivity.class);
+        startActivity(intent);
+    }
+
 
     //https://www.tutorialspoint.com/android/android_phone_calls.htm
     public void phoneOnClick(View view) {

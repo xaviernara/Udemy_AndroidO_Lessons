@@ -194,6 +194,7 @@
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/bible96"
                         android:background="@color/white"
+                        android:onClick="beliefsOnClick"
                         />
 
                     <TextView

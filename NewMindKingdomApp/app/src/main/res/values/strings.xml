@@ -98,4 +98,6 @@
     <string name="title_activity_social_media">SocialMedia</string>
     <string name="title_activity_home">Home</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_beilefs">BeilefsActivity</string>
+    <string name="title_activity_location">Map</string>
 </resources>
