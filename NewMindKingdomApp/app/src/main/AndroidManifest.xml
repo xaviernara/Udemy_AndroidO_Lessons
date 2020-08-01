@@ -21,8 +21,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:replace="android:appComponentFactory"
+
+
         >
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,8 +44,10 @@
             android:label="Previous Messages" />
         <activity
             android:name=".AboutUs"
-            android:label="@string/title_activity_website" />
-        <activity android:name=".GivingWays" />
+            android:label="About Us" />
+        <activity android:name=".GivingWays"
+                    android:label="Giving Ways"
+            />
         <activity
             android:name=".VisionStatement"
             android:label="Vision Statement" />

@@ -26,7 +26,9 @@ public class GivingWays extends AppCompatActivity {
     }
 
     public void paypalWebsiteLink(View view){
-        Intent paypalIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://newmindkingdom.org/give.html"));
+        //https://www.paypal.com/donate/?token=numoyRPrpVKFprADwgP4NJrQTT542020KToPYXY48rwoHtbDUT1OHb0U3fOVEBnzHpz8R0&country.x=US&locale.x=US
+        //Intent paypalIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://newmindkingdom.org/give.html"));
+        Intent paypalIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("//https://www.paypal.com/donate/?token=numoyRPrpVKFprADwgP4NJrQTT542020KToPYXY48rwoHtbDUT1OHb0U3fOVEBnzHpz8R0&country.x=US&locale.x=US"));
         startActivity(paypalIntent);
     }
 
