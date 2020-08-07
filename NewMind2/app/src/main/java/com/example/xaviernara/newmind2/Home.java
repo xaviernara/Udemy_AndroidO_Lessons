@@ -158,7 +158,7 @@ public class Home extends Activity {
     }
 
     public void pastorOnClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), PastorBiography.class);
+        Intent intent = new Intent(getApplicationContext(), PastorBio.class);
         startActivity(intent);
     }
 
@@ -176,7 +176,7 @@ public class Home extends Activity {
     //https://www.tutorialspoint.com/android/android_phone_calls.htm
     public void phoneOnClick(View view) {
         Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel: + 8802177690"));
+        callIntent.setData(Uri.parse("tel: + 2198038331"));
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions

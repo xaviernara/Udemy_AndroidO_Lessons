@@ -136,7 +136,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/priest100"
-                        android:background="@color/white"
+                        android:background="@android:color/white"
                         android:onClick="pastorOnClick"
                         />
 
@@ -251,7 +251,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/binoculars144"
-                        android:background="@color/white"
+                        android:background="@android:color/white"
                         android:onClick="visionOnClick"
                         />
 
@@ -308,7 +308,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/church96"
-                        android:background="@color/white"
+                        android:background="@android:color/white"
                         />
 
                     <TextView
@@ -365,7 +365,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/location80"
-                        android:background="@color/white"
+                        android:background="@android:color/white"
                         />
 
                     <TextView
@@ -420,7 +420,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/website96"
-                        android:background="@color/white"
+                        android:background="@android:color/white"
                         android:onClick="websiteOnClick"
                         />
 
@@ -476,7 +476,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/money100"
-                        android:background="@color/white"
+                        android:background="@android:color/white"
                         android:onClick="givingOnClick"
                         />
 
@@ -532,7 +532,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/connectedpeople96"
-                        android:background="@color/white"
+                        android:background="@android:color/white"
                         android:onClick="socialMediaOnClick"
                         />
 
@@ -587,7 +587,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/phone96"
-                        android:background="@color/white"
+                        android:background="@android:color/white"
                         android:onClick="phoneOnClick"
                         />
 
@@ -642,7 +642,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/crest"
-                        android:background="@color/white"
+                        android:background="@android:color/white"
                         android:onClick="crestOnClick"
                         />
 
@@ -698,7 +698,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/rconcept96"
-                        android:background="@color/white"
+                        android:background="@android:color/white"
                         android:onClick="sevenROnClick"
                         />
 
