@@ -1,10 +1,12 @@
 package com.example.xaviernara.newmindapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+//import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class PastorBiography extends AppCompatActivity {
 

@@ -6,8 +6,10 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
-import android.support.v4.app.ActivityCompat;
+//import android.support.v4.app.ActivityCompat;
 import android.view.View;
+
+import androidx.core.app.ActivityCompat;
 
 public class Home extends Activity {
 
@@ -130,7 +132,7 @@ public class Home extends Activity {
     //https://www.tutorialspoint.com/android/android_phone_calls.htm
     public void phoneOnClick(View view) {
         Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel: + 8802177690"));
+        callIntent.setData(Uri.parse("tel: +2198032331"));
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions

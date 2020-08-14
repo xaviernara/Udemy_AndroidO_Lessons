@@ -1,6 +1,6 @@
 package com.example.xaviernara.newmindapp;
 
-import android.support.v4.app.FragmentActivity;
+//import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
 import com.google.android.gms.maps.CameraUpdate;
@@ -12,6 +12,8 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.TileOverlayOptions;
+
+import androidx.fragment.app.FragmentActivity;
 
 public class LocationActivity extends FragmentActivity implements OnMapReadyCallback {
 

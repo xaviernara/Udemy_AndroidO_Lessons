@@ -11,8 +11,10 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.os.Handler;
 import android.support.annotation.Nullable;
-import android.support.v4.app.NotificationManagerCompat;
+//import android.support.v4.app.NotificationManagerCompat;
 import android.view.WindowManager;
+
+import androidx.core.app.NotificationManagerCompat;
 
 public class MainActivity extends Activity {
 
