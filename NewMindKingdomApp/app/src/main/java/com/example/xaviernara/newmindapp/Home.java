@@ -75,57 +75,72 @@ public class Home extends Activity {
     public void aboutOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), AboutUs.class);
         startActivity(intent);
+        finish();
     }
 
     public void socialMediaOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), SocialMedia.class);
         startActivity(intent);
+        finish();
     }
 
 
     public void websiteOnClick(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://newmindkingdom.org"));
         startActivity(intent);
+        finish();
     }
 
     public void sevenROnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), SevenRConcept.class);
         startActivity(intent);
+        finish();
     }
 
     public void visionOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), VisionStatement.class);
         startActivity(intent);
+        finish();
     }
 
     public void crestOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), CrestInfo.class);
         startActivity(intent);
+        finish();
     }
 
     public void givingOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), GivingWays.class);
         startActivity(intent);
+        finish();
     }
+
+    /*
+    Not needed because the SignUp class holds this with firebase
 
     public void signUpOnClick(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/17AShdI3lj8vwOfxkhBoLcv_YRCqf4KOTY03Wq2guQCE/viewform?edit_requested=true"));
         startActivity(intent);
+        finish();
     }
+    */
 
     public void pastorOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), PastorBiography.class);
         startActivity(intent);
+        finish();
     }
 
     public void beliefsOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), BeliefsActivity.class);
         startActivity(intent);
+        finish();
     }
 
     public void locationOnClick(View view){
         Intent intent = new Intent(getApplicationContext(), LocationActivity.class);
         startActivity(intent);
+        finish();
     }
 
 
