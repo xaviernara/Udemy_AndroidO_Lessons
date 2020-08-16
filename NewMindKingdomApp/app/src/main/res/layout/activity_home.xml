@@ -38,15 +38,13 @@
     -->
         <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="730dp"
             android:layout_weight="8"
-            android:columnCount="2"
-            android:rowCount="3"
             android:alignmentMode="alignMargins"
+            android:columnCount="2"
             android:columnOrderPreserved="true"
             android:padding="14dp"
-            >
-
+            android:rowCount="3">
 
 
             <!--Row 1 -->
@@ -57,34 +55,32 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
+                android:layout_rowWeight="1"
                 app:cardCornerRadius="8dp"
-                >
+                app:cardElevation="8dp">
 
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:orientation="vertical"
                     android:layout_margin="6dp"
-                    >
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/about144"
                         android:background="@color/white"
+                        android:contentDescription=""
                         android:onClick="aboutOnClick"
-                        />
+                        android:src="@drawable/about144" />
 
-                    <TextView
+                    <!--  <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
@@ -93,14 +89,10 @@
                         android:textStyle="bold"
                         android:text="About Us"
                         />
-
-
-
-
+                        -->
 
 
                 </LinearLayout>
-
 
 
             </android.support.v7.widget.CardView>
@@ -113,34 +105,31 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
+                android:layout_rowWeight="1"
                 app:cardCornerRadius="8dp"
-                >
+                app:cardElevation="8dp">
 
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:orientation="vertical"
                     android:layout_margin="5dp"
-                    >
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/priest100"
                         android:background="@color/white"
                         android:onClick="pastorOnClick"
-                        />
+                        android:src="@drawable/priest100" />
 
-                    <TextView
+                    <!--> <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
@@ -148,19 +137,13 @@
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:text="Pastor Bio"
-                        />
-
-
-
-
+                        />-->
 
 
                 </LinearLayout>
 
 
-
             </android.support.v7.widget.CardView>
-
 
 
             <!--Row 2 -->
@@ -170,34 +153,31 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
+                android:layout_rowWeight="1"
                 app:cardCornerRadius="8dp"
-                >
+                app:cardElevation="8dp">
 
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:orientation="vertical"
                     android:layout_margin="5dp"
-                    >
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/bible96"
                         android:background="@color/white"
                         android:onClick="beliefsOnClick"
-                        />
+                        android:src="@drawable/bible96" />
 
-                    <TextView
+                    <!--<TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
@@ -205,20 +185,13 @@
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:text="Our Belief"
-                        />
-
-
-
-
+                        />-->
 
 
                 </LinearLayout>
 
 
-
             </android.support.v7.widget.CardView>
-
-
 
 
             <!--Row 2 -->
@@ -228,34 +201,31 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
+                android:layout_rowWeight="1"
                 app:cardCornerRadius="8dp"
-                >
+                app:cardElevation="8dp">
 
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:orientation="vertical"
                     android:layout_margin="6dp"
-                    >
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/binoculars144"
                         android:background="@color/white"
                         android:onClick="visionOnClick"
-                        />
+                        android:src="@drawable/binoculars144" />
 
-                    <TextView
+                    <!--<TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
@@ -263,19 +233,13 @@
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:text="Our Vision"
-                        />
-
-
-
-
+                        />-->
 
 
                 </LinearLayout>
 
 
-
             </android.support.v7.widget.CardView>
-
 
 
             <!--Row 3 -->
@@ -285,33 +249,30 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
+                android:layout_rowWeight="1"
                 app:cardCornerRadius="8dp"
-                >
+                app:cardElevation="8dp">
 
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:orientation="vertical"
                     android:layout_margin="6dp"
-                    >
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/church96"
                         android:background="@color/white"
-                        />
+                        android:src="@drawable/church96" />
 
-                    <TextView
+                    <!--<TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
@@ -319,19 +280,13 @@
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:text="Pastor Bio"
-                        />
-
-
-
-
+                        />-->
 
 
                 </LinearLayout>
 
 
-
             </android.support.v7.widget.CardView>
-
 
 
             <!--Row 3 -->
@@ -342,33 +297,30 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
+                android:layout_rowWeight="1"
                 app:cardCornerRadius="8dp"
-                >
+                app:cardElevation="8dp">
 
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:orientation="vertical"
                     android:layout_margin="6dp"
-                    >
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/location80"
                         android:background="@color/white"
-                        />
+                        android:src="@drawable/location80" />
 
-                    <TextView
+                    <!--<TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
@@ -376,15 +328,10 @@
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:text="Location"
-                        />
-
-
-
-
+                        />-->
 
 
                 </LinearLayout>
-
 
 
             </android.support.v7.widget.CardView>
@@ -397,50 +344,41 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
+                android:layout_rowWeight="1"
                 app:cardCornerRadius="8dp"
-                >
+                app:cardElevation="8dp">
 
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:orientation="vertical"
                     android:layout_margin="5dp"
-                    >
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/website96"
                         android:background="@color/white"
                         android:onClick="websiteOnClick"
-                        />
+                        android:src="@drawable/website96" />
 
-                    <TextView
+                    <!--<TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Pastor Bio"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:text="Pastor Bio"
-                        />
-
-
-
-
+                        android:textStyle="bold" />-->
 
 
                 </LinearLayout>
-
 
 
             </android.support.v7.widget.CardView>
@@ -453,50 +391,41 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
+                android:layout_rowWeight="1"
                 app:cardCornerRadius="8dp"
-                >
+                app:cardElevation="8dp">
 
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:orientation="vertical"
                     android:layout_margin="6dp"
-                    >
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/money100"
                         android:background="@color/white"
                         android:onClick="givingOnClick"
-                        />
+                        android:src="@drawable/money100" />
 
-                    <TextView
+                    <!-- <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Giving"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:text="Giving"
-                        />
-
-
-
-
+                        android:textStyle="bold" /> -->
 
 
                 </LinearLayout>
-
 
 
             </android.support.v7.widget.CardView>
@@ -509,50 +438,41 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
+                android:layout_rowWeight="1"
                 app:cardCornerRadius="8dp"
-                >
+                app:cardElevation="8dp">
 
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:orientation="vertical"
                     android:layout_margin="5dp"
-                    >
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/connectedpeople96"
                         android:background="@color/white"
                         android:onClick="socialMediaOnClick"
-                        />
+                        android:src="@drawable/connectedpeople96" />
 
-                    <TextView
+                    <!--<TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Pastor Bio"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:text="Pastor Bio"
-                        />
-
-
-
-
+                        android:textStyle="bold" />-->
 
 
                 </LinearLayout>
-
 
 
             </android.support.v7.widget.CardView>
@@ -564,50 +484,41 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
+                android:layout_rowWeight="1"
                 app:cardCornerRadius="8dp"
-                >
+                app:cardElevation="8dp">
 
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:orientation="vertical"
                     android:layout_margin="6dp"
-                    >
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/phone96"
                         android:background="@color/white"
                         android:onClick="phoneOnClick"
-                        />
+                        android:src="@drawable/phone96" />
 
-                    <TextView
+                    <!-- <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Call"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:text="Call"
-                        />
-
-
-
-
+                        android:textStyle="bold" /> -->
 
 
                 </LinearLayout>
-
 
 
             </android.support.v7.widget.CardView>
@@ -619,50 +530,41 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
+                android:layout_rowWeight="1"
                 app:cardCornerRadius="8dp"
-                >
+                app:cardElevation="8dp">
 
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:orientation="vertical"
                     android:layout_margin="2dp"
-                    >
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/crest"
                         android:background="@color/white"
                         android:onClick="crestOnClick"
-                        />
+                        android:src="@drawable/crest" />
 
-                    <TextView
+                    <!-- <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Call"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:text="Call"
-                        />
-
-
-
-
+                        android:textStyle="bold" />-->
 
 
                 </LinearLayout>
-
 
 
             </android.support.v7.widget.CardView>
@@ -675,72 +577,47 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                app:cardElevation="8dp"
+                android:layout_rowWeight="1"
                 app:cardCornerRadius="8dp"
-                >
+                app:cardElevation="8dp">
 
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:orientation="vertical"
                     android:layout_margin="2dp"
-                    >
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/rconcept96"
                         android:background="@color/white"
                         android:onClick="sevenROnClick"
-                        />
+                        android:src="@drawable/rconcept96" />
 
-                    <TextView
+                    <!--<TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="7 R Concept"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:text="7 R Concept"
-                        />
-
-
-
-
+                        android:textStyle="bold" /> -->
 
 
                 </LinearLayout>
 
 
-
             </android.support.v7.widget.CardView>
 
 
-
-
-
-
-
         </GridLayout>
-
-
-
-
-
-
-
-
-
-
-
 
 
     </LinearLayout>

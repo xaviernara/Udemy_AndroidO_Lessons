@@ -8,9 +8,19 @@
     tools:context=".AboutUs">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="About Us"/>
+
+
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+
+        android:text="New Mind Kingdom Ministries is a Life Skill teaching ministry with Destiny and a Destination in mind. Our focus and intent is to teach you the Word of God so that you can make it applicable to your everyday life. “The Word works when YOU work it.” Wisdom is the correct application of knowledge. Life is based on choices. Make wise choices, good life. Make foolish choices, foolish life.
+
+Deuteronomy 30:19 I call heaven and earth to record this day against you, that I have set before you life and death, blessing and cursing: therefore choose life, that both thou and thy seed may live. We choose our life that consequently affects the lives around us. Pastor Ward’s endeavor is to give you so much Word so that you may have ample amount of knowledge to apply wisdom in your choices to have an “Abundant life.”"
+        android:textColor="@android:color/black" />
 
 </androidx.core.widget.NestedScrollView>

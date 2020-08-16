@@ -2,7 +2,7 @@ package com.example.xaviernara.newmindapp;
 
 import android.app.IntentService;
 import android.app.Notification;
-import android.app.NotificationManager;
+//import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -82,10 +82,10 @@ class MyNewIntentService extends IntentService {
         builder.setContentText("Come join us as we usher in the day with prayer!");
         builder.setSmallIcon(R.drawable.crest);
 
-        Intent noftifyIntent = new Intent(this,MainActivity.class);
+        Intent notifyIntent = new Intent(this,MainActivity.class);
 
         //to be able to launch the app from the notification
-        PendingIntent pendingIntent = PendingIntent.getActivity(this,2,noftifyIntent,PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this,2,notifyIntent,PendingIntent.FLAG_UPDATE_CURRENT);
         builder.setContentIntent(pendingIntent);
         Notification notificationCompat = builder.build();
         NotificationManagerCompat managerCompat = NotificationManagerCompat.from(this);

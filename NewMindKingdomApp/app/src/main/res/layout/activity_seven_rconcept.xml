@@ -16,11 +16,11 @@
         >
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="Our Mandate: The 7R’s-It Is What We Do
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="698dp"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Our Mandate: The 7R’s-It Is What We Do
 
 The Spirit of God has given us a vision/assignment with our 7R Concept.
 
@@ -38,10 +38,10 @@ The Spirit of God has given us a vision/assignment with our 7R Concept.
 
 7. Rejoice - We are ”Excited” when we here the reports of success and accomplishment.
 "
-        android:textColor="@android:color/background_dark"
-        android:textSize="@dimen/text_margin"
-        android:textStyle="normal"
-        tools:ignore="HardcodedText" />
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/text_margin"
+            android:textStyle="normal"
+            tools:ignore="HardcodedText" />
 
     </LinearLayout>
 
