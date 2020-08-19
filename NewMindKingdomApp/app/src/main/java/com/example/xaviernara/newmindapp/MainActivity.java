@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
             public void run() {
                 //Intent is used to switch from one activity to another.
                 Intent i=new Intent(MainActivity.this,
-                        Home.class);
+                        Login.class);
 
                 //invoke the SecondActivity.
                 startActivity(i);
