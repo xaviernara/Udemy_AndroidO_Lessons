@@ -1,7 +1,7 @@
 package com.example.xaviernara.newmindapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -83,13 +83,18 @@ public class SignUp extends AppCompatActivity {
                 }
                 else{
                     Toast.makeText(SignUp.this, "Error :"+ task.getException().getMessage(),Toast.LENGTH_SHORT).show();
-
+                    progressBar.setVisibility(View.GONE);
                 }
             }
         });
 
 
 
+    }
+
+    public void loginTextOnClick(View view){
+        startActivity(new Intent(getApplicationContext(),Login.class));
+        finish();
     }
 
 

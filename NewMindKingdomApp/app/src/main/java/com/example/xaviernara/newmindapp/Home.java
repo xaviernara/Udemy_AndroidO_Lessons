@@ -9,6 +9,8 @@ import android.app.Activity;
 //import android.support.v4.app.ActivityCompat;
 import android.view.View;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import androidx.core.app.ActivityCompat;
 
 public class Home extends Activity {
@@ -159,6 +161,15 @@ public class Home extends Activity {
             return;
         }
         startActivity(callIntent);
+    }
+
+    //if the users clicks the log out text view this will direct them to the login activity
+    public void logOut(View view){
+        FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(getApplicationContext(), Login.class);
+        startActivity(intent);
+        finish();
+
     }
 
 
