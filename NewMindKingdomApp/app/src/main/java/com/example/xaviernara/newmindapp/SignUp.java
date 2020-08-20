@@ -21,8 +21,7 @@ import androidx.annotation.NonNull;
 public class SignUp extends AppCompatActivity {
 
     EditText fullName,emailText,passwordText,address;
-    Button registerButton;
-    TextView alreadyRegisteredText;
+    TextView alreadyRegisteredText,registerButton;
     ProgressBar progressBar;
     private FirebaseAuth mAuth;
 
@@ -35,7 +34,7 @@ public class SignUp extends AppCompatActivity {
         emailText = findViewById(R.id.emailText);
         passwordText = findViewById(R.id.passwordText);
         address = findViewById(R.id.addressText);
-        registerButton = findViewById(R.id.registerButton);
+        registerButton = findViewById(R.id.registerTextView);
         alreadyRegisteredText = findViewById(R.id.alreadyRegisteredText);
         progressBar = findViewById(R.id.progressBar);
 
@@ -78,6 +77,14 @@ public class SignUp extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if(task.isSuccessful()){
+
+                    //send verification link
+
+                   String userId =mAuth.getCurrentUser().getUid();
+                   DocumentReference documentReference = fStore.collction("users").document(userId);
+
+
+
                     Toast.makeText(SignUp.this, "User Created",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(),Home.class));
                 }
@@ -93,7 +100,7 @@ public class SignUp extends AppCompatActivity {
     }
 
     public void loginTextOnClick(View view){
-        startActivity(new Intent(getApplicationContext(),Login.class));
+        startActivity(new Intent(getApplicationContext(), Login.class));
         finish();
     }
 

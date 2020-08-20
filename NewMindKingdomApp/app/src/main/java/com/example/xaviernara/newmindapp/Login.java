@@ -26,8 +26,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class Login extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
-    TextView signUpText,emailText,passwordText,forgotPasswordText;
-    Button loginButton;
+    TextView signUpText,emailText,passwordText,forgotPasswordText, loginButton;
     ProgressBar progressBar;
 
 
@@ -42,7 +41,7 @@ public class Login extends AppCompatActivity {
         signUpText = findViewById(R.id.alreadyRegisteredText);
         emailText = findViewById(R.id.emailText);
         passwordText = findViewById(R.id.passwordText);
-        loginButton = findViewById(R.id.registerButton);
+        loginButton = findViewById(R.id.logintextView);
         progressBar = findViewById(R.id.progressBar2);
         forgotPasswordText = findViewById(R.id.forgotPassword);
     }
