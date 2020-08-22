@@ -2,8 +2,11 @@ package com.example.xaviernara.newmindapp;
 
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,9 +15,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import androidx.annotation.NonNull;
 
@@ -78,14 +87,40 @@ public class SignUp extends AppCompatActivity {
 
                 if(task.isSuccessful()){
 
+
+
+                    /*
                     //send verification link
+                    FirebaseUser user = mAuth.getCurrentUser();
+                    user.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void aVoid) {
+                            Toast.makeText(SignUp.this,"Verification Email Sent",Toast.LENGTH_SHORT).show();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Log.d("TAG","onFailure: Email not sent "+e.getMessage());
+                        }
+                    });
 
                    String userId =mAuth.getCurrentUser().getUid();
                    DocumentReference documentReference = fStore.collction("users").document(userId);
+                   Map<String,String> userMap =new HashMap<>();
+                   userMap.put("fullName",fullName);
+                   userMap.put("email",email);
+                   userMap.put("address",address);
+
+
+                     */
+
+
+
 
 
 
                     Toast.makeText(SignUp.this, "User Created",Toast.LENGTH_SHORT).show();
+                    sendGreetingsEmail();
                     startActivity(new Intent(getApplicationContext(),Home.class));
                 }
                 else{
@@ -101,7 +136,32 @@ public class SignUp extends AppCompatActivity {
 
     public void loginTextOnClick(View view){
         startActivity(new Intent(getApplicationContext(), Login.class));
-        finish();
+        //finish();
+    }
+
+    //Used to send the new user the greetings email after signing up
+    protected void sendGreetingsEmail(){
+        Log.i("Send Email", "");
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+
+        emailIntent.setData(Uri.parse("mailto:"));
+        emailIntent.setType("text/plain");
+        emailIntent.putExtra(Intent.EXTRA_EMAIL,emailText.getText().toString());
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT,"Welcome to New Mind Kingdom Ministries!");
+        emailIntent.putExtra(Intent.EXTRA_TEXT,"Greetings Message");
+
+        try{
+            startActivity(Intent.createChooser(emailIntent,"Send New User Email..."));
+            finish();
+            Log.i("Finish Sending Email", "");
+
+        }catch(android.content.ActivityNotFoundException ex){
+
+            Toast.makeText(SignUp.this,"Error: "+ex.getMessage(),Toast.LENGTH_SHORT).show();
+
+        }
+
+
     }
 
 

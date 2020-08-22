@@ -159,6 +159,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="imagePath" value="C:\Users\xaviernara\OneDrive\Pictures\church images\19884132_870355829783767_6045720870812926746_n.jpg" />
+                                                <entry key="paddingPercent" value="-10" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -190,8 +192,12 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="backgroundColor" value="dd59ff" />
-                                      <entry key="outputName" value="person_icon" />
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="backgroundColor" value="000000" />
+                                      <entry key="cropped" value="true" />
+                                      <entry key="iconShape" value="NONE" />
+                                      <entry key="imageAsset" value="C:\Users\xaviernara\OneDrive\Pictures\church images\19884132_870355829783767_6045720870812926746_n.jpg" />
+                                      <entry key="outputName" value="bigCrest" />
                                     </map>
                                   </option>
                                 </PersistentState>

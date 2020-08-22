@@ -77,44 +77,44 @@ public class Home extends Activity {
     public void aboutOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), AboutUs.class);
         startActivity(intent);
-        finish();
+        //finish();
     }
 
     public void socialMediaOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), SocialMedia.class);
         startActivity(intent);
-        finish();
+        //finish();
     }
 
 
     public void websiteOnClick(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://newmindkingdom.org"));
         startActivity(intent);
-        finish();
+        //finish();
     }
 
     public void sevenROnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), SevenRConcept.class);
         startActivity(intent);
-        finish();
+        //finish();
     }
 
     public void visionOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), VisionStatement.class);
         startActivity(intent);
-        finish();
+       // finish();
     }
 
     public void crestOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), CrestInfo.class);
         startActivity(intent);
-        finish();
+        //finish();
     }
 
     public void givingOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), GivingWays.class);
         startActivity(intent);
-        finish();
+        //finish();
     }
 
     /*
@@ -130,19 +130,19 @@ public class Home extends Activity {
     public void pastorOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), PastorBiography.class);
         startActivity(intent);
-        finish();
+        //finish();
     }
 
     public void beliefsOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), BeliefsActivity.class);
         startActivity(intent);
-        finish();
+        //finish();
     }
 
     public void locationOnClick(View view){
         Intent intent = new Intent(getApplicationContext(), LocationActivity.class);
         startActivity(intent);
-        finish();
+        //finish();
     }
 
 
@@ -168,7 +168,7 @@ public class Home extends Activity {
         FirebaseAuth.getInstance().signOut();
         Intent intent = new Intent(getApplicationContext(), Login.class);
         startActivity(intent);
-        finish();
+        //finish();
 
     }
 

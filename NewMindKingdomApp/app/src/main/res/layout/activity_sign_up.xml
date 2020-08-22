@@ -11,21 +11,21 @@
 
 
     <EditText
-            android:id="@+id/addressText"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="Address"
-            android:inputType="textPersonName"
-            android:drawableLeft="@mipmap/home_icon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fullName"
-            app:layout_constraintVertical_bias="0.100000024" />
+        android:id="@+id/addressText"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:autofillHints=""
+        android:drawableLeft="@mipmap/home_icon"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullName"
+        app:layout_constraintVertical_bias="0.100000024" />
 
-        <EditText
+    <EditText
             android:id="@+id/emailText"
             android:layout_width="300dp"
             android:layout_height="40dp"
