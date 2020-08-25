@@ -141,6 +141,22 @@ public class SignUp extends AppCompatActivity {
 
     //Used to send the new user the greetings email after signing up
     protected void sendGreetingsEmail(){
+
+        String greetingsEmail = "Greetings,\n" +
+                "\n" +
+                "We here at New Mind Kingdom Ministries would like to inform you of our new\n" +
+                "location and welcome you to attend our Sunday morning worship experience.\n" +
+                "We start our service on Sunday at 10:00 am promptly at 6213 Kennedy Ave. in\n" +
+                "Hammond, IN. We also invite you to join us via social media on Tuesday mornings\n" +
+                "at 7:00 am and at 8:00 pm on Wednesday evenings for a unique worship and\n" +
+                "prophetic experience. We wish to connect with you so that we can work together\n" +
+                "to advance the Kingdom! Please feel free to connect with us, we would love to\n" +
+                "see you! We hope to see you soon here at the Mind!\n" +
+                "\n" +
+                "Advancing the Kingdom,\n" +
+                "\n" +
+                "New Mind Kingdom Ministries";
+
         Log.i("Send Email", "");
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
 
@@ -148,7 +164,7 @@ public class SignUp extends AppCompatActivity {
         emailIntent.setType("text/plain");
         emailIntent.putExtra(Intent.EXTRA_EMAIL,emailText.getText().toString());
         emailIntent.putExtra(Intent.EXTRA_SUBJECT,"Welcome to New Mind Kingdom Ministries!");
-        emailIntent.putExtra(Intent.EXTRA_TEXT,"Greetings Message");
+        emailIntent.putExtra(Intent.EXTRA_TEXT,greetingsEmail);
 
         try{
             startActivity(Intent.createChooser(emailIntent,"Send New User Email..."));
