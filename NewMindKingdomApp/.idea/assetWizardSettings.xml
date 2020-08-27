@@ -136,7 +136,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="ffffff" />
-                                                <entry key="imagePath" value="C:\Users\xaviernara\AppData\Local\Temp\baseline_person_24.xml" />
+                                                <entry key="imagePath" value="C:\Users\xaviernara\AppData\Local\Temp\baseline_phone_24.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -147,7 +147,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/person/baseline_person_24.xml" />
+                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/phone/baseline_phone_24.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -192,12 +192,10 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="assetType" value="IMAGE" />
-                                      <entry key="backgroundColor" value="000000" />
+                                      <entry key="backgroundColor" value="d843ff" />
                                       <entry key="cropped" value="true" />
-                                      <entry key="iconShape" value="NONE" />
                                       <entry key="imageAsset" value="C:\Users\xaviernara\OneDrive\Pictures\church images\19884132_870355829783767_6045720870812926746_n.jpg" />
-                                      <entry key="outputName" value="bigCrest" />
+                                      <entry key="outputName" value="phone_icon" />
                                     </map>
                                   </option>
                                 </PersistentState>

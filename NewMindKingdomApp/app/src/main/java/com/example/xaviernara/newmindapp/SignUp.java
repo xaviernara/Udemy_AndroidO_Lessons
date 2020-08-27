@@ -21,6 +21,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -29,21 +31,35 @@ import androidx.annotation.NonNull;
 
 public class SignUp extends AppCompatActivity {
 
-    EditText fullName,emailText,passwordText,address;
+    EditText fullNameText,emailText,passwordText,addressText,phoneNumberText;
     TextView alreadyRegisteredText,registerButton;
     ProgressBar progressBar;
     private FirebaseAuth mAuth;
+    DatabaseReference databaseNewUser;
+    String email,password,fullName, address,phoneNumber;
+
+
+    public FirebaseAuth getmAuth() {
+        return mAuth;
+    }
+
+    public DatabaseReference getDatabaseNewUser() {
+        return databaseNewUser;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        fullName= findViewById(R.id.fullName);
+        databaseNewUser = FirebaseDatabase.getInstance().getReference("new_user");
+
+        phoneNumberText = findViewById(R.id.phoneEdittext);
+        fullNameText= findViewById(R.id.fullName);
         emailText = findViewById(R.id.emailText);
         passwordText = findViewById(R.id.passwordText);
-        address = findViewById(R.id.addressText);
-        registerButton = findViewById(R.id.registerTextView);
+        addressText = findViewById(R.id.addressText);
+        registerButton = findViewById(R.id.registerButton);
         alreadyRegisteredText = findViewById(R.id.alreadyRegisteredText);
         progressBar = findViewById(R.id.progressBar);
 
@@ -58,10 +74,15 @@ public class SignUp extends AppCompatActivity {
 
     }
 
+    //onClick method for register button that will authenticate the new user's email/password using firebase
+    //*move email/password portions of this method to addNewUserToFireBaseDB accommodate other edittexts
     public void RegisterButtonOnClick(View view){
 
-        String email = emailText.getText().toString().trim();
-        String password = passwordText.getText().toString().trim();
+        email = emailText.getText().toString().trim();
+        password = passwordText.getText().toString().trim();
+        fullName = fullNameText.getText().toString().trim();
+        address = addressText.getText().toString().trim();
+        phoneNumber = phoneNumberText.getText().toString().trim();
 
         if(TextUtils.isEmpty(email)){
             emailText.setError("Email is Required");
@@ -69,14 +90,35 @@ public class SignUp extends AppCompatActivity {
         }
 
         if(TextUtils.isEmpty(password)){
-            emailText.setError("Password is Required");
+            passwordText.setError("Password is Required");
             return;
         }
 
         if(password.length() < 6){
-            emailText.setError("Password has to be Greater than 6 Characters");
+            passwordText.setError("Password has to be Greater than 6 Characters");
             return;
         }
+
+        if(TextUtils.isEmpty(fullName)){
+            fullNameText.setError("Full Name is Required");
+            return;
+        }
+
+        if(TextUtils.isEmpty(address)){
+            addressText.setError("Address is Required Ex: 123 Main St.");
+            return;
+        }
+
+        if(TextUtils.isEmpty(phoneNumber)){
+            phoneNumberText.setError("Phone Number is Required");
+            return;
+        }
+
+        if(phoneNumber.length() < 10){
+            phoneNumberText.setError("Phone Number Ex: 555-555-5555 ");
+            return;
+        }
+
 
         progressBar.setVisibility(View.VISIBLE);
 
@@ -114,12 +156,8 @@ public class SignUp extends AppCompatActivity {
 
                      */
 
-
-
-
-
-
-                    Toast.makeText(SignUp.this, "User Created",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(SignUp.this, "Welcome To The Mind",Toast.LENGTH_SHORT).show();
+                    addNewUserToFireBaseDB(fullName,email,password,address,phoneNumber);
                     sendGreetingsEmail();
                     startActivity(new Intent(getApplicationContext(),Home.class));
                 }
@@ -134,6 +172,7 @@ public class SignUp extends AppCompatActivity {
 
     }
 
+    //onClick method for "Already Registered" textview which will direct user to login activity
     public void loginTextOnClick(View view){
         startActivity(new Intent(getApplicationContext(), Login.class));
         //finish();
@@ -179,6 +218,46 @@ public class SignUp extends AppCompatActivity {
 
 
     }
+
+
+
+
+    /*
+        Watch "Firebase Realtime Database Tutorial for Android - Saving Data #1"
+        https://youtu.be/EM2x33g4syY
+
+        method will add new user info to firebase db
+
+     */
+    private void addNewUserToFireBaseDB(String fullName,String email,String password, String address, String phoneNumber){
+
+        /*fullName = fullNameText.getText().toString().trim();
+        address = addressText.getText().toString().trim();
+        //email = emailText.getText().toString().trim();
+        //password = passwordText.getText().toString().trim();
+        phoneNumber = phoneNumberText.getText().toString().trim();*/
+
+        if(!TextUtils.isEmpty(fullName) && !TextUtils.isEmpty(address) && !TextUtils.isEmpty(email) && !TextUtils.isEmpty(password) && !TextUtils.isEmpty(phoneNumber)){
+
+            //will generate a unique id(primary key) for each new user(i.e. every time the database is queried )
+            //if you
+            String generatedUserId = databaseNewUser.push().getKey();
+            NewUserInfo newUser = new NewUserInfo(generatedUserId,fullName,address,email,password,phoneNumber);
+            databaseNewUser.child(generatedUserId).setValue(newUser);
+            Toast.makeText(SignUp.this, "Welcome To The Mind",Toast.LENGTH_SHORT).show();
+
+        }else{
+
+            Toast.makeText(this,"Please Fill Out Required Fields",Toast.LENGTH_SHORT).show();
+
+        }
+
+    }
+
+   /* private void retrieveNewUserInfoFromFireBaseDB(){
+
+
+    }*/
 
 
 
