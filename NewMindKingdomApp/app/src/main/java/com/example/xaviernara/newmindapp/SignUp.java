@@ -52,6 +52,8 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
+        getActionBar().hide();
+
         databaseNewUser = FirebaseDatabase.getInstance().getReference("new_user");
 
         phoneNumberText = findViewById(R.id.phoneEdittext);

@@ -52,7 +52,9 @@ app:layout_constraintVertical_bias="0.110000014"--><!--app:layout_constraintBott
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintBottom_toTopOf="@+id/addressText"
+        />
 
     <EditText
         android:id="@+id/addressText"
@@ -91,9 +93,10 @@ app:layout_constraintVertical_bias="0.110000014"--><!--app:layout_constraintBott
         android:ems="10"
         android:hint="Password"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="id"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailText"
+        app:layout_constraintBottom_toTopOf="@+id/phoneEdittext"
         tools:layout_editor_absoluteY="410dp" />
 
     <androidx.cardview.widget.CardView
@@ -166,6 +169,7 @@ app:layout_constraintTop_toBottomOf="@+id/alreadyRegisteredText" />
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/fullName"
         app:srcCompat="@drawable/crest" />
 
     <EditText
