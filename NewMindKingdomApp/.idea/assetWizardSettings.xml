@@ -135,8 +135,8 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="color" value="ffffff" />
-                                                <entry key="imagePath" value="C:\Users\xaviernara\AppData\Local\Temp\baseline_phone_24.xml" />
+                                                <entry key="color" value="b23cff" />
+                                                <entry key="imagePath" value="C:\Users\xaviernara\AppData\Local\Temp\baseline_storefront_24.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -147,7 +147,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/phone/baseline_phone_24.xml" />
+                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/storefront/baseline_storefront_24.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -172,6 +172,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="fontFamily" value="CSD16" />
+                                                <entry key="text" value="New Mind Cafe" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -183,6 +185,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="fontFamily" value="CSD16" />
+                                                <entry key="text" value="New Mind Cafe" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -192,10 +196,10 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="backgroundColor" value="d843ff" />
+                                      <entry key="backgroundColor" value="afafaf" />
                                       <entry key="cropped" value="true" />
                                       <entry key="imageAsset" value="C:\Users\xaviernara\OneDrive\Pictures\church images\19884132_870355829783767_6045720870812926746_n.jpg" />
-                                      <entry key="outputName" value="phone_icon" />
+                                      <entry key="outputName" value="store_icon" />
                                     </map>
                                   </option>
                                 </PersistentState>

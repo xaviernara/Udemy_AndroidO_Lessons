@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class PastorBiography extends AppCompatActivity {
 
 
-    //onClick method for previous button that would switch the screen to the next activity
+   /* //onClick method for previous button that would switch the screen to the next activity
     public void firstActivity(View view){
 
 
@@ -30,7 +30,7 @@ public class PastorBiography extends AppCompatActivity {
         //instead of cycling back and forth thru the activities screens like the intent/startActivity way
         //but if the button is pressed then the activity will still switch back and forth like normal
         finish();
-    }
+    }*/
 
 
 
@@ -80,6 +80,8 @@ public class PastorBiography extends AppCompatActivity {
                 "Mind Ministries. This planted the seed for New Mind Kingdom Ministries.\n" +
                 "His quiver is full with 6 beautiful children; Antoine, Christopher, Jessica, Frederick Jr, Roben,\n" +
                 "and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD be all Glory!\"");
+
+
 
 
 

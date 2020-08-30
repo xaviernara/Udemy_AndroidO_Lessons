@@ -71,26 +71,16 @@ and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD 
         android:layout_height="wrap_content"
         >
 
+
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="0dp"
             android:layout_height="250dp"
+            android:alpha=".9"
+            android:background="@drawable/crest"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:background="@drawable/crest"
-            android:alpha=".9"
             app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginBottom="49dp"
-                android:layout_marginStart="36dp"
-                android:scaleType="centerCrop"
-                android:alpha="1"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/prophet_no_border" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -108,21 +98,33 @@ and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD 
                 app:layout_constraintStart_toEndOf="@+id/imageView4"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="49dp"
+                android:layout_marginStart="36dp"
+                android:alpha="1"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/prophet_no_border" />
+
             <TextView
                 android:id="@+id/textView6"
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pastor Biography"
                 android:textAllCaps="false"
                 android:textColor="@android:color/black"
                 android:textSize="20dp"
-                android:textStyle="bold"
 
+                android:textStyle="bold"
                 android:typeface="monospace"
-                app:layout_constraintBottom_toTopOf="@+id/imageView4"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.57"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -155,103 +157,129 @@ and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD 
                 app:layout_constraintStart_toEndOf="@+id/imageView4"
                 app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-            <LinearLayout
-                android:id="@+id/linearLayout"
-                android:layout_width="0dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="140dp"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView4"
-                android:baselineAligned="false">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageButton
-                        android:id="@+id/imageButton"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        app:srcCompat="@drawable/facebook" />
-
-                    <LinearLayout
-                        android:layout_width="410dp"
-                        android:layout_height="394dp"
-                        android:orientation="horizontal">
-
-                        <!--<TextView
-                            android:id="@+id/textView9"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            android:layout_weight="1"
-                            android:text="Biography"
-                            android:textColor="@android:color/black"
-                            android:textSize="18dp"
-                            android:textStyle="bold" />-->
-
-
-                        <TextView
-                            android:id="@+id/pastorBio"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="@dimen/text_margin"
-                            android:textColor="@android:color/black"
-                            android:textStyle="normal"
-                            android:visibility="visible"
-                            tools:ignore="HardcodedText"
-                            tools:visibility="visible" />
-
-
-
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:background="@drawable/cashapp240"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@drawable/twitter"/>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout">
 
+
+            <!--facebook image-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    app:srcCompat="@drawable/facebook" />
+
+                <!--<LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="394dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    &lt;!&ndash;<TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:text="Biography"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />&ndash;&gt;
+
+
+                    &lt;!&ndash;<TextView
+                        android:id="@+id/pastorBio"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/text_margin"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText"
+                        tools:visibility="visible" />&ndash;&gt;
+
+
+
+                </LinearLayout>-->
+            </LinearLayout>
+
+
+            <!--cashapp image-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/cashapp240" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/twitter" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            
+            >
+            
+            <TextView
+                android:id="@+id/pastorBio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:textSize="18dp"
+                android:textStyle="bold|normal"/>
+
+
+            
+            
+        </LinearLayout>
+        
+        
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

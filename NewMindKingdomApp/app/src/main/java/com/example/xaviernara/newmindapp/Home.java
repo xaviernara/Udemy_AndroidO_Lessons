@@ -145,6 +145,12 @@ public class Home extends Activity {
         //finish();
     }
 
+    public void storeOnClick(View view){
+        Intent intent = new Intent(getApplicationContext(), Store.class);
+        startActivity(intent);
+        //finish();
+    }
+
 
     //https://www.tutorialspoint.com/android/android_phone_calls.htm
     public void phoneOnClick(View view) {
@@ -165,12 +171,20 @@ public class Home extends Activity {
 
     //if the users clicks the log out text view this will direct them to the login activity
     public void logOut(View view){
+
         FirebaseAuth.getInstance().signOut();
         Intent intent = new Intent(getApplicationContext(), Login.class);
         startActivity(intent);
         //finish();
 
     }
+
+
+
+
+
+
+
 
 
 
