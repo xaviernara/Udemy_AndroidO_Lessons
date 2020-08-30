@@ -9,28 +9,19 @@
     tools:context=".CrestInfo">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         >
 
         <TextView
+            android:id="@+id/crestInfoText"
             android:layout_width="match_parent"
-            android:layout_height="538dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_margin="@dimen/text_margin"
-            android:text="The shield rooted in the Word of God, our foundation, has four intents:
-        1st Renew the Mind of the believer,
-        2nd the chauffeur speaks of our call and purpose,
-        3rd the praying hand represent our commitment to prayer and
-        4th the dove represents the free flowing of Holy Spirit.
-        In the center of the shield is our 7R concept.
-        The Lions are covered in silver, which represent Holy Spirit, and the lions represent Boldness.
-        Therefore, the Lion are in silver representing Boldness in the Spirit.
-        The Sword represents the piercing power of the Word of God."
-
-
             android:textColor="@android:color/black"
+            android:textStyle="bold"
             tools:ignore="HardcodedText" />
 
 
