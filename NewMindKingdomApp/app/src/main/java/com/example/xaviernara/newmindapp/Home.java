@@ -1,6 +1,8 @@
 package com.example.xaviernara.newmindapp;
 
 import android.Manifest;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -145,10 +147,28 @@ public class Home extends Activity {
         //finish();
     }
 
+
+    //https://abhiandroid.com/ui/alertdialog
+    //will display a alert dialog when clicked showing image
     public void storeOnClick(View view){
-        Intent intent = new Intent(getApplicationContext(), Store.class);
-        startActivity(intent);
+        /*Intent intent = new Intent(getApplicationContext(), Store.class);
+        startActivity(intent);*/
         //finish();
+
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        alertDialogBuilder.setIcon(R.mipmap.coming_soon);
+
+        alertDialogBuilder.setPositiveButton("Can Hardly Wait!", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                //when button is clicked the dialog box will close
+            }
+        });
+
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
+
+
     }
 
 

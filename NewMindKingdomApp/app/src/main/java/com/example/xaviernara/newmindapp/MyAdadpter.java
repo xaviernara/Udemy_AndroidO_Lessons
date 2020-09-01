@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class MyAdadpter extends RecyclerView.Adapter<MyAdadpter.MyViewHolder> {
@@ -15,6 +16,9 @@ public class MyAdadpter extends RecyclerView.Adapter<MyAdadpter.MyViewHolder> {
     String[] data1, data2;
     int[] images;
     Context cxt;
+
+    //Android | RecyclerView - GeeksforGeeks
+    //https://www.geeksforgeeks.org/android-recyclerview/
 
     public MyAdadpter(Context context, String[] itemsForSale,String[] descriptions, int[] imgs ) {
         cxt = context;
@@ -51,10 +55,13 @@ public class MyAdadpter extends RecyclerView.Adapter<MyAdadpter.MyViewHolder> {
 
         TextView myText1,myText2;
         ImageView myImage;
+       ConstraintLayout constraintLayout;
+
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
+            constraintLayout = itemView.findViewById(R.id.crestInfoText);
             myText1 = itemView.findViewById(R.id.titleText);
             myText2 = itemView.findViewById(R.id.descriptionsText);
             myImage = itemView.findViewById(R.id.imageView);

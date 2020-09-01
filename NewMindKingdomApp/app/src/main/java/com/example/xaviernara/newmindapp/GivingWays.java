@@ -5,21 +5,38 @@ import android.net.Uri;
 //import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class GivingWays extends AppCompatActivity {
 
+    EditText amountText;
+    TextView giveText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_giving_ways);
+
+        amountText =findViewById(R.id.amountText);
+        giveText = findViewById(R.id.giveTextView);
     }
 
 
     public void cashAppWebsiteLink(View view){
         Intent cashAppIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://cash.app/$NewMindKingdom"));
         startActivity(cashAppIntent);
+    }
+
+    public void giveButtonOnClick(View view){
+
+        //add in app purchases here
+
+        Toast.makeText(this,"Thanks For Giving!!!",Toast.LENGTH_SHORT);
+
     }
 
     public void zelleWebsiteLink(View view){

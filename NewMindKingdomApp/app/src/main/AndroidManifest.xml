@@ -7,7 +7,7 @@
         android:allowBackup="true"
         android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
         android:icon="@mipmap/church_crest"
-        android:label="@string/app_name"
+        android:label="New Mind Kingdom App"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
@@ -23,34 +23,53 @@
                 <category android:name="android.intent.category.DD" />
             </intent-filter>
         </activity>
-        <activity android:name=".PastorBiography" />
+        <activity android:name=".PastorBiography"
+            android:label="Pastor Biography"
+            android:parentActivityName=".Home"
+            />
         <activity
             android:name=".CrestInfo"
-            android:label="Crest" />
+            android:label="Crest Info"
+            android:parentActivityName=".Home"
+            />
         <activity
             android:name=".SevenRConcept"
-            android:label="7R Concept" />
+            android:label="7R Concept"
+            android:parentActivityName=".Home"
+            />
         <activity
             android:name=".PreviousMessages"
-            android:label="Previous Messages" />
+            android:label="Previous Messages"
+            android:parentActivityName=".Home"
+            />
         <activity
             android:name=".AboutUs"
-            android:label="About Us" />
+            android:label="About Us"
+            android:parentActivityName=".Home"
+            />
         <activity
             android:name=".GivingWays"
-            android:label="Giving Ways" />
+            android:label="Giving Ways"
+            android:parentActivityName=".Home"
+            />
         <activity
             android:name=".VisionStatement"
-            android:label="Vision Statement" />
+            android:label="Vision Statement"
+            android:parentActivityName=".Home"
+            />
         <activity
             android:name=".SocialMedia"
-            android:label="@string/title_activity_social_media" />
+            android:label="Social Media"
+            android:parentActivityName=".Home"
+            />
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home" />
         <activity
             android:name=".BeliefsActivity"
-            android:label="@string/title_activity_beilefs" />
+            android:label="Our Beliefs"
+            android:parentActivityName=".Home"
+            />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -61,15 +80,18 @@
         -->
         <activity
             android:name=".LocationActivity"
-            android:label="@string/title_activity_location" />
+            android:label="@string/title_activity_location"
+            android:parentActivityName=".Home"
+            />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
     </application>
+
+
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
 </manifest>
