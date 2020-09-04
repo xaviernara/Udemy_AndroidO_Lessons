@@ -9,18 +9,68 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 //import android.support.v4.app.ActivityCompat;
+import android.view.MenuItem;
 import android.view.View;
 
+import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.legacy.app.ActionBarDrawerToggle;
 
 public class Home extends Activity {
+
+
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
+    //Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        /*-------------Hooks---------------------------*/
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.nav_view);
+
+        /*-------------Toolbar---------------------------*/
+
+        /*-------------Navigation Drawer menu---------------------------*/
+        navigationView.bringToFront();
+        /*ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();*/
+        navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this);
+
+    }
+
+/*
+    @Override
+    public boolean OnNavigationItemSelectedListener(@NonNull MenuItem menuItem){
+
+        return false;
+    }
+*/
+
+
+    //this method will allow the navigation bar to closed when the back button on the phone is pressed instead of the whole application
+    @Override
+    public void onBackPressed() {
+
+        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
+            drawerLayout.closeDrawer(GravityCompat.START);
+
+        }
+        else{
+            super.onBackPressed();
+        }
+
+
     }
 
     /*

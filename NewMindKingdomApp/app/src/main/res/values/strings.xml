@@ -99,7 +99,7 @@
     <string name="title_activity_social_media">SocialMedia</string>
     <string name="title_activity_home">Home</string>
     <string name="title_activity_main2">Main2Activity</string>
-    <string name="title_activity_beilefs">BeilefsActivity</string>
+    <string name="title_activity_beliefs">BeliefsActivity</string>
     <string name="title_activity_location">Map</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
@@ -110,6 +110,8 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+
 
     <string-array name="itemsForSale">
         <item>tShirt</item>
@@ -126,6 +128,9 @@
         <item>Religious Book</item>
         <item>Soda Pop</item>
     </string-array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 
 </resources>

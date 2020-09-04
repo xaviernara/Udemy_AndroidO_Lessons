@@ -135,8 +135,8 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="color" value="b23cff" />
-                                                <entry key="imagePath" value="C:\Users\xaviernara\AppData\Local\Temp\baseline_monetization_on_24.xml" />
+                                                <entry key="color" value="ffffff" />
+                                                <entry key="imagePath" value="C:\Users\xaviernara\AppData\Local\Temp\baseline_image_24.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -147,7 +147,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/monetization_on/baseline_monetization_on_24.xml" />
+                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/image/baseline_image_24.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -159,7 +159,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\xaviernara\OneDrive\Pictures\church images\coming_soon.jpg" />
+                                                <entry key="imagePath" value="C:\Users\xaviernara\OneDrive\Pictures\church images\logout.png" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -196,9 +196,10 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="backgroundColor" value="adadad" />
-                                      <entry key="imageAsset" value="C:\Users\xaviernara\OneDrive\Pictures\church images\coming_soon.jpg" />
-                                      <entry key="outputName" value="coming_soon" />
+                                      <entry key="backgroundColor" value="d843ff" />
+                                      <entry key="cropped" value="true" />
+                                      <entry key="imageAsset" value="C:\Users\xaviernara\OneDrive\Pictures\church images\logout.png" />
+                                      <entry key="outputName" value="logout_icon" />
                                     </map>
                                   </option>
                                 </PersistentState>
