@@ -159,7 +159,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\xaviernara\OneDrive\Pictures\church images\logout.png" />
+                                                <entry key="imagePath" value="C:\Users\xaviernara\OneDrive\Pictures\church images\purplebg3.jpg" />
+                                                <entry key="paddingPercent" value="-5" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -196,10 +197,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="backgroundColor" value="d843ff" />
-                                      <entry key="cropped" value="true" />
-                                      <entry key="imageAsset" value="C:\Users\xaviernara\OneDrive\Pictures\church images\logout.png" />
-                                      <entry key="outputName" value="logout_icon" />
+                                      <entry key="imageAsset" value="C:\Users\xaviernara\OneDrive\Pictures\church images\purplebg3.jpg" />
+                                      <entry key="outputName" value="purplebg3" />
                                     </map>
                                   </option>
                                 </PersistentState>

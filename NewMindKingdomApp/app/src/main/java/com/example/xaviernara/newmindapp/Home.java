@@ -22,6 +22,8 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.legacy.app.ActionBarDrawerToggle;
 
+import static com.google.android.material.navigation.NavigationView.*;
+
 public class Home extends Activity {
 
 
@@ -34,6 +36,7 @@ public class Home extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        //hOW TO IMPLEMENT Navigation bar: https://youtu.be/m1RV0HPuBWo
         /*-------------Hooks---------------------------*/
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
@@ -45,17 +48,21 @@ public class Home extends Activity {
         /*ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();*/
-        navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this);
+        navigationView.setNavigationItemSelectedListener((OnNavigationItemSelectedListener) this);
 
     }
 
-/*
-    @Override
+
+  /*  @Override
     public boolean OnNavigationItemSelectedListener(@NonNull MenuItem menuItem){
 
         return false;
-    }
-*/
+
+        //THIS WILL CLOSE THE DRAWER WHEN PREFORMING A ACTION(EX switching to another activity )
+        drawerLayout.closeDrawer(GravityCompact.START);
+
+    }*/
+
 
 
     //this method will allow the navigation bar to closed when the back button on the phone is pressed instead of the whole application
