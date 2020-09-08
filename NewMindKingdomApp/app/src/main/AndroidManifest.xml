@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:appComponentFactory">
-        <activity android:name=".Store"></activity>
+        <activity android:name=".ContactUs"></activity>
+        <activity android:name=".Store" />
         <activity android:name=".Profile" />
         <activity android:name=".SignUp" />
         <activity android:name=".Login" />
@@ -23,53 +24,45 @@
                 <category android:name="android.intent.category.DD" />
             </intent-filter>
         </activity>
-        <activity android:name=".PastorBiography"
+        <activity
+            android:name=".PastorBiography"
             android:label="Pastor Biography"
-            android:parentActivityName=".Home"
-            />
+            android:parentActivityName=".Home" />
         <activity
             android:name=".CrestInfo"
             android:label="Crest Info"
-            android:parentActivityName=".Home"
-            />
+            android:parentActivityName=".Home" />
         <activity
             android:name=".SevenRConcept"
             android:label="7R Concept"
-            android:parentActivityName=".Home"
-            />
+            android:parentActivityName=".Home" />
         <activity
             android:name=".PreviousMessages"
             android:label="Previous Messages"
-            android:parentActivityName=".Home"
-            />
+            android:parentActivityName=".Home" />
         <activity
             android:name=".AboutUs"
             android:label="About Us"
-            android:parentActivityName=".Home"
-            />
+            android:parentActivityName=".Home" />
         <activity
             android:name=".GivingWays"
             android:label="Giving Ways"
-            android:parentActivityName=".Home"
-            />
+            android:parentActivityName=".Home" />
         <activity
             android:name=".VisionStatement"
             android:label="Vision Statement"
-            android:parentActivityName=".Home"
-            />
+            android:parentActivityName=".Home" />
         <activity
             android:name=".SocialMedia"
             android:label="Social Media"
-            android:parentActivityName=".Home"
-            />
+            android:parentActivityName=".Home" />
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home" />
         <activity
             android:name=".BeliefsActivity"
             android:label="Our Beliefs"
-            android:parentActivityName=".Home"
-            />
+            android:parentActivityName=".Home" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -81,17 +74,15 @@
         <activity
             android:name=".LocationActivity"
             android:label="@string/title_activity_location"
-            android:parentActivityName=".Home"
-            />
+            android:parentActivityName=".Home" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
     </application>
-
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 </manifest>

@@ -11,6 +11,21 @@
     tools:context=".Home">
 
 
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            />
+
+    </RelativeLayout>
+
+
+
     <!--for adding navigation bar to home activity and editing -->
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"

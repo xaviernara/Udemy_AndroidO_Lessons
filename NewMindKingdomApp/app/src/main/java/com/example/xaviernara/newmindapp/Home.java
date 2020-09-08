@@ -18,9 +18,11 @@ import com.google.firebase.auth.FirebaseAuth;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.legacy.app.ActionBarDrawerToggle;
+
 
 import static com.google.android.material.navigation.NavigationView.*;
 
@@ -29,7 +31,7 @@ public class Home extends Activity {
 
     DrawerLayout drawerLayout;
     NavigationView navigationView;
-    //Toolbar toolbar;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,10 @@ public class Home extends Activity {
         navigationView = findViewById(R.id.nav_view);
 
         /*-------------Toolbar---------------------------*/
+        //getSupportActionBar().hide();
+        toolbar = findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
+
 
         /*-------------Navigation Drawer menu---------------------------*/
         navigationView.bringToFront();
@@ -49,6 +55,7 @@ public class Home extends Activity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();*/
         navigationView.setNavigationItemSelectedListener((OnNavigationItemSelectedListener) this);
+        navigationView.setCheckedItem(R.id.nav_home);
 
     }
 
