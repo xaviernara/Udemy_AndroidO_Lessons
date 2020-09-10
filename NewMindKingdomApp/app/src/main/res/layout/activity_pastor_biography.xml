@@ -89,15 +89,17 @@ and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD 
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@color/white"
+                android:background="@color/gray"
                 android:backgroundTint="@color/white"
                 android:orientation="vertical">
 
                 <ImageButton
                     android:id="@+id/imageButton"
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="91dp"
-                    android:background="@color/white"
+                    android:onClick="pastorFacebookOnClick"
+                    android:background="@color/gray"
+                    android:backgroundTint="@color/gray"
                     android:layout_gravity="center_vertical"
                     app:srcCompat="@mipmap/facebook_icon" />
 
@@ -142,30 +144,36 @@ and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD 
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@color/white"
+                android:background="@color/gray"
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:layout_width="106dp"
-                    android:layout_height="56dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="83dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/cashapp240" />
+                    android:background="@color/gray"
+                    android:onClick="pastorCashappOnClick"
+                    android:src="@mipmap/cashapp_square" />
 
             </LinearLayout>
 
+            <!--twitter image-->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@color/white"
+                android:background="@color/gray"
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:layout_width="99dp"
-                    android:layout_height="56dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="88dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/twitter" />
+                    android:background="@color/gray"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="pastorTwitterOnClick"
+                    android:src="@mipmap/twitter_icon" />
 
             </LinearLayout>
 
@@ -178,17 +186,19 @@ and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/purple"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout"
 
             >
 
             <TextView
                 android:id="@+id/pastorBio"
-                android:layout_width="399dp"
+                android:layout_width="395dp"
                 android:layout_height="313dp"
                 android:layout_margin="8dp"
+                android:background="@color/gray"
                 android:textSize="18dp"
-                android:text=""
+                android:textColor="@android:color/black"
                 android:textStyle="bold|normal" />
 
 

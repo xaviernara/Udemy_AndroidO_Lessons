@@ -65,7 +65,7 @@
             android:alignmentMode="alignMargins"
             android:columnCount="2"
             android:columnOrderPreserved="true"
-            android:background="@android:color/holo_purple"
+            android:background="@color/purple"
             android:padding="14dp"
             android:rowCount="3">
 

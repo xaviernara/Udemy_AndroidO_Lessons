@@ -196,6 +196,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
+                                      <entry key="backgroundColor" value="adadad" />
                                       <entry key="imageAsset" value="C:\Users\xaviernara\OneDrive\Pictures\church images\youtube.png" />
                                       <entry key="outputName" value="youtube_icon" />
                                     </map>

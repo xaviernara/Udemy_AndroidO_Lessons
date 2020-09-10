@@ -3,38 +3,174 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/crest"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray"
     android:alpha=".9"
     android:orientation="vertical"
+    android:id="@+id/nestedScroll"
     tools:context=".AboutUs">
 
 
-    <LinearLayout
-        android:layout_height="match_parent"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout"
         >
-        <TextView
-            android:id="@+id/aboutUsText"
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/viewFlipper"
+            />
+
+
+
+
+
+
+        <!-- about us/follow us text-->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColor="@android:color/black"
-            android:text="About Us"/>
+            android:orientation="vertical"
+            android:layout_below="@+id/viewFlipper"
+            android:id="@+id/linearLayout1"
+            >
 
 
-        <TextView
-            android:layout_width="200dp"
-            android:layout_height="20dp"
-            android:text="Follow Us"
-            android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/aboutUsText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text=""
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Connect With Us"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
 
 
-    </LinearLayout>
+        <!--social media links -->
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/linearLayout1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout1">
+
+
+        <!--facebook image-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:backgroundTint="@color/gray"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="fill_parent"
+                android:layout_height="91dp"
+                android:onClick="facebookWebsiteLink"
+                android:background="@color/gray"
+                android:backgroundTint="@color/gray"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@mipmap/facebook_icon" />
+
+
+        </LinearLayout>
+
+
+        <!--cashapp image-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="83dp"
+                android:layout_gravity="center"
+                android:background="@color/gray"
+                android:backgroundTint="@color/gray"
+                android:onClick="instagramWebsiteLink"
+                android:src="@mipmap/instagram_icon" />
+
+        </LinearLayout>
+
+        <!--twitter image-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="88dp"
+                android:layout_gravity="center"
+                android:background="@color/gray"
+                android:backgroundTint="@color/gray"
+                android:onClick="twitterWebsiteLink"
+                android:src="@mipmap/twitter_icon" />
+
+        </LinearLayout>
+
+
+            <!--youtube image-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="88dp"
+                    android:layout_gravity="center"
+                    android:background="@color/gray"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="youtubeWebsiteLink"
+                    android:src="@mipmap/youtube_icon" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
 
 
 
 
+
+
+
+
+
+
+    </RelativeLayout>
 
 
 </androidx.core.widget.NestedScrollView>

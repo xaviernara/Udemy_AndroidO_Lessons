@@ -2,6 +2,7 @@ package com.example.xaviernara.newmindapp;
 
 import android.content.Intent;
 //import android.support.v7.app.AppCompatActivity;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -86,10 +87,23 @@ public class PastorBiography extends AppCompatActivity {
 
         TextView pastorBio = findViewById(R.id.pastorBio);
         pastorBio.setText(Html.fromHtml(htmlText,Html.FROM_HTML_MODE_COMPACT));
-
-
-
-
-
     }
+
+
+    public void pastorFacebookOnClick(View view){
+        Intent cashAppIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/frederick.ward.7"));
+        startActivity(cashAppIntent);
+    }
+
+    public void pastorTwitterOnClick(View view){
+        Intent twitterIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/prophetwar1"));
+        startActivity(twitterIntent);
+    }
+
+    public void pastorCashappOnClick(View view){
+        Intent cashAppIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://cash.app/$fewprophet"));
+        startActivity(cashAppIntent);
+    }
+
+
 }
