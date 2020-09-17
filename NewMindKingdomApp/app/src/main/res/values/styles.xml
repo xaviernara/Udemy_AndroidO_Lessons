@@ -9,6 +9,9 @@
         <item name="android:statusBarColor">?attr/colorPrimary</item>
         <item name="android:navigationBarColor">@android:color/darker_gray</item>
         <item name="android:colorAccent">@android:color/darker_gray</item>
+        <item name="windowActionBar">false</item>
+        <item name= "windowNoTitle">true</item>>
+
 <!--
 
         for making the status bar transparent
