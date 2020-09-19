@@ -193,11 +193,11 @@ and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD 
 
             <TextView
                 android:id="@+id/pastorBio"
-                android:layout_width="395dp"
-                android:layout_height="313dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:background="@color/gray"
-                android:textSize="18dp"
+                android:textSize="25dp"
                 android:textColor="@android:color/black"
                 android:textStyle="bold|normal" />
 
@@ -209,7 +209,7 @@ and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD 
             android:layout_width="0dp"
             android:layout_height="250dp"
             android:alpha=".9"
-            android:background="@drawable/crest"
+            android:background="@drawable/bigger_crest"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -226,6 +226,7 @@ and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD 
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/prophet_no_border" />
 
+<!--
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
@@ -241,6 +242,7 @@ and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD 
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/imageView4"
                 app:layout_constraintTop_toTopOf="parent" />
+-->
 
             <TextView
                 android:id="@+id/textView6"
@@ -249,15 +251,16 @@ and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD 
                 android:layout_marginTop="10dp"
                 android:text="Pastor Biography"
                 android:textAllCaps="false"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-
+                android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:fontFamily="cursive"
                 android:textStyle="bold"
                 android:typeface="monospace"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+<!--
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
@@ -273,11 +276,14 @@ and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD 
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/imageView4"
                 app:layout_constraintTop_toBottomOf="@+id/textView4" />
+-->
 
+<!--
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:text="Head Pastor"
                 android:textColor="@android:color/black"
@@ -288,6 +294,7 @@ and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD 
                 app:layout_constraintHorizontal_bias="0.393"
                 app:layout_constraintStart_toEndOf="@+id/imageView4"
                 app:layout_constraintTop_toBottomOf="@+id/textView5" />
+-->
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

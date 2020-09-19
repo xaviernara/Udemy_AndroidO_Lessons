@@ -29,6 +29,11 @@ public class Login extends AppCompatActivity {
     TextView signUpText,emailText,passwordText,forgotPasswordText, loginButton;
     ProgressBar progressBar;
 
+    public FirebaseAuth getmAuth(){
+
+        return mAuth;
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,12 +78,12 @@ public class Login extends AppCompatActivity {
         }
 
         if(TextUtils.isEmpty(password)){
-            emailText.setError("Password is Required");
+            passwordText.setError("Password is Required");
             return;
         }
 
         if(password.length() < 6){
-            emailText.setError("Password has to be Greater than 6 Characters");
+            passwordText.setError("Password has to be Greater than 6 Characters");
             return;
         }
 

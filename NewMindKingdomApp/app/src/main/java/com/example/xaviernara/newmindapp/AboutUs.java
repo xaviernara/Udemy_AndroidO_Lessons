@@ -57,7 +57,7 @@ public class AboutUs extends Activity {
         imageView.setBackgroundResource(image);
 
         viewFlipper.addView(imageView);
-        viewFlipper.setFlipInterval(4000); // 4 seconds
+        viewFlipper.setFlipInterval(20000); // 20 seconds
         viewFlipper.setAutoStart(true);
 
         //animation

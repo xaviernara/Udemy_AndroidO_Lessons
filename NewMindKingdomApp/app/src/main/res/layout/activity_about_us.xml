@@ -80,7 +80,6 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@color/gray"
-            android:backgroundTint="@color/gray"
             android:orientation="vertical">
 
             <ImageButton

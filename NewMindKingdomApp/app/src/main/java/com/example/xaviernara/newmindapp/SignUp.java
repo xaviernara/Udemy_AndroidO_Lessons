@@ -52,7 +52,7 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        getActionBar().hide();
+        //getActionBar().hide();
 
         databaseNewUser = FirebaseDatabase.getInstance().getReference("new_user");
 
@@ -70,7 +70,7 @@ public class SignUp extends AppCompatActivity {
         //if the user is already logged in & registered they will be directed to the Home activity
         if(mAuth.getCurrentUser() != null){
             startActivity(new Intent(getApplicationContext(),Home.class));
-            Toast.makeText(SignUp.this,"Welcome "+mAuth.getCurrentUser(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(SignUp.this,"Welcome "+fullName, Toast.LENGTH_SHORT).show();
             finish();
         }
 

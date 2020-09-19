@@ -46,7 +46,7 @@ public class PastorBiography extends AppCompatActivity {
            "returned to Chicago and attended George W. Carver Area High School, graduating in June of" +
            "1985. He continued his education at Olive-Harvey Community College. Leaving college, he" +
            "acquired employment to assist his mother in purchasing a house to leave Altgeld. He returned to" +
-           "college attending Logos Ministerial Institute graduating receiving his ordination May of 1991.</p> \n" +
+           "college attending Logos Ministerial Institute graduating receiving his ordination May of 1991.</p> \n \n" +
            "<p>He began going to Church with his mother at Progressive Missionary Baptist Church the late Dr." +
            "John Digby pastor. He felt the pull of God on his life and in grade school, he began to attend" +
            "Altgeld Seven Day Adventist. He later began playing drums at United Presbyterian Church under" +
@@ -55,7 +55,8 @@ public class PastorBiography extends AppCompatActivity {
            "Corinthians Baptist Church. Holy Spirit continued to move in Prophet’s life and led him to" +
            "Liberty Temple Full Gospel Church. Where he was planted and bloomed under the opuses of" +
            "Apostle Clifford E. and the late Denise M. Turner.</p>" +
-           "\n <p>In of 1999, His father; Bishop Claude E. Tears set Prophet Ward in the Office of the Prophet. He" +
+
+           "\n \n <p>In of 1999, His father; Bishop Claude E. Tears set Prophet Ward in the Office of the Prophet. He" +
            "later began Power Ministries Baptist Church and World Outreach Ministries then Renewing the" +
            "Mind Ministries. This planted the seed for New Mind Kingdom Ministries." +
            "His quiver is full with 6 beautiful children; Antoine, Christopher, Jessica, Frederick Jr, Roben," +
@@ -96,7 +97,7 @@ public class PastorBiography extends AppCompatActivity {
     }
 
     public void pastorTwitterOnClick(View view){
-        Intent twitterIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/prophetwar1"));
+        Intent twitterIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/prophetward1"));
         startActivity(twitterIntent);
     }
 

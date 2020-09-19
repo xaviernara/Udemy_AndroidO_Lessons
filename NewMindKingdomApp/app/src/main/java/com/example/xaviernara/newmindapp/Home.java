@@ -11,17 +11,20 @@ import android.app.Activity;
 //import android.support.v4.app.ActivityCompat;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.graphics.drawable.DrawerArrowDrawable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.legacy.app.ActionBarDrawerToggle;
 
 
 import static com.google.android.material.navigation.NavigationView.*;
@@ -32,6 +35,8 @@ public class Home extends Activity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
+    ActionBarDrawerToggle actionBarDrawerToggle;
+    //Login login = new Login();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +48,11 @@ public class Home extends Activity {
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
 
+        /*------------------Hamburger toggle button----*/
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
+        drawerLayout.setDrawerListener(actionBarDrawerToggle);
+
+
         /*-------------Toolbar---------------------------*/
         //getSupportActionBar().hide();
         toolbar = findViewById(R.id.toolbar);
@@ -50,17 +60,62 @@ public class Home extends Activity {
 
 
         /*-------------Navigation Drawer menu---------------------------*/
+        //click event listener for nav bar menu items:    https://www.youtube.com/watch?time_continue=78&v=67NRmoHp1NY&feature=emb_logo
         navigationView.bringToFront();
+
+
+        navigationView.setNavigationItemSelectedListener(new OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+
+                switch(menuItem.getItemId()){
+
+                    case R.id.nav_home:
+                        Toast.makeText(Home.this,"Your Home",Toast.LENGTH_SHORT).show();
+                        return true;
+
+                    case R.id.nav_contact_us:
+                            Intent intent = new Intent(getApplicationContext(),ContactUs.class);
+                            startActivity(intent);
+                            return true;
+
+                    case R.id.nav_logout:
+                        //login.getmAuth().signOut();
+                        //if the users clicks the log out button view this will direct them to the login activity
+                        FirebaseAuth.getInstance().signOut();
+                        intent = new Intent(getApplicationContext(), Login.class);
+                        startActivity(intent);
+                        return true;
+
+                    case R.id.nav_settings:
+                        Toast.makeText(Home.this,"Coming soon",Toast.LENGTH_SHORT).show();
+                        return true;
+
+                    case R.id.nav_gallery:
+                        Toast.makeText(Home.this, "Gallery Coming soon",Toast.LENGTH_SHORT).show();
+                        return true;
+                    case R.id.nav_announcements:
+                        Toast.makeText(Home.this,"Announcements Coming soon ",Toast.LENGTH_SHORT).show();
+
+                }
+                return true;
+            }
+        });
         /*ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();*/
-        navigationView.setNavigationItemSelectedListener((OnNavigationItemSelectedListener) this);
+        //navigationView.setNavigationItemSelectedListener((OnNavigationItemSelectedListener) this);
         navigationView.setCheckedItem(R.id.nav_home);
 
     }
 
+    @Override
+    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        actionBarDrawerToggle.syncState();
+    }
 
-  /*  @Override
+    /*  @Override
     public boolean OnNavigationItemSelectedListener(@NonNull MenuItem menuItem){
 
         return false;
@@ -146,11 +201,23 @@ public class Home extends Activity {
         //finish();
     }
 
+/*
     public void socialMediaOnClick(View view) {
         Intent intent = new Intent(getApplicationContext(), SocialMedia.class);
         startActivity(intent);
         //finish();
     }
+*/
+
+    public void previousSermonsOnClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), PreviousMessages.class);
+        startActivity(intent);
+        //finish();
+    }
+
+
+
+
 
 
     public void websiteOnClick(View view) {
@@ -253,7 +320,7 @@ public class Home extends Activity {
         startActivity(callIntent);
     }
 
-    //if the users clicks the log out text view this will direct them to the login activity
+    //if the users clicks the log out button view this will direct them to the login activity
     public void logOut(View view){
 
         FirebaseAuth.getInstance().signOut();
