@@ -10,7 +10,7 @@ public class BeliefsActivity extends Activity {
 
     TextView beliefsText,visionText,missionText;
 
-    String htmlText1 = "\"<h1>What We Believe</h1>\n" +
+    String htmlText1 = "\"<h2>What We Believe</h2>\n" +
             "We believe in the Bible.  The Bible is the Logos, the inspired written Word of God.  Holy men were led by the Spirit to write and record the scriptures.  We accept the Full Gospel, the Old and New Testament.  (II Timothy 3;16, I Thessalonians 2:13, II Peter 1:21)\n" +
             "We believe in the Trinity: One God manifested in three person (Genesis 1:1-3, 26, I John 5:8, Matthew 28:19)\n" +
             "God the Father, the Head of the Deity (John 14:28, John 16:28)\n" +
@@ -31,7 +31,7 @@ public class BeliefsActivity extends Activity {
             "\"";
 
 
-    String htmlText2 = "MISSION\n" +
+    String htmlText2 = "<h2>MISSION</h2>\n" +
             "\n" +
             "\n" +
             "Being led by Holy Spirit, we will proclaim the Full Gospel by evangelizing the world, compelling the unsaved to come into the saving knowledge of Jesus. We will “Renew the Mind” of the total man, body, soul and spirit, through Kingdom concepts. We will carry out our assignment: Reconcile, Relate, Restore, Renew, Reinforce, Release and Rejoice. We will establish this concept by equipping the believer, using task specific methods through strategic teaching and disciplined faith in God’s Word.\n" +
@@ -45,7 +45,7 @@ public class BeliefsActivity extends Activity {
             "Through lives sacrificed to God, we will allow him to use us as He pleases, “Advancing His Kingdom” by promoting an all inclusive ministry where all gifts and talents are embraced and given the opportunity to flourish. We will create tomorrow’s leaders, today.";
 
 
-    String htmlText3 = "VISION\n" +
+    String htmlText3 = "<h2>VISION</h2>\n" +
             "\n" +
             "\n" +
             "\n" +
@@ -79,6 +79,10 @@ public class BeliefsActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_beilefs);
+
         beliefsText = findViewById(R.id.beliefs);
         beliefsText.setText(Html.fromHtml(htmlText1,Html.FROM_HTML_MODE_COMPACT));
 
@@ -86,11 +90,7 @@ public class BeliefsActivity extends Activity {
         visionText.setText(Html.fromHtml(htmlText2,Html.FROM_HTML_MODE_COMPACT));
 
        missionText = findViewById(R.id.mission);
-        beliefsText.setText(Html.fromHtml(htmlText3,Html.FROM_HTML_MODE_COMPACT));
+       missionText.setText(Html.fromHtml(htmlText3,Html.FROM_HTML_MODE_COMPACT));
 
-
-
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_beilefs);
     }
 }

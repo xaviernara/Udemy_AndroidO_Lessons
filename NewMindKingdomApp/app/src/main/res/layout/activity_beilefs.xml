@@ -31,16 +31,17 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal"
-                android:background="@color/white"
+                android:background="@color/gray"
                 >
 
                 <TextView
                     android:id="@+id/beliefs"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:textSize="16sp"
                     android:textColor="@android:color/black"
-                    android:text="" />
+                    />
             </LinearLayout>
 
             <LinearLayout
@@ -78,23 +79,17 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal"
-                android:background="@color/white"
+                android:background="@color/gray"
                 >
 
                 <TextView
                     android:id="@+id/vision"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:textColor="@android:color/black"
-                    android:text="" />
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
             </LinearLayout>
-
-
-
-a
-
-
 
         </LinearLayout>
 
@@ -114,16 +109,17 @@ a
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal"
-                android:background="@color/white"
+                android:background="@color/gray"
                 >
 
                 <TextView
                     android:id="@+id/mission"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:textSize="16sp"
                     android:textColor="@android:color/black"
-                    android:text="" />
+                    />
             </LinearLayout>
 
             <LinearLayout

@@ -66,6 +66,7 @@ public class ContactUs extends AppCompatActivity {
         String title = titleText.getText().toString();
         String message = messageText.getText().toString();
         String subject = subjectText.getText().toString();
+        String emailAddress = "info@newmindkingdom.org";
 
 
 
@@ -75,14 +76,19 @@ public class ContactUs extends AppCompatActivity {
         emailIntent.setData(Uri.parse("mailto:"));
         emailIntent.setType("text/plain");
         emailIntent.putExtra(Intent.EXTRA_TITLE,title);
-        emailIntent.putExtra(Intent.EXTRA_EMAIL,"info@newmindkingdom.org");
+        emailIntent.putExtra(Intent.EXTRA_EMAIL,new String[] {emailAddress});
         emailIntent.putExtra(Intent.EXTRA_SUBJECT,subject);
         emailIntent.putExtra(Intent.EXTRA_TEXT,message);
 
+
+        emailIntent.setType("message/rfc882");
+
         try{
-            startActivity(Intent.createChooser(emailIntent,"Send New User Email..."));
+            startActivity(Intent.createChooser(emailIntent,"Choose an Email Client..."));
             finish();
             Log.i("Finish Sending Email", "");
+            Toast.makeText(this,"Thanks for Contacting Us!!!",Toast.LENGTH_SHORT).show();
+
 
         }catch(android.content.ActivityNotFoundException ex){
 
