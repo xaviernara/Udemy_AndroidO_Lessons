@@ -23,12 +23,14 @@ public class MainActivity extends Activity {
     private static int SPLASH_SCREEN_TIME_OUT=3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Make sure this is before calling super.onCreate
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
 
 
         //This method is used so that your splash activity
         //can cover the entire screen.
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+        /*getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
@@ -49,7 +51,10 @@ public class MainActivity extends Activity {
                 finish();
 
             }
-        }, SPLASH_SCREEN_TIME_OUT);
+        }, SPLASH_SCREEN_TIME_OUT);*/
+
+
+
     }
 
 }

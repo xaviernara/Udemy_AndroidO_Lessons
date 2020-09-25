@@ -193,7 +193,8 @@ and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD 
 
             <ScrollView
                 android:layout_height="match_parent"
-                android:layout_width="match_parent">
+                android:layout_width="match_parent"
+                >
 
 
             <TextView

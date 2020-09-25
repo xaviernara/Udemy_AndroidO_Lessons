@@ -85,12 +85,11 @@
 
             <ImageButton
                 android:id="@+id/imageButton"
-                android:layout_width="match_parent"
-                android:layout_height="91dp"
+                android:layout_width="fill_parent"
+                android:layout_height="89dp"
                 android:onClick="facebookWebsiteLink"
                 android:background="@color/gray"
                 android:backgroundTint="@color/gray"
-                android:layout_gravity="center_vertical"
                 app:srcCompat="@mipmap/facebook_icon" />
 
 
@@ -113,7 +112,7 @@
                 android:background="@color/gray"
                 android:backgroundTint="@color/gray"
                 android:onClick="instagramWebsiteLink"
-                android:src="@mipmap/facebook_icon" />
+                android:src="@mipmap/instagram_icon" />
 
         </LinearLayout>
 

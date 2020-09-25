@@ -39,9 +39,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:textSize="16sp"
+                    android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    />
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -87,8 +87,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/black" />
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -117,9 +118,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:textSize="16sp"
+                    android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    />
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
