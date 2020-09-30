@@ -205,8 +205,9 @@ public class SignUp extends AppCompatActivity {
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
 
 
-        emailIntent.setData(Uri.parse("mailto:"));
-        emailIntent.setType("text/plain");
+        emailIntent.setDataAndType(Uri.parse("mailto:"),"text/plain");
+        /*emailIntent.setData(Uri.parse("mailto:"));
+        emailIntent.setType("text/plain");*/
         emailIntent.putExtra(Intent.EXTRA_EMAIL,new String[] {emailAddress});
         emailIntent.putExtra(Intent.EXTRA_SUBJECT,"Welcome to New Mind Kingdom Ministries!");
         emailIntent.putExtra(Intent.EXTRA_TEXT,greetingsEmail);
