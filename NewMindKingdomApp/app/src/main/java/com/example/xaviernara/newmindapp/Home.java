@@ -11,9 +11,7 @@ import android.app.Activity;
 //import android.support.v4.app.ActivityCompat;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.Toast;
-import android.widget.ViewFlipper;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -38,26 +36,12 @@ public class Home extends Activity {
     NavigationView navigationView;
     Toolbar toolbar;
     ActionBarDrawerToggle actionBarDrawerToggle;
-    ViewFlipper viewFlipper;
     //Login login = new Login();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
-        /*------------------View flipper-------------*/
-        viewFlipper = findViewById(R.id.viewFlipper);
-        int[] images = {R.drawable.home_gallery1,R.drawable.home_gallery2,R.drawable.home_gallery3,R.drawable.home_gallery4,R.drawable.home_gallery5,R.drawable.home_gallery6};
-        for(int i = 0; i<images.length;i++){
-            flipperImages(images[i]);
-
-        }
-
-
-
-
-
 
         //hOW TO IMPLEMENT Navigation bar: https://youtu.be/m1RV0HPuBWo
         /*-------------Hooks---------------------------*/
@@ -108,15 +92,10 @@ public class Home extends Activity {
                         return true;
 
                     case R.id.nav_gallery:
-                        intent = new Intent(getApplicationContext(),Gallery.class);
-                        startActivity(intent);
-                        //Toast.makeText(Home.this, "Gallery Coming soon",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Home.this, "Gallery Coming soon",Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.nav_announcements:
-                        //intent = new Intent(getApplicationContext(),Gallery.class);
-                        //startActivity(intent);
                         Toast.makeText(Home.this,"Announcements Coming soon ",Toast.LENGTH_SHORT).show();
-
 
                 }
                 return true;
@@ -221,22 +200,6 @@ public class Home extends Activity {
         startActivity(intent);
         //finish();
     }
-
-
-    public void flipperImages (int image){
-
-        ImageView imageView = new ImageView(this);
-        imageView.setBackgroundResource(image);
-
-        viewFlipper.addView(imageView);
-        viewFlipper.setFlipInterval(15000); // 15 seconds
-        viewFlipper.setAutoStart(true);
-
-        //animation
-        viewFlipper.setInAnimation(this,android.R.anim.slide_in_left);
-        viewFlipper.setOutAnimation(this,android.R.anim.slide_out_right);
-    }
-
 
 /*
     public void socialMediaOnClick(View view) {

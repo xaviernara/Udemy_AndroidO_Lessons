@@ -158,11 +158,10 @@ public class SignUp extends AppCompatActivity {
 
                      */
 
+                    //Toast.makeText(SignUp.this, "Welcome To The Mind",Toast.LENGTH_SHORT).show();
                     addNewUserToFireBaseDB(fullName,email,password,address,phoneNumber);
                     sendGreetingsEmail();
-                    Toast.makeText(SignUp.this, "Welcome To The New Mind App",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(),Home.class));
-
                 }
                 else{
                     Toast.makeText(SignUp.this, "Error :"+ task.getException().getMessage(),Toast.LENGTH_SHORT).show();
@@ -199,27 +198,27 @@ public class SignUp extends AppCompatActivity {
                 "\n" +
                 "New Mind Kingdom Ministries";
 
-        String emailAddress = emailText.getText().toString();
-
         Log.i("Send Email", "");
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
 
+<<<<<<< HEAD
 
         emailIntent.setDataAndType(Uri.parse("mailto:"),"text/plain");
         /*emailIntent.setData(Uri.parse("mailto:"));
         emailIntent.setType("text/plain");*/
         emailIntent.putExtra(Intent.EXTRA_EMAIL,new String[] {emailAddress});
+=======
+        emailIntent.setData(Uri.parse("mailto:"));
+        emailIntent.setType("text/plain");
+        emailIntent.putExtra(Intent.EXTRA_EMAIL,emailText.getText().toString());
+>>>>>>> parent of 8268ad6... fixed beliefs actvity error, fixed nav bar menu icons, add viewfliper to home, fixed email errors in contact us
         emailIntent.putExtra(Intent.EXTRA_SUBJECT,"Welcome to New Mind Kingdom Ministries!");
         emailIntent.putExtra(Intent.EXTRA_TEXT,greetingsEmail);
-
-        emailIntent.setType("message/rfc882");
-
 
         try{
             startActivity(Intent.createChooser(emailIntent,"Send New User Email..."));
             finish();
             Log.i("Finish Sending Email", "");
-            Toast.makeText(this,"New User Email Sent",Toast.LENGTH_SHORT).show();
 
         }catch(android.content.ActivityNotFoundException ex){
 

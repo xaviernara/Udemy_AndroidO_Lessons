@@ -18,7 +18,7 @@
         >
         <ViewFlipper
             android:layout_width="match_parent"
-            android:layout_height="230dp"
+            android:layout_height="200dp"
             android:id="@+id/viewFlipper"
             />
 
@@ -44,7 +44,6 @@
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:text=""
-                android:textColor="@android:color/black"
                 android:textStyle="bold|italic" />
 
             <TextView
@@ -86,7 +85,11 @@
             <ImageButton
                 android:id="@+id/imageButton"
                 android:layout_width="fill_parent"
+<<<<<<< HEAD
                 android:layout_height="89dp"
+=======
+                android:layout_height="91dp"
+>>>>>>> parent of 8268ad6... fixed beliefs actvity error, fixed nav bar menu icons, add viewfliper to home, fixed email errors in contact us
                 android:onClick="facebookWebsiteLink"
                 android:background="@color/gray"
                 android:backgroundTint="@color/gray"
@@ -96,7 +99,7 @@
         </LinearLayout>
 
 
-        <!--instagram image-->
+        <!--cashapp image-->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"

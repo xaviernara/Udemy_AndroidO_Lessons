@@ -19,7 +19,7 @@ public class AboutUs extends Activity {
     TextView aboutUsText;
     String htmlText = "<p>New Mind Kingdom Ministries is a Life Skill teaching ministry with Destiny and a Destination in mind. Our focus and intent is to teach you the Word of God so that you can make it applicable to your everyday life. " +
             "“The Word works when YOU work it.” Wisdom is the correct application of knowledge. " +
-            "Life is based on choices. Make wise choices, good life. Make foolish choices, foolish life.</p>\n" +
+            "Life is based on choices. Make wise choices, good life. Make foolish choices, foolish life</p>.\n" +
             "\n" +
             "<p>Deuteronomy 30:19 I call heaven and earth to record this day against you, that I have set before you life and death, blessing and cursing: therefore choose life, " +
             "that both thou and thy seed may live. We choose our life that consequently affects the lives around us. " +
@@ -57,7 +57,7 @@ public class AboutUs extends Activity {
         imageView.setBackgroundResource(image);
 
         viewFlipper.addView(imageView);
-        viewFlipper.setFlipInterval(15000); // 15 seconds
+        viewFlipper.setFlipInterval(20000); // 20 seconds
         viewFlipper.setAutoStart(true);
 
         //animation

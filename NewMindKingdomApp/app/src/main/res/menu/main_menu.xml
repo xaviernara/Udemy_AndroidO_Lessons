@@ -7,36 +7,36 @@
         <item
             android:id="@+id/nav_home"
             android:title="Home"
-            android:icon="@drawable/ic_baseline_home_50"
+            android:icon="@mipmap/home_icon"
             />
 
         <item
             android:id="@+id/nav_announcements"
             android:title="Announcements"
-            android:icon="@drawable/ic_baseline_notification_important_24"
+            android:icon="@mipmap/megaphone_icon"
             />
 
         <item
             android:id="@+id/nav_contact_us"
             android:title="Contact Us"
-            android:icon="@drawable/ic_baseline_email_24"
+            android:icon="@mipmap/email_icon"
             />
 
         <item
             android:id="@+id/nav_gallery"
             android:title="Gallery"
-            android:icon="@drawable/ic_outline_image_24"
+            android:icon="@mipmap/gallery_icon"
             />
 
         <item
             android:id="@+id/nav_settings"
             android:title="Settings"
-            android:icon="@drawable/ic_baseline_settings_24"
+            android:icon="@mipmap/settings_icon"
             />
         <item
             android:id="@+id/nav_logout"
             android:title="Log Out"
-            android:icon="@drawable/ic_baseline_subdirectory_arrow_left_24"
+            android:icon="@mipmap/logout_icon"
             />
 
     </group>

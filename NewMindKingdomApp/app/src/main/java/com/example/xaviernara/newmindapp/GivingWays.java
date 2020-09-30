@@ -21,8 +21,8 @@ public class GivingWays extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_giving_ways);
 
-        //amountText =findViewById(R.id.amountText);
-        //giveText = findViewById(R.id.giveTextView);
+        amountText =findViewById(R.id.amountText);
+        giveText = findViewById(R.id.giveTextView);
     }
 
 
