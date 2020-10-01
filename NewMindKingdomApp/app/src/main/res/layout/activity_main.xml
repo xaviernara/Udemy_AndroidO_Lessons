@@ -4,12 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
-    android:background="@color/colorPrimary"
     android:id="@+id/linear"
-=======
     android:background="@android:color/white"
->>>>>>> parent of 8268ad6... fixed beliefs actvity error, fixed nav bar menu icons, add viewfliper to home, fixed email errors in contact us
     tools:context=".MainActivity">
 
 

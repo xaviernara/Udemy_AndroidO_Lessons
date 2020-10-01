@@ -23,8 +23,8 @@ public class Store extends AppCompatActivity {
         itemsForSale = getResources().getStringArray(R.array.itemsForSale);
         descriptions = getResources().getStringArray(R.array.descriptions);
 
-        MyAdadpter myAdadpter = new MyAdadpter(this,itemsForSale,descriptions,images);
-        recyclerView.setAdapter(myAdadpter);
+        MyAdapter myAdapter = new MyAdapter(this,itemsForSale,descriptions,images);
+        recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 }

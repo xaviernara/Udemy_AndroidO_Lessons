@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class MyAdadpter extends RecyclerView.Adapter<MyAdadpter.MyViewHolder> {
+public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     String[] data1, data2;
     int[] images;
@@ -20,7 +20,7 @@ public class MyAdadpter extends RecyclerView.Adapter<MyAdadpter.MyViewHolder> {
     //Android | RecyclerView - GeeksforGeeks
     //https://www.geeksforgeeks.org/android-recyclerview/
 
-    public MyAdadpter(Context context, String[] itemsForSale,String[] descriptions, int[] imgs ) {
+    public MyAdapter(Context context, String[] itemsForSale, String[] descriptions, int[] imgs ) {
         cxt = context;
         data1= itemsForSale;
         data2=descriptions;
@@ -30,7 +30,7 @@ public class MyAdadpter extends RecyclerView.Adapter<MyAdadpter.MyViewHolder> {
 
     @NonNull
     @Override
-    public MyAdadpter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MyAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         LayoutInflater layoutInflater = LayoutInflater.from(cxt);
         View view = layoutInflater.inflate(R.layout.recycler_rows,parent,false);
@@ -38,7 +38,7 @@ public class MyAdadpter extends RecyclerView.Adapter<MyAdadpter.MyViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyAdadpter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyAdapter.MyViewHolder holder, int position) {
 
         holder.myText1.setText(data1[position]);
         holder.myText2.setText(data2[position]);

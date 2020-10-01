@@ -353,7 +353,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/email/baseline_email_24.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/subdirectory_arrow_left/baseline_subdirectory_arrow_left_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -364,7 +364,7 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_baseline_email_24" />
+                            <entry key="outputName" value="ic_baseline_subdirectory_arrow_left_24" />
                             <entry key="sourceFile" value="C:\Users\xaviernara\Desktop\Udemy Lessons\Udemy_AndroidO_Lessons\NewMindKingdomApp" />
                           </map>
                         </option>

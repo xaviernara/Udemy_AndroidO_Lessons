@@ -25,13 +25,7 @@
         android:layout_marginEnd="103dp"
         android:layout_marginStart="99dp"
         android:ems="10"
-<<<<<<< HEAD
         android:hint="Name"
-        android:inputType="textPersonName"
-        android:textColorHint="@android:color/black"
-=======
-        android:hint="Title"
->>>>>>> parent of 8268ad6... fixed beliefs actvity error, fixed nav bar menu icons, add viewfliper to home, fixed email errors in contact us
         android:textFontWeight="0"
         android:inputType="textPersonName"
         android:textColorHint="@android:color/black"
@@ -50,11 +44,6 @@
         android:layout_marginStart="99dp"
         android:ems="10"
         android:hint="Subject"
-<<<<<<< HEAD
-        android:inputType="textEmailSubject|textAutoCorrect|textAutoComplete"
-        android:textColorHint="@android:color/black"
-=======
->>>>>>> parent of 8268ad6... fixed beliefs actvity error, fixed nav bar menu icons, add viewfliper to home, fixed email errors in contact us
         android:textFontWeight="1"
         android:inputType="textEmailSubject|textAutoCorrect|textAutoComplete"
         android:textColorHint="@android:color/black"
@@ -106,13 +95,8 @@
                 android:layout_centerInParent="true"
                 android:fontFamily="sans-serif-thin"
                 android:onClick="emailButtonOnClick"
-<<<<<<< HEAD
                 android:text="Send Email"
                 android:textColor="@color/white"
-=======
-                android:text="Email Us"
-                android:textColor="@android:color/black"
->>>>>>> parent of 8268ad6... fixed beliefs actvity error, fixed nav bar menu icons, add viewfliper to home, fixed email errors in contact us
                 android:textSize="30dp"
                 android:textStyle="bold" />
         </RelativeLayout>

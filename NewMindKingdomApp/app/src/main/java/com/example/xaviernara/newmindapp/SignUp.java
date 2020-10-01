@@ -201,17 +201,16 @@ public class SignUp extends AppCompatActivity {
         Log.i("Send Email", "");
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
 
-<<<<<<< HEAD
+        String emailAddress = "info@newmindkingdom.org";
+
 
         emailIntent.setDataAndType(Uri.parse("mailto:"),"text/plain");
         /*emailIntent.setData(Uri.parse("mailto:"));
         emailIntent.setType("text/plain");*/
         emailIntent.putExtra(Intent.EXTRA_EMAIL,new String[] {emailAddress});
-=======
         emailIntent.setData(Uri.parse("mailto:"));
         emailIntent.setType("text/plain");
         emailIntent.putExtra(Intent.EXTRA_EMAIL,emailText.getText().toString());
->>>>>>> parent of 8268ad6... fixed beliefs actvity error, fixed nav bar menu icons, add viewfliper to home, fixed email errors in contact us
         emailIntent.putExtra(Intent.EXTRA_SUBJECT,"Welcome to New Mind Kingdom Ministries!");
         emailIntent.putExtra(Intent.EXTRA_TEXT,greetingsEmail);
 

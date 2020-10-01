@@ -85,11 +85,7 @@
             <ImageButton
                 android:id="@+id/imageButton"
                 android:layout_width="fill_parent"
-<<<<<<< HEAD
                 android:layout_height="89dp"
-=======
-                android:layout_height="91dp"
->>>>>>> parent of 8268ad6... fixed beliefs actvity error, fixed nav bar menu icons, add viewfliper to home, fixed email errors in contact us
                 android:onClick="facebookWebsiteLink"
                 android:background="@color/gray"
                 android:backgroundTint="@color/gray"

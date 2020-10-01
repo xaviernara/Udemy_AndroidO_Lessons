@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.custom_dialog.activity_main);
         //this will bind your MainActivity.class file with activity_main.
 
         new Handler().postDelayed(new Runnable() {

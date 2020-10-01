@@ -39,14 +39,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-<<<<<<< HEAD
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
-=======
-                    android:textColor="@android:color/black"
-                    android:text="" />
->>>>>>> parent of 8268ad6... fixed beliefs actvity error, fixed nav bar menu icons, add viewfliper to home, fixed email errors in contact us
+
             </LinearLayout>
 
             <LinearLayout
@@ -92,19 +88,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-<<<<<<< HEAD
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
-=======
-                    android:textColor="@android:color/black"
-                    android:text="" />
->>>>>>> parent of 8268ad6... fixed beliefs actvity error, fixed nav bar menu icons, add viewfliper to home, fixed email errors in contact us
             </LinearLayout>
-
-
-
-a
 
 
 
@@ -134,14 +121,9 @@ a
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-<<<<<<< HEAD
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
-=======
-                    android:textColor="@android:color/black"
-                    android:text="" />
->>>>>>> parent of 8268ad6... fixed beliefs actvity error, fixed nav bar menu icons, add viewfliper to home, fixed email errors in contact us
             </LinearLayout>
 
             <LinearLayout
