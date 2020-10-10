@@ -11,7 +11,8 @@ public class Store extends AppCompatActivity {
     RecyclerView recyclerView;
 
     String itemsForSale[], descriptions[];
-    int[] images =  {R.drawable.pathway,R.drawable.pathway,R.drawable.pathway,R.drawable.pathway,R.drawable.pathway};
+    int[] images =  {R.mipmap.youtube_icon,R.mipmap.youtube_icon,R.mipmap.youtube_icon,R.mipmap.youtube_icon,
+            R.mipmap.youtube_icon,R.mipmap.youtube_icon,R.mipmap.youtube_icon,R.mipmap.youtube_icon};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

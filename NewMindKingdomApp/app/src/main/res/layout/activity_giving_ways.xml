@@ -128,11 +128,11 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
         android:layout_marginTop="44dp"
         android:text="2 Corinthians 9:7"
+        android:textColor="@color/white"
+        android:textSize="30sp"
         android:textStyle="bold|italic"
-        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -142,8 +142,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text='"God Loves A Cheerful Giver"'
+        android:textAlignment="center"
+        android:textAllCaps="false"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:textSize="26sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/passwordText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -153,49 +155,52 @@
 
     <ImageButton
         android:id="@+id/cashappButton"
-        android:layout_width="100dp"
-        android:layout_height="77dp"
-        android:layout_marginBottom="44dp"
+        android:layout_width="195dp"
+        android:layout_height="195dp"
+        android:layout_marginBottom="232dp"
+        android:layout_marginEnd="66dp"
         android:layout_marginStart="56dp"
-        android:onClick="cashAppWebsiteLink"
         android:backgroundTint="@android:color/darker_gray"
+        android:onClick="cashAppWebsiteLink"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/paypalButton"
+        app:layout_constraintHorizontal_bias="0.214"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView2"
         app:layout_constraintVertical_bias="0.838"
-        app:srcCompat="@mipmap/cashapp_square" />
+        app:srcCompat="@drawable/cashapp240" />
 
     <ImageButton
         android:id="@+id/paypalButton"
-        android:layout_width="100dp"
-        android:layout_height="73dp"
-        android:onClick="paypalWebsiteLink"
+        android:layout_width="190dp"
+        android:layout_height="223dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="24dp"
         android:backgroundTint="@android:color/darker_gray"
+        android:onClick="paypalWebsiteLink"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.696"
-        app:layout_constraintStart_toEndOf="@+id/cashappButton"
         app:layout_constraintTop_toBottomOf="@+id/cardView2"
-        app:layout_constraintVertical_bias="0.569"
-        app:srcCompat="@mipmap/paypal_square" />
+        app:layout_constraintVertical_bias="0.52"
+        app:srcCompat="@drawable/paypal240" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="152dp"
-        android:layout_marginEnd="171dp"
-        android:layout_marginStart="183dp"
-        android:layout_marginTop="33dp"
-        android:text="OR"
-        android:textAllCaps="false"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+    <!--    <TextView-->
+<!--        android:id="@+id/textView9"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="152dp"-->
+<!--        android:layout_marginEnd="171dp"-->
+<!--        android:layout_marginStart="183dp"-->
+<!--        android:layout_marginTop="33dp"-->
+<!--        android:text="OR"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold|italic"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/cardView2" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -35,7 +35,7 @@
         android:id="@+id/nav_view"
         app:headerLayout="@layout/header"
         app:menu="@menu/main_menu"
-        android:layout_gravity="start"
+        android:layout_gravity="end"
 
         />
 
@@ -348,7 +348,6 @@
             <!--Row 3 -->
             <!--Col 2 -->
             <!--Location -->
-
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -473,7 +472,7 @@
                         android:layout_gravity="center_horizontal"
                         android:background="@color/gray"
                         android:onClick="givingOnClick"
-                        android:src="@drawable/money2" />
+                        android:src="@drawable/money3" />
 
                     <!-- <TextView
                         android:layout_width="wrap_content"
@@ -522,7 +521,7 @@
                         android:background="@color/gray"
                         android:backgroundTint="@color/gray"
                         android:onClick="previousSermonsOnClick"
-                        android:src="@drawable/sermon" />
+                        android:src="@drawable/videoplaylist2" />
 
                     <!--<TextView
                         android:layout_width="wrap_content"
@@ -622,7 +621,7 @@
                         android:background="@color/gray"
                         android:backgroundTint="@color/gray"
                         android:onClick="crestOnClick"
-                        android:src="@drawable/crest_no_border" />
+                        android:src="@drawable/defense2" />
 
                     <!-- <TextView
                         android:layout_width="wrap_content"

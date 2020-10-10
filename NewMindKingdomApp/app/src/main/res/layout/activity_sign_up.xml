@@ -42,8 +42,8 @@ app:layout_constraintVertical_bias="0.110000014"--><!--app:layout_constraintBott
 
     <EditText
         android:id="@+id/fullName"
-        android:layout_width="wrap_content"
-        android:layout_height="42dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
         android:layout_marginTop="40dp"
         android:drawableLeft="@mipmap/person_icon"
         android:ems="10"
@@ -59,8 +59,8 @@ app:layout_constraintVertical_bias="0.110000014"--><!--app:layout_constraintBott
 
     <EditText
         android:id="@+id/addressText"
-        android:layout_width="wrap_content"
-        android:layout_height="42dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:drawableLeft="@mipmap/home_icon"
         android:ems="10"
@@ -74,8 +74,8 @@ app:layout_constraintVertical_bias="0.110000014"--><!--app:layout_constraintBott
 
     <EditText
         android:id="@+id/emailText"
-        android:layout_width="wrap_content"
-        android:layout_height="42dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
         android:drawableLeft="@mipmap/email_icon"
         android:ems="10"
         android:hint="Email"
@@ -90,8 +90,8 @@ app:layout_constraintVertical_bias="0.110000014"--><!--app:layout_constraintBott
 
     <EditText
         android:id="@+id/passwordText"
-        android:layout_width="wrap_content"
-        android:layout_height="42dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
         android:drawableLeft="@mipmap/lock_icon"
         android:ems="10"
         android:hint="Password"
@@ -179,8 +179,8 @@ app:layout_constraintTop_toBottomOf="@+id/alreadyRegisteredText" />
 
     <EditText
         android:id="@+id/phoneEdittext"
-        android:layout_width="wrap_content"
-        android:layout_height="42dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
         android:drawableLeft="@mipmap/phone_icon"
         android:ems="10"
         android:hint="Phone"

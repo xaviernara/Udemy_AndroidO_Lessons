@@ -247,7 +247,8 @@ public class Home extends Activity {
 */
 
     public void previousSermonsOnClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), PreviousMessages.class);
+        //Intent intent = new Intent(getApplicationContext(), PreviousMessages.class);
+        Intent intent = new Intent(getApplicationContext(), Store.class);
         startActivity(intent);
         //finish();
     }
