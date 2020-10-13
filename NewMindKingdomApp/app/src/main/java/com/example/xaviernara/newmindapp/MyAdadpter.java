@@ -11,22 +11,31 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class MyAdadpter extends RecyclerView.Adapter<MyAdadpter.MyViewHolder> {
+public class MyAdadpter extends RecyclerView.Adapter<MyAdadpter.MyViewHolder> implements View.OnClickListener{
 
     String[] data1, data2;
     int[] images;
     Context cxt;
 
+    RecyclerViewOnClickListenerInterface onClickListenerInterface;
+
+    //Watch "RecyclerView - Android Studio Tutorial | Part 1" on YouTube
+    //https://youtu.be/18VcnYN5_LM
+
     //Android | RecyclerView - GeeksforGeeks
     //https://www.geeksforgeeks.org/android-recyclerview/
+
+
 
     public MyAdadpter(Context context, String[] itemsForSale,String[] descriptions, int[] imgs ) {
         cxt = context;
         data1= itemsForSale;
-        data2=descriptions;
+        data2= descriptions;
         images = imgs;
 
     }
+
+
 
     @NonNull
     @Override
@@ -48,6 +57,16 @@ public class MyAdadpter extends RecyclerView.Adapter<MyAdadpter.MyViewHolder> {
     @Override
     public int getItemCount() {
         return images.length;
+    }
+
+   /* @Override
+    public void onClick(View view, int position) {
+        onClickListenerInterface.onClick(view,); //
+    }*/
+
+    @Override
+    public void onClick(View view) {
+        onClickListenerInterface.onClick(view,getItemCount()); // call the onClick in the OnItemClickListener
     }
 
 

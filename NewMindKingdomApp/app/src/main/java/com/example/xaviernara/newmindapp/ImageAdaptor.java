@@ -12,6 +12,10 @@ import java.util.List;
 
 public class ImageAdaptor extends BaseAdapter {
 
+
+    //Watch "RecyclerView - Android Studio Tutorial | Part 1" on YouTube
+    //https://youtu.be/18VcnYN5_LM
+
     private Context context;
     private List<Integer> thumbnailsId;
 
