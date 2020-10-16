@@ -35,8 +35,7 @@
         android:id="@+id/nav_view"
         app:headerLayout="@layout/header"
         app:menu="@menu/main_menu"
-        android:layout_gravity="end"
-
+        android:layout_gravity="start"
         />
 
     <LinearLayout
@@ -58,6 +57,7 @@
                    <include
                        layout="@layout/toolbar"
                        android:id="@+id/toolbar"
+                       android:visibility="gone"
                        />
 
 
@@ -127,7 +127,7 @@
                         android:background="@color/gray"
                         android:contentDescription=""
                         android:onClick="aboutOnClick"
-                        android:padding="5dp"
+                        android:padding="10dp"
                         android:src="@drawable/about2" />
 
                     <!--  <TextView
@@ -178,6 +178,7 @@
                         android:layout_gravity="center_horizontal"
                         android:background="@color/gray"
                         android:onClick="pastorOnClick"
+                        android:padding="5dp"
                         android:src="@drawable/priest2" />
 
                     <!--> <TextView
@@ -227,6 +228,7 @@
                         android:layout_gravity="center_horizontal"
                         android:background="@color/gray"
                         android:onClick="beliefsOnClick"
+                        android:padding="5dp"
                         android:src="@drawable/cross2" />
 
                     <!--<TextView
@@ -326,6 +328,7 @@
                         android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
                         android:background="@color/gray"
+                        android:padding="5dp"
                         android:src="@drawable/church2" />
 
                     <!--<TextView
@@ -375,6 +378,7 @@
                         android:layout_gravity="center_horizontal"
                         android:background="@color/gray"
                         android:onClick="locationOnClick"
+                        android:padding="5dp"
                         android:src="@drawable/location2" />
 
                     <!--<TextView
@@ -424,6 +428,7 @@
                         android:layout_gravity="center_horizontal"
                         android:background="@color/gray"
                         android:onClick="websiteOnClick"
+                        android:padding="5dp"
                         android:src="@drawable/internet2" />
 
                     <!--<TextView
@@ -519,6 +524,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:background="@color/gray"
+                        android:padding="5dp"
                         android:backgroundTint="@color/gray"
                         android:onClick="previousSermonsOnClick"
                         android:src="@drawable/videoplaylist2" />
@@ -618,6 +624,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
+
                         android:background="@color/gray"
                         android:backgroundTint="@color/gray"
                         android:onClick="crestOnClick"

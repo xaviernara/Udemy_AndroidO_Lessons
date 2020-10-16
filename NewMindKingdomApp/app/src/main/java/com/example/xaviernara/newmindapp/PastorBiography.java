@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.Html;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -88,6 +89,7 @@ public class PastorBiography extends AppCompatActivity {
 
         TextView pastorBio = findViewById(R.id.pastorBio);
         pastorBio.setText(Html.fromHtml(htmlText,Html.FROM_HTML_MODE_COMPACT));
+        pastorBio.setMovementMethod(new ScrollingMovementMethod());
     }
 
 

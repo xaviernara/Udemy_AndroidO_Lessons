@@ -3,6 +3,7 @@ package com.example.xaviernara.newmindapp;
 import android.os.Bundle;
 import android.app.Activity;
 import android.text.Html;
+import android.text.method.ScrollingMovementMethod;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -10,7 +11,7 @@ public class BeliefsActivity extends Activity {
 
     TextView beliefsText,visionText,missionText;
 
-    String htmlText1 = "\"<h2>What We Believe</h2>\n" +
+    String htmlText1 = "<h2>What We Believe</h2>\n" +
             "We believe in the Bible.  The Bible is the Logos, the inspired written Word of God.  Holy men were led by the Spirit to write and record the scriptures.  We accept the Full Gospel, the Old and New Testament.  (II Timothy 3;16, I Thessalonians 2:13, II Peter 1:21)\n" +
             "We believe in the Trinity: One God manifested in three person (Genesis 1:1-3, 26, I John 5:8, Matthew 28:19)\n" +
             "God the Father, the Head of the Deity (John 14:28, John 16:28)\n" +
@@ -46,10 +47,6 @@ public class BeliefsActivity extends Activity {
 
 
     String htmlText3 = "<h2>VISION</h2>\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "\n" +
             "The Vision of New Mind Kingdom Ministries is to minister to the Whole man, Body, Soul and Spirit through various ministries set in place to focus on specific needs via systematic teachings from the Word of God.\n" +
             "\n" +
             "We will accomplish this by promoting an I.C.C.E (Integrity Character Compassion Excellence) Culture.\n" +
@@ -85,12 +82,15 @@ public class BeliefsActivity extends Activity {
 
         beliefsText = findViewById(R.id.beliefs);
         beliefsText.setText(Html.fromHtml(htmlText1,Html.FROM_HTML_MODE_COMPACT));
+        beliefsText.setMovementMethod(new ScrollingMovementMethod());
 
         visionText = findViewById(R.id.vision);
         visionText.setText(Html.fromHtml(htmlText2,Html.FROM_HTML_MODE_COMPACT));
+        visionText.setMovementMethod(new ScrollingMovementMethod());
 
-       missionText = findViewById(R.id.mission);
-       missionText.setText(Html.fromHtml(htmlText3,Html.FROM_HTML_MODE_COMPACT));
+        missionText = findViewById(R.id.mission);
+        missionText.setText(Html.fromHtml(htmlText3,Html.FROM_HTML_MODE_COMPACT));
+        missionText.setMovementMethod(new ScrollingMovementMethod());
 
     }
 }

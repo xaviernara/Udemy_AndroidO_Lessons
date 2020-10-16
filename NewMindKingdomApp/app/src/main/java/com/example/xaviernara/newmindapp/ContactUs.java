@@ -69,30 +69,51 @@ public class ContactUs extends AppCompatActivity {
         String emailAddress = "info@newmindkingdom.org";
 
 
+        if(title.isEmpty()){
+            titleText.setError("Title is required");
+            return;
+        }
 
-        Log.i("Send Email", "");
-        Intent emailIntent = new Intent(Intent.ACTION_SEND);
-
-        emailIntent.setData(Uri.parse("mailto:"));
-        emailIntent.setType("text/plain");
-        emailIntent.putExtra(Intent.EXTRA_TITLE,title);
-        emailIntent.putExtra(Intent.EXTRA_EMAIL,new String[] {emailAddress});
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT,subject);
-        emailIntent.putExtra(Intent.EXTRA_TEXT,message);
-
-
-        emailIntent.setType("message/rfc882");
-
-        try{
-            startActivity(Intent.createChooser(emailIntent,"Choose an Email Client..."));
-            finish();
-            Log.i("Finish Sending Email", "");
-            Toast.makeText(this,"Thanks for Contacting Us!!!",Toast.LENGTH_SHORT).show();
+        if(message.isEmpty()) {
+            messageText.setError("Message is required");
+            return;
+        }
+        if(subject.isEmpty()){
+            subjectText.setError("Subject is required");
+            return;
+        }
 
 
-        }catch(android.content.ActivityNotFoundException ex){
 
-            Toast.makeText(this,"Error: "+ex.getMessage(),Toast.LENGTH_SHORT).show();
+
+        if(!title.isEmpty() && !message.isEmpty() && !subject.isEmpty() ){
+
+            Log.i("Send Email", "");
+            Intent emailIntent = new Intent(Intent.ACTION_SEND);
+
+            emailIntent.setData(Uri.parse("mailto:"));
+            emailIntent.setType("text/plain");
+            emailIntent.putExtra(Intent.EXTRA_TITLE,title);
+            emailIntent.putExtra(Intent.EXTRA_EMAIL,new String[] {emailAddress});
+            emailIntent.putExtra(Intent.EXTRA_SUBJECT,subject);
+            emailIntent.putExtra(Intent.EXTRA_TEXT,message);
+
+
+            emailIntent.setType("message/rfc882");
+
+            try{
+                startActivity(Intent.createChooser(emailIntent,"Choose an Email Client..."));
+                finish();
+                Log.i("Finish Sending Email", "");
+                Toast.makeText(this,"Thanks for Contacting Us!!!",Toast.LENGTH_SHORT).show();
+
+
+            }catch(android.content.ActivityNotFoundException ex){
+
+                Toast.makeText(this,"Error: "+ex.getMessage(),Toast.LENGTH_SHORT).show();
+
+            }
+
 
         }
 

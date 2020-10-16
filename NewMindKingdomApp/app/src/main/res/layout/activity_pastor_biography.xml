@@ -188,30 +188,19 @@ and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD 
             app:layout_constraintStart_toStartOf="parent"
             android:background="@color/purple"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-
             >
-
-            <ScrollView
-                android:layout_height="match_parent"
-                android:layout_width="match_parent"
-                android:fillViewport="true"
-                >
-
 
             <TextView
                 android:id="@+id/pastorBio"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:background="@color/gray"
                 android:textSize="25sp"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="false"
                 android:textColor="@android:color/black"
-                android:textStyle="bold|normal" />
-
-            </ScrollView>
-
-
-
+                android:textStyle="normal" />
 
         </LinearLayout>
 

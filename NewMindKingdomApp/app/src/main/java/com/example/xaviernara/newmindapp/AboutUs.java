@@ -23,7 +23,7 @@ public class AboutUs extends Activity {
             "\n" +
             "<p>Deuteronomy 30:19 I call heaven and earth to record this day against you, that I have set before you life and death, blessing and cursing: therefore choose life, " +
             "that both thou and thy seed may live. We choose our life that consequently affects the lives around us. " +
-            "Pastor Ward’s endeavor is to give you so much Word so that you may have ample amount of knowledge to apply wisdom in your choices to have an “Abundant life.</p>”\"";
+            "Pastor Ward’s endeavor is to give you so much Word so that you may have ample amount of knowledge to apply wisdom in your choices to have an “Abundant life“  " +"</p>";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

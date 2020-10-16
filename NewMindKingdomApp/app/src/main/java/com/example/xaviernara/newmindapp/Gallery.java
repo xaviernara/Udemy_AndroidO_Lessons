@@ -22,8 +22,8 @@ public class Gallery extends AppCompatActivity {
     //https://haseebhussain441.wixsite.com/edutainment/post/4-tips-for-keeping-students-engaged-and-focused
 
     List<Integer> galleryImages = new ArrayList<>(Arrays.asList(
-            R.mipmap.coming_soon, R.mipmap.coming_soon, R.mipmap.coming_soon, R.mipmap.coming_soon,
-            R.mipmap.coming_soon, R.mipmap.coming_soon));
+            R.drawable.home_gallery1,R.drawable.home_gallery2,R.drawable.home_gallery3,R.drawable.home_gallery4,R.drawable.home_gallery5,R.drawable.home_gallery6,
+            R.drawable.home_gallery7,R.drawable.home_gallery8,R.drawable.home_gallery9,R.drawable.home_gallery10,R.drawable.home_gallery11,R.drawable.home_gallery12));
 
     GridView gridView;
     Dialog dialog;
@@ -76,12 +76,12 @@ public class Gallery extends AppCompatActivity {
             }
         });
 
-        String title = getResources().getResourceName(itemPosition);
+        //String title = getResources().getResourceName(itemPosition);
 
         //extracting image names
-        int index = title.indexOf("/");
+        /*int index = title.indexOf("/");
         String name = title.substring(index + 1, title.length());
-        imageName.setText(name);
+        imageName.setText(name);*/
 
         galleryImage.setImageResource(itemPosition);
 

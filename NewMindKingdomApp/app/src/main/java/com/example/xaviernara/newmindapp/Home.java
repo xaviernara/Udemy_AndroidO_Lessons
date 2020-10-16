@@ -41,6 +41,8 @@ public class Home extends Activity {
     ViewFlipper viewFlipper;
     //Login login = new Login();
 
+    Intent intent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +50,11 @@ public class Home extends Activity {
 
         /*------------------View flipper-------------*/
         viewFlipper = findViewById(R.id.viewFlipper);
-        int[] images = {R.drawable.home_gallery1,R.drawable.home_gallery2,R.drawable.home_gallery3,R.drawable.home_gallery4,R.drawable.home_gallery5,R.drawable.home_gallery6};
+
+        //int[] images = {R.drawable.home_gallery1,R.drawable.home_gallery2,R.drawable.home_gallery3,R.drawable.home_gallery4,R.drawable.home_gallery5,R.drawable.home_gallery6};
+
+        int[] images = {R.drawable.home_gallery1,R.drawable.home_gallery2,R.drawable.home_gallery3,R.drawable.home_gallery4,R.drawable.home_gallery5,R.drawable.home_gallery6,
+            R.drawable.home_gallery7,R.drawable.home_gallery8,R.drawable.home_gallery9,R.drawable.home_gallery10,R.drawable.home_gallery11,R.drawable.home_gallery12};
         for(int i = 0; i<images.length;i++){
             flipperImages(images[i]);
 
@@ -116,6 +122,11 @@ public class Home extends Activity {
                         //intent = new Intent(getApplicationContext(),Gallery.class);
                         //startActivity(intent);
                         Toast.makeText(Home.this,"Announcements Coming soon ",Toast.LENGTH_SHORT).show();
+
+                    case R.id.nav_membership:
+                        intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://newmindkingdom.org/join-our-ministry.html"));
+                        startActivity(intent);
+                        return true;
 
 
                 }
@@ -248,8 +259,12 @@ public class Home extends Activity {
 
     public void previousSermonsOnClick(View view) {
         //Intent intent = new Intent(getApplicationContext(), PreviousMessages.class);
-        Intent intent = new Intent(getApplicationContext(), Store.class);
+        /*Intent intent = new Intent(getApplicationContext(), Store.class);
+        startActivity(intent);*/
+
+        intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/channel/UCyu_YbjuDswWIPD8YD4YR8w"));
         startActivity(intent);
+
         //finish();
     }
 
@@ -259,31 +274,31 @@ public class Home extends Activity {
 
 
     public void websiteOnClick(View view) {
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://newmindkingdom.org"));
+        intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://newmindkingdom.org"));
         startActivity(intent);
         //finish();
     }
 
     public void sevenROnClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), SevenRConcept.class);
+        intent = new Intent(getApplicationContext(), SevenRConcept.class);
         startActivity(intent);
         //finish();
     }
 
     public void visionOnClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), VisionStatement.class);
+        intent = new Intent(getApplicationContext(), VisionStatement.class);
         startActivity(intent);
        // finish();
     }
 
     public void crestOnClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), CrestInfo.class);
+        intent = new Intent(getApplicationContext(), CrestInfo.class);
         startActivity(intent);
         //finish();
     }
 
     public void givingOnClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), GivingWays.class);
+        intent = new Intent(getApplicationContext(), GivingWays.class);
         startActivity(intent);
         //finish();
     }
@@ -299,19 +314,19 @@ public class Home extends Activity {
     */
 
     public void pastorOnClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), PastorBiography.class);
+        intent = new Intent(getApplicationContext(), PastorBiography.class);
         startActivity(intent);
         //finish();
     }
 
     public void beliefsOnClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), BeliefsActivity.class);
+        intent = new Intent(getApplicationContext(), BeliefsActivity.class);
         startActivity(intent);
         //finish();
     }
 
     public void locationOnClick(View view){
-        Intent intent = new Intent(getApplicationContext(), LocationActivity.class);
+        intent = new Intent(getApplicationContext(), LocationActivity.class);
         startActivity(intent);
         //finish();
     }
@@ -362,7 +377,7 @@ public class Home extends Activity {
     public void logOut(View view){
 
         FirebaseAuth.getInstance().signOut();
-        Intent intent = new Intent(getApplicationContext(), Login.class);
+        intent = new Intent(getApplicationContext(), Login.class);
         startActivity(intent);
         //finish();
 
