@@ -301,7 +301,7 @@
 
             <!--Row 3 -->
             <!--Col 1 -->
-            <!--Our Church -->
+            <!--Service Times -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -329,7 +329,8 @@
                         android:layout_gravity="center_horizontal"
                         android:background="@color/gray"
                         android:padding="5dp"
-                        android:src="@drawable/church2" />
+                        android:onClick="clockOnClick"
+                        android:src="@drawable/clock3" />
 
                     <!--<TextView
                         android:layout_width="wrap_content"
@@ -378,8 +379,8 @@
                         android:layout_gravity="center_horizontal"
                         android:background="@color/gray"
                         android:onClick="locationOnClick"
-                        android:padding="5dp"
-                        android:src="@drawable/location2" />
+                        android:padding="10dp"
+                        android:src="@drawable/location4" />
 
                     <!--<TextView
                         android:layout_width="wrap_content"

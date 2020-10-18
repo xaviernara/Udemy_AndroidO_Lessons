@@ -33,16 +33,24 @@
                 android:orientation="horizontal"
                 android:background="@color/gray"
                 >
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadeScrollbars="false"
+                    >
+
                     <TextView
-                    android:id="@+id/beliefs"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                        android:scrollbars="vertical"
-                        android:fadeScrollbars="false"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/black"
-                    />
+                        android:id="@+id/beliefs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        />
+                </androidx.core.widget.NestedScrollView>
+
+
+
             </LinearLayout>
 
             <LinearLayout
@@ -82,15 +90,20 @@
                 android:orientation="horizontal"
                 android:background="@color/gray"
                 >
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadeScrollbars="false"
+                    >
+
                     <TextView
                         android:id="@+id/vision"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:textSize="16sp"
-                        android:scrollbars="vertical"
-                        android:fadeScrollbars="false"
                         android:textColor="@android:color/black" />
+                </androidx.core.widget.NestedScrollView>
             </LinearLayout>
 
         </LinearLayout>
@@ -113,16 +126,20 @@
                 android:orientation="horizontal"
                 android:background="@color/gray"
                 >
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadeScrollbars="false"
+                    >
                     <TextView
                         android:id="@+id/mission"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="1"
                         android:textSize="16sp"
-                        android:scrollbars="vertical"
-                        android:fadeScrollbars="false"
                         android:textColor="@android:color/black"
                         />
+                </androidx.core.widget.NestedScrollView>
 
 
             </LinearLayout>

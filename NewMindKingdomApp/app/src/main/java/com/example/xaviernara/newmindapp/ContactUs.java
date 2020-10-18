@@ -86,20 +86,21 @@ public class ContactUs extends AppCompatActivity {
 
 
 
-        if(!title.isEmpty() && !message.isEmpty() && !subject.isEmpty() ){
+        //if(!title.isEmpty() && !message.isEmpty() && !subject.isEmpty() ){
 
             Log.i("Send Email", "");
             Intent emailIntent = new Intent(Intent.ACTION_SEND);
 
-            emailIntent.setData(Uri.parse("mailto:"));
-            emailIntent.setType("text/plain");
+            emailIntent.setDataAndType(Uri.parse("mailto:"),"text/plain");
+            //emailIntent.setData(Uri.parse("mailto:"));
+            //emailIntent.setType("text/plain");
             emailIntent.putExtra(Intent.EXTRA_TITLE,title);
             emailIntent.putExtra(Intent.EXTRA_EMAIL,new String[] {emailAddress});
             emailIntent.putExtra(Intent.EXTRA_SUBJECT,subject);
             emailIntent.putExtra(Intent.EXTRA_TEXT,message);
 
 
-            emailIntent.setType("message/rfc882");
+            //emailIntent.setType("message/rfc882");
 
             try{
                 startActivity(Intent.createChooser(emailIntent,"Choose an Email Client..."));
@@ -115,7 +116,7 @@ public class ContactUs extends AppCompatActivity {
             }
 
 
-        }
+        //}
 
 
 

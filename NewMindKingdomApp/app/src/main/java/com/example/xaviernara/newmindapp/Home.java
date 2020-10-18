@@ -122,6 +122,7 @@ public class Home extends Activity {
                         //intent = new Intent(getApplicationContext(),Gallery.class);
                         //startActivity(intent);
                         Toast.makeText(Home.this,"Announcements Coming soon ",Toast.LENGTH_SHORT).show();
+                        return true;
 
                     case R.id.nav_membership:
                         intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://newmindkingdom.org/join-our-ministry.html"));
@@ -281,6 +282,12 @@ public class Home extends Activity {
 
     public void sevenROnClick(View view) {
         intent = new Intent(getApplicationContext(), SevenRConcept.class);
+        startActivity(intent);
+        //finish();
+    }
+
+    public void clockOnClick(View view) {
+        intent = new Intent(getApplicationContext(), ServiceTimes.class);
         startActivity(intent);
         //finish();
     }

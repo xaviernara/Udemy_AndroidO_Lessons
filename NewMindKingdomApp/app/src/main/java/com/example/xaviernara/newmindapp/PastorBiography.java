@@ -38,7 +38,7 @@ public class PastorBiography extends AppCompatActivity {
 
    String htmlText = " <p>Prophet Frederick E. Ward was born in Chicago, IL at Mount Sinai Hospital (There is a spiritual" +
            "significance) on July 7 th 1966 to the proud parents of Mary L. Ward and the late Raymond Ward." +
-           "Raised on the far Southside of Chicago, moving from the Englewood neighborhood, he primarily" +
+           " Raised on the far Southside of Chicago, moving from the Englewood neighborhood, he primarily" +
            "grew up in the Altgeld Gardens (Chicago Housing Projects) “Block 8 for Life”.</p>" +
 
            "\n <p>He began his education at Phyllis Wheatly Child Parent Center, Carver Primary, Isaac Newton" +
@@ -61,7 +61,8 @@ public class PastorBiography extends AppCompatActivity {
            "later began Power Ministries Baptist Church and World Outreach Ministries then Renewing the" +
            "Mind Ministries. This planted the seed for New Mind Kingdom Ministries." +
            "His quiver is full with 6 beautiful children; Antoine, Christopher, Jessica, Frederick Jr, Roben," +
-           "and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD be all Glory!</p>";
+           "and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan." +
+           "\n To GOD be all Glory!</p>";
 
 
 
