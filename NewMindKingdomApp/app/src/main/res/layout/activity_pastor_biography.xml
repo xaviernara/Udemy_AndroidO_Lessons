@@ -77,7 +77,7 @@ and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD 
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:orientation="horizontal"
-            android:weightSum="3"
+            android:weightSum="4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/constraintLayout">
@@ -154,6 +154,26 @@ and Irmani. Proud Pa-Pa to three grand babies, Jaylen, Joshua and Teagan To GOD 
                     android:background="@color/gray"
                     android:onClick="pastorCashappOnClick"
                     android:src="@mipmap/cashapp_square" />
+
+            </LinearLayout>
+
+
+            <!--hotanddoll image-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="83dp"
+                    android:layout_gravity="center"
+                    android:background="@color/gray"
+                    android:onClick="hotdollOnClick"
+                    android:src="@mipmap/hotdoll_icon" />
 
             </LinearLayout>
 

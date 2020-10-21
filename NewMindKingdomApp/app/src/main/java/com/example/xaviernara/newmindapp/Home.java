@@ -18,6 +18,8 @@ import android.widget.ViewFlipper;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.Random;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -40,6 +42,7 @@ public class Home extends Activity {
     ActionBarDrawerToggle actionBarDrawerToggle;
     ViewFlipper viewFlipper;
     //Login login = new Login();
+    Random generator = new Random();
 
     Intent intent;
 
@@ -47,6 +50,7 @@ public class Home extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
 
         /*------------------View flipper-------------*/
         viewFlipper = findViewById(R.id.viewFlipper);
@@ -56,7 +60,8 @@ public class Home extends Activity {
         int[] images = {R.drawable.home_gallery1,R.drawable.home_gallery2,R.drawable.home_gallery3,R.drawable.home_gallery4,R.drawable.home_gallery5,R.drawable.home_gallery6,
             R.drawable.home_gallery7,R.drawable.home_gallery8,R.drawable.home_gallery9,R.drawable.home_gallery10,R.drawable.home_gallery11,R.drawable.home_gallery12};
         for(int i = 0; i<images.length;i++){
-            flipperImages(images[i]);
+            int randomImage = generator.nextInt(images.length);
+            flipperImages(images[randomImage]);
 
         }
 

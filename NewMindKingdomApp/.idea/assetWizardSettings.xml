@@ -159,7 +159,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\xaviernara\OneDrive\Pictures\church images\youtube.png" />
+                                                <entry key="imagePath" value="C:\Users\xaviernara\OneDrive\Pictures\church images\IMG_3202.PNG" />
+                                                <entry key="paddingPercent" value="-5" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -197,8 +198,10 @@
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="backgroundColor" value="adadad" />
-                                      <entry key="imageAsset" value="C:\Users\xaviernara\OneDrive\Pictures\church images\youtube.png" />
-                                      <entry key="outputName" value="youtube_icon" />
+                                      <entry key="cropped" value="true" />
+                                      <entry key="iconShape" value="CIRCLE" />
+                                      <entry key="imageAsset" value="C:\Users\xaviernara\OneDrive\Pictures\church images\IMG_3202.PNG" />
+                                      <entry key="outputName" value="hotdoll_icon" />
                                     </map>
                                   </option>
                                 </PersistentState>

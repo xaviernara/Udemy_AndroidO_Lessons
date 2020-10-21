@@ -35,6 +35,8 @@ public class PastorBiography extends AppCompatActivity {
         finish();
     }*/
 
+   Intent intent;
+
 
    String htmlText = " <p>Prophet Frederick E. Ward was born in Chicago, IL at Mount Sinai Hospital (There is a spiritual" +
            "significance) on July 7 th 1966 to the proud parents of Mary L. Ward and the late Raymond Ward." +
@@ -95,18 +97,23 @@ public class PastorBiography extends AppCompatActivity {
 
 
     public void pastorFacebookOnClick(View view){
-        Intent cashAppIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/frederick.ward.7"));
-        startActivity(cashAppIntent);
+        intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/frederick.ward.7"));
+        startActivity(intent);
     }
 
     public void pastorTwitterOnClick(View view){
-        Intent twitterIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/prophetward1"));
-        startActivity(twitterIntent);
+        intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/prophetward1"));
+        startActivity(intent);
     }
 
     public void pastorCashappOnClick(View view){
-        Intent cashAppIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://cash.app/$fewprophet"));
-        startActivity(cashAppIntent);
+        intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://cash.app/$fewprophet"));
+        startActivity(intent);
+    }
+
+    public void hotdollOnClick(View view){
+        intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://hotanddoll.org"));
+        startActivity(intent);
     }
 
 
