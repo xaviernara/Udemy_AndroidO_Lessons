@@ -1,0 +1,87 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Update User Information">
+
+
+        <!--<EditTextPreference
+            app:key="signature"
+            app:title="@string/signature_title"
+            app:useSimpleSummaryProvider="true" />-->
+
+        <ListPreference
+            app:defaultValue="reply"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="userInfo"
+            app:title="User Information"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory app:title="Enable Notifications ">
+
+        <SwitchPreferenceCompat
+            app:key="smsNotify"
+            app:title="Activate SMS Notifications"
+            app:summaryOn="SMS Notifications Enabled"
+            app:summaryOff=" SMS Notifications Disabled"
+            app:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            app:key="pushNotify"
+            app:title="Activate Push Notifications"
+            app:summaryOn="Push Notifications Enabled"
+            app:summaryOff=" Push Notifications Disabled"
+            app:defaultValue="true" />
+
+        <!--<SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />-->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Learn About The Developer">
+
+        <Preference
+            app:key="developerInfo"
+            app:title="Developer Info"
+            app:useSimpleSummaryProvider="true" />
+
+        <Preference
+            app:key="probReport"
+            app:title="Report a problem"
+            app:useSimpleSummaryProvider="true" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="About" >
+
+        <Preference
+            app:key="versionNumber"
+            app:title="App Version"
+            app:summary="1.0.0"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Help">
+
+        <Preference
+            app:key="feedback"
+            app:title="Send Feedback"
+            app:summary="Report technical issues or suggest new features"
+            app:useSimpleSummaryProvider="true" />
+
+        <Preference
+            app:key="rateApp"
+            app:title="Rate the app"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

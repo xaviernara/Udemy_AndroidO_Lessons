@@ -29,6 +29,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.preference.Preference;
 
 
 import static com.google.android.material.navigation.NavigationView.*;
@@ -115,7 +116,9 @@ public class Home extends Activity {
                         return true;
 
                     case R.id.nav_settings:
-                        Toast.makeText(Home.this,"Coming soon",Toast.LENGTH_SHORT).show();
+                        intent = new Intent(getApplicationContext(), SettingsPreference.class);
+                        //Toast.makeText(Home.this,"Coming soon",Toast.LENGTH_SHORT).show();
+                        startActivity(intent);
                         return true;
 
                     case R.id.nav_gallery:
