@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "340973525408",
+    "firebase_url": "https://hot-and-doll.firebaseio.com",
+    "project_id": "hot-and-doll",
+    "storage_bucket": "hot-and-doll.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340973525408:android:a034bcca18e90b13b66cc5",
+        "android_client_info": {
+          "package_name": "com.example.hotanddoll"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340973525408-dbek4idpafb18oogcg70gkgtd5ruopv6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hotanddoll",
+            "certificate_hash": "d800da8fa59b9086f6a9347ededd66643a3a6830"
+          }
+        },
+        {
+          "client_id": "340973525408-80unst1j5jsvlb4pdjod046amcm5gfgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHF-cPyEUeI-GqLufyUJnWGCX75tZQKMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340973525408-80unst1j5jsvlb4pdjod046amcm5gfgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
