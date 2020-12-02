@@ -28,6 +28,9 @@ public class Profile extends AppCompatActivity {
     TextView emailTV;
     TextView idTV;
     ImageView photoIV;
+
+    //https://github.com/Pro-Grammerr/GoogleSignIn/blob/master/app/src/main/java/com/example/chirag/googlesignin/Main2Activity.java
+
 /*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
