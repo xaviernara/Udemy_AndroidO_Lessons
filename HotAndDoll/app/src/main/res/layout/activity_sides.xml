@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:columnCount="3"
-            android:padding="15dp"
+            android:padding="12dp"
             android:rowCount="4">
 
             <!--Row 1 -->
@@ -48,6 +48,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="15dp"
+                        android:textSize="12dp"
                         android:fontFamily="sans-serif-medium"
                         android:text="Greens" />
 
@@ -55,8 +56,8 @@
                         android:id="@+id/addGreens"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
                         android:layout_marginTop="55dp"
                         android:backgroundTint="@color/hdYellow"
                         app:cardCornerRadius="20dp">
@@ -101,6 +102,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
+                        android:textSize="12dp"
                         android:layout_marginTop="15dp"
                         android:fontFamily="sans-serif-medium"
                         android:text="Candied Sweets" />
@@ -109,8 +111,8 @@
                         android:id="@+id/addSweets"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
                         android:layout_marginTop="55dp"
                         android:backgroundTint="@color/hdYellow"
                         app:cardCornerRadius="20dp">
@@ -156,6 +158,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="15dp"
+                        android:textSize="12dp"
                         android:fontFamily="sans-serif-medium"
                         android:text="Mac and Cheese" />
 
@@ -163,8 +166,8 @@
                         android:id="@+id/addMac"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
                         android:layout_marginTop="55dp"
                         android:backgroundTint="@color/hdYellow"
                         app:cardCornerRadius="20dp">
@@ -211,6 +214,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="15dp"
+                        android:textSize="12dp"
                         android:fontFamily="sans-serif-medium"
                         android:text="Red Beans and Rice" />
 
@@ -218,8 +222,8 @@
                         android:id="@+id/addRedBeans"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
                         android:layout_marginTop="55dp"
                         android:backgroundTint="@color/hdYellow"
                         app:cardCornerRadius="20dp">
@@ -265,6 +269,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="15dp"
+                        android:textSize="12dp"
                         android:fontFamily="sans-serif-medium"
                         android:text="Green Beans" />
 
@@ -272,8 +277,8 @@
                         android:id="@+id/addGBeans"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
                         android:layout_marginTop="55dp"
                         android:backgroundTint="@color/hdYellow"
                         app:cardCornerRadius="20dp">
@@ -320,14 +325,15 @@
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="15dp"
                         android:fontFamily="sans-serif-medium"
+                        android:textSize="12dp"
                         android:text="Black Eyed Peas" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/addBEP"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
                         android:layout_marginTop="55dp"
                         android:backgroundTint="@color/hdYellow"
                         app:cardCornerRadius="20dp">
@@ -373,6 +379,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="15dp"
+                        android:textSize="12dp"
                         android:fontFamily="sans-serif-medium"
                         android:text="Corn" />
 
@@ -380,8 +387,8 @@
                         android:id="@+id/addCorn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
                         android:layout_marginTop="55dp"
                         android:backgroundTint="@color/hdYellow"
                         app:cardCornerRadius="20dp">
@@ -427,6 +434,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="15dp"
+                        android:textSize="12dp"
                         android:fontFamily="sans-serif-medium"
                         android:text="Dressing" />
 
@@ -434,8 +442,8 @@
                         android:id="@+id/addDressing"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
                         android:layout_marginTop="55dp"
                         android:backgroundTint="@color/hdYellow"
                         app:cardCornerRadius="20dp">
@@ -481,6 +489,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="15dp"
+                        android:textSize="12dp"
                         android:fontFamily="sans-serif-medium"
                         android:text="Spaghetti" />
 
@@ -488,8 +497,8 @@
                         android:id="@+id/addSpaghetti"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
                         android:layout_marginTop="55dp"
                         android:backgroundTint="@color/hdYellow"
                         app:cardCornerRadius="20dp">
@@ -535,6 +544,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="15dp"
+                        android:textSize="12dp"
                         android:fontFamily="sans-serif-medium"
                         android:text="Potato Salad" />
 
@@ -542,8 +552,8 @@
                         android:id="@+id/addPotatoSalad"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
                         android:layout_marginTop="55dp"
                         android:backgroundTint="@color/hdYellow"
                         app:cardCornerRadius="20dp">
@@ -589,6 +599,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="15dp"
+                        android:textSize="12dp"
                         android:fontFamily="sans-serif-medium"
                         android:text="Cole Slaw" />
 
@@ -596,8 +607,8 @@
                         android:id="@+id/addColeSlaw"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
                         android:layout_marginTop="55dp"
                         android:backgroundTint="@color/hdYellow"
                         app:cardCornerRadius="20dp">
@@ -643,6 +654,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="15dp"
+                        android:textSize="12dp"
                         android:fontFamily="sans-serif-medium"
                         android:text="Mashed Potatoes" />
 
@@ -650,8 +662,8 @@
                         android:id="@+id/addMashed"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
                         android:layout_marginTop="55dp"
                         android:backgroundTint="@color/hdYellow"
                         app:cardCornerRadius="20dp">
