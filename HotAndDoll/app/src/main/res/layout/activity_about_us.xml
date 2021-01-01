@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs">
+    <!--android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:isScrollContainer="true"
+    android:scrollbars="vertical|horizontal"
+    android:stretchColumns="*"-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal|vertical"
+        android:fillViewport="true"
+        android:scrollbarStyle="insideOverlay"
+        >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal|vertical"
+            android:fillViewport="true"
+            android:scrollbarStyle="insideOverlay"
+            >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:isScrollContainer="true"
+                android:scrollbars="vertical|horizontal"
+                android:stretchColumns="*">
+                <TableRow android:background="@color/hdBlue" android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/hdYellow"
+                        android:text="Item Name" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/hdYellow"
+                        android:text="In-Stock" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/hdYellow"
+                        android:layout_weight="1"
+                        android:text="Price" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/hdYellow"
+                        android:text="Date Bought" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/hdYellow"
+                        android:text="Total" />
+
+                </TableRow>
+
+                <TableRow android:background="#DAE8FC" android:padding="5dp">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Date"
+                        android:inputType="datetime"
+                        android:textColorHint="@color/hdYellow"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:textColorHint="@android:color/black"
+                        />
+                </TableRow>
+
+                <TableRow android:background="#DAE8FC" android:padding="5dp">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@android:color/black" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Date"
+                        android:inputType="datetime"
+                        android:textColorHint="@color/hdYellow"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                </TableRow>
+
+                <TableRow android:background="#DAE8FC" android:padding="5dp">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Date"
+                        android:inputType="datetime"
+                        android:textColorHint="@color/hdYellow"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                </TableRow>
+
+                <TableRow android:background="#DAE8FC" android:padding="5dp">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Date"
+                        android:inputType="datetime"
+                        android:textColorHint="@color/hdYellow"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                </TableRow>
+
+                <TableRow android:background="#DAE8FC" android:padding="5dp">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Date"
+                        android:inputType="datetime"
+                        android:textColorHint="@color/hdYellow"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:textColorHint="@android:color/black"
+                        />
+                </TableRow>
+
+                <TableRow android:background="#DAE8FC" android:padding="5dp">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Date"
+                        android:inputType="datetime"
+                        android:textColorHint="@color/hdYellow"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:textColorHint="@android:color/black"
+                        />
+                </TableRow>
+
+                <TableRow android:background="#DAE8FC" android:padding="5dp">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Date"
+                        android:inputType="datetime"
+                        android:textColorHint="@color/hdYellow"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                </TableRow>
+
+                <TableRow android:background="#DAE8FC" android:padding="5dp">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Date"
+                        android:inputType="datetime"
+                        android:textColorHint="@color/hdYellow"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                </TableRow>
+
+                <TableRow android:background="#DAE8FC" android:padding="5dp">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Date"
+                        android:inputType="datetime"
+                        android:textColorHint="@color/hdYellow"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:textColorHint="@android:color/black"
+                        />
+                </TableRow>
+
+                <TableRow android:background="#DAE8FC" android:padding="5dp">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Date"
+                        android:inputType="datetime"
+                        android:textColorHint="@color/hdYellow"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                </TableRow>
+
+                <TableRow android:background="#DAE8FC" android:padding="5dp">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect|textMultiLine"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@android:color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Date"
+                        android:inputType="datetime"
+                        android:textColorHint="@color/hdYellow"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:textColorHint="@android:color/black"
+                        />
+                </TableRow>
+
+                <TableRow android:background="#DAE8FC" android:padding="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="10dp"
+                        android:background="@color/hdBlue"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Add Row"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="10dp"
+                        android:background="@color/hdBlue"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Add Column"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </TableRow>
+
+
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+    <!--<Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="322dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="361dp"
+        android:text="Button"
+        android:onClick="sendSMS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+
+
+
+</LinearLayout>
