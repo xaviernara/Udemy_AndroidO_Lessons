@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:appComponentFactory">
+        <activity android:name=".Fragment"></activity>
         <activity android:name=".ServiceTimes" />
         <activity android:name=".GalleryFullImageView" />
         <activity android:name=".Gallery" />
@@ -31,11 +32,9 @@
             android:name=".PastorBiography"
             android:label="Pastor Biography"
             android:parentActivityName=".Home" />
-
         <activity
             android:name=".SettingsPreference"
             android:label="Settings" />
-
         <activity
             android:name=".CrestInfo"
             android:label="Crest Info"
@@ -96,9 +95,9 @@
             </intent-filter>
         </service>
     </application>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 </manifest>

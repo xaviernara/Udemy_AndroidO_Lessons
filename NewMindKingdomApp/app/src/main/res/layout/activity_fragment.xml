@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment">
+
+
+    <!-- display two Button's and a FrameLayout to replace the Fragment's  -->
+    <Button
+        android:id="@+id/firstFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:text="First Fragment"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/secondFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/black"
+        android:text="Second Fragment"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </FrameLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
