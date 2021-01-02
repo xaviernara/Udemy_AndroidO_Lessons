@@ -2,7 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/nav_group1"
+        >
 
         <item
             android:id="@+id/nav_home"
@@ -44,6 +47,63 @@
             android:title="Log Out"
             android:icon="@drawable/ic_baseline_subdirectory_arrow_left_24"
             />
+
+    </group>
+
+
+    <group
+        android:visible="false"
+        android:id="@+id/nav_group2"
+        >
+
+        <item
+            android:id="@+id/nav_about_us"
+            android:title="About Us"
+            />
+
+        <item
+            android:id="@+id/nav_pastor_info"
+            android:title="Pastor Info"
+            />
+        <item
+            android:id="@+id/nab_beliefs"
+            android:title="Our Beliefs"
+            />
+        <item
+            android:id="@+id/nav_times"
+            android:title="Church Times"
+            />
+        <item
+            android:id="@+id/nav_location"
+            android:title="Location"
+            />
+        <item
+            android:id="@+id/nav_website"
+            android:title="Church Website"/>
+
+        <item
+            android:id="@+id/nav_giving"
+            android:title="Givings"
+            />
+
+        <item
+            android:id="@+id/nav_previous_messages"
+            android:title="Previous Messages"
+            />
+
+        <item
+            android:id="@+id/nav_crest"
+            android:title="Crest"
+            />
+
+        <item
+            android:id="@+id/nav_7r"
+            android:title="7R Concept"
+            />
+
+
+
+
 
     </group>
 
