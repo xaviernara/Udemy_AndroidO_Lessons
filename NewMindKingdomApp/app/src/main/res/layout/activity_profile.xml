@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,8 +7,8 @@
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_dark"
     tools:context=".Profile">
-
-    <!--circular profile image -->
+<!--
+    &lt;!&ndash;circular profile image &ndash;&gt;
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="135dp"
@@ -28,13 +28,13 @@
 
     </androidx.cardview.widget.CardView>
 
-    <!--<RelativeLayout
+    &lt;!&ndash;<RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>-->
+        app:layout_constraintTop_toTopOf="parent"/>&ndash;&gt;
 
 
 
@@ -63,7 +63,7 @@
         />
 
 
-    <!-- Home Button/Text View-->
+    &lt;!&ndash; Home Button/Text View&ndash;&gt;
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
@@ -95,7 +95,7 @@
 
     </LinearLayout>
 
-    <!--Email Us Button/Text View-->
+    &lt;!&ndash;Email Us Button/Text View&ndash;&gt;
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
@@ -127,7 +127,7 @@
 
     </LinearLayout>
 
-    <!-- Annoucements Button/Text View-->
+    &lt;!&ndash; Annoucements Button/Text View&ndash;&gt;
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
@@ -159,7 +159,7 @@
 
     </LinearLayout>
 
-    <!--Gallery Button/Text View-->
+    &lt;!&ndash;Gallery Button/Text View&ndash;&gt;
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
@@ -191,7 +191,7 @@
 
     </LinearLayout>
 
-    <!-- Settings Button/Text View-->
+    &lt;!&ndash; Settings Button/Text View&ndash;&gt;
     <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="match_parent"
@@ -223,7 +223,7 @@
 
     </LinearLayout>
 
-    <!-- Logout Button/Text View-->
+    &lt;!&ndash; Logout Button/Text View&ndash;&gt;
     <LinearLayout
         android:id="@+id/linearLayout_logOut"
         android:layout_width="match_parent"
@@ -258,6 +258,6 @@
     </LinearLayout>
 
 
-
+-->
 
 </RelativeLayout>
