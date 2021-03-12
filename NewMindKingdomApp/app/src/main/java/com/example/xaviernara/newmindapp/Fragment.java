@@ -11,7 +11,7 @@ public class Fragment extends androidx.fragment.app.Fragment {
 
 
 
-    @Override
+   /* @Override
     public View onCreate(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -19,5 +19,5 @@ public class Fragment extends androidx.fragment.app.Fragment {
         //setContentView(R.layout.activity_fragment);
 
         return inflater.inflate(R.layout.activity_fragment,container,false);
-    }
+    }*/
 }

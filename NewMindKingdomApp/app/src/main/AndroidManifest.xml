@@ -12,7 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:appComponentFactory">
-        <activity android:name=".Fragment"></activity>
         <activity android:name=".ServiceTimes" />
         <activity android:name=".GalleryFullImageView" />
         <activity android:name=".Gallery" />
@@ -25,7 +24,9 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DD" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+               <!-- <category android:name="android.intent.category.DD" />-->
             </intent-filter>
         </activity>
         <activity
