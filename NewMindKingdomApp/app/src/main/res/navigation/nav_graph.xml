@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/login">
+    app:startDestination="@id/homeFragment2">
 
     <activity
         android:id="@+id/login"
@@ -20,4 +20,58 @@
         android:name="com.example.xaviernara.newmindapp.Home"
         android:label="activity_home"
         tools:layout="@layout/activity_home" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.xaviernara.newmindapp.fragments.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/crestInfoFragment"
+        android:name="com.example.xaviernara.newmindapp.fragments.CrestInfoFragment"
+        android:label="fragment_crest_info"
+        tools:layout="@layout/fragment_crest_info" />
+    <fragment
+        android:id="@+id/pastorBioFragment"
+        android:name="com.example.xaviernara.newmindapp.fragments.PastorBioFragment"
+        android:label="fragment_pastor_bio"
+        tools:layout="@layout/fragment_pastor_bio" />
+    <fragment
+        android:id="@+id/sevenRFragment"
+        android:name="com.example.xaviernara.newmindapp.fragments.SevenRFragment"
+        android:label="fragment_seven_r"
+        tools:layout="@layout/fragment_seven_r" />
+    <fragment
+        android:id="@+id/visionStatementFragment"
+        android:name="com.example.xaviernara.newmindapp.fragments.VisionStatementFragment"
+        android:label="fragment_vision_statement"
+        tools:layout="@layout/fragment_vision_statement" />
+    <fragment
+        android:id="@+id/serviceTimesFragment"
+        android:name="com.example.xaviernara.newmindapp.fragments.ServiceTimesFragment"
+        android:label="fragment_service_times"
+        tools:layout="@layout/fragment_service_times" />
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.xaviernara.newmindapp.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_serviceTimesFragment"
+            app:destination="@id/serviceTimesFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_visionStatementFragment"
+            app:destination="@id/visionStatementFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_sevenRFragment"
+            app:destination="@id/sevenRFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_pastorBioFragment"
+            app:destination="@id/pastorBioFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_crestInfoFragment"
+            app:destination="@id/crestInfoFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_aboutUsFragment"
+            app:destination="@id/aboutUsFragment" />
+    </fragment>
 </navigation>
