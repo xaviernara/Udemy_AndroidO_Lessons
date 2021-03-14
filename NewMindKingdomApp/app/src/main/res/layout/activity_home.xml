@@ -47,7 +47,7 @@
 <!--
         For text above the image buttons;
 -->
-               <RelativeLayout
+              <!-- <RelativeLayout
                    android:layout_width="match_parent"
                    android:layout_height="200dp"
                    android:layout_weight="1"
@@ -68,7 +68,7 @@
                        />
 
 
-                   <!--
+                   &lt;!&ndash;
                                       <TextView
                                           android:layout_below="@id/toolbar"
                                           android:layout_width="wrap_content"
@@ -78,7 +78,7 @@
                                           android:textColor="@android:color/black"
                                           android:text=" We Are A Life Skill Teaching Ministry "
                                           />
-                   -->
+                   &ndash;&gt;
 
         </RelativeLayout>
 
@@ -95,9 +95,9 @@
             android:rowCount="3">
 
 
-            <!--Row 1 -->
-            <!--Col 1 -->
-            <!--About Us -->
+            &lt;!&ndash;Row 1 &ndash;&gt;
+            &lt;!&ndash;Col 1 &ndash;&gt;
+            &lt;!&ndash;About Us &ndash;&gt;
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
@@ -130,7 +130,7 @@
                         android:padding="10dp"
                         android:src="@drawable/about2" />
 
-                    <!--  <TextView
+                    &lt;!&ndash;  <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
@@ -139,7 +139,7 @@
                         android:textStyle="bold"
                         android:text="About Us"
                         />
-                        -->
+                        &ndash;&gt;
 
 
                 </LinearLayout>
@@ -148,9 +148,9 @@
             </androidx.cardview.widget.CardView>
 
 
-            <!--Row 1 -->
-            <!--Col 2 -->
-            <!--Pastor bio -->
+            &lt;!&ndash;Row 1 &ndash;&gt;
+            &lt;!&ndash;Col 2 &ndash;&gt;
+            &lt;!&ndash;Pastor bio &ndash;&gt;
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -181,7 +181,7 @@
                         android:padding="5dp"
                         android:src="@drawable/priest2" />
 
-                    <!--> <TextView
+                    &lt;!&ndash;dash;&gt; <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
@@ -189,7 +189,7 @@
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:text="Pastor Bio"
-                        />-->
+                        />&ndash;&gt;
 
 
                 </LinearLayout>
@@ -198,9 +198,9 @@
             </androidx.cardview.widget.CardView>
 
 
-            <!--Row 2 -->
-            <!--Col 1 -->
-            <!--Our Beliefs -->
+            &lt;!&ndash;Row 2 &ndash;&gt;
+            &lt;!&ndash;Col 1 &ndash;&gt;
+            &lt;!&ndash;Our Beliefs &ndash;&gt;
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -231,7 +231,7 @@
                         android:padding="5dp"
                         android:src="@drawable/cross2" />
 
-                    <!--<TextView
+                    &lt;!&ndash;<TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
@@ -239,7 +239,7 @@
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:text="Our Belief"
-                        />-->
+                        />&ndash;&gt;
 
 
                 </LinearLayout>
@@ -248,10 +248,10 @@
             </androidx.cardview.widget.CardView>
 
 
-            <!--Row 2 -->
-            <!--Col 2 -->
-            <!--Vision -->
-<!--
+            &lt;!&ndash;Row 2 &ndash;&gt;
+            &lt;!&ndash;Col 2 &ndash;&gt;
+            &lt;!&ndash;Vision &ndash;&gt;
+&lt;!&ndash;
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -296,12 +296,12 @@
 
 
             </androidx.cardview.widget.CardView>
--->
+&ndash;&gt;
 
 
-            <!--Row 3 -->
-            <!--Col 1 -->
-            <!--Service Times -->
+            &lt;!&ndash;Row 3 &ndash;&gt;
+            &lt;!&ndash;Col 1 &ndash;&gt;
+            &lt;!&ndash;Service Times &ndash;&gt;
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -332,7 +332,7 @@
                         android:onClick="clockOnClick"
                         android:src="@drawable/clock3" />
 
-                    <!--<TextView
+                    &lt;!&ndash;<TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
@@ -340,7 +340,7 @@
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:text="Pastor Bio"
-                        />-->
+                        />&ndash;&gt;
 
 
                 </LinearLayout>
@@ -349,9 +349,9 @@
             </androidx.cardview.widget.CardView>
 
 
-            <!--Row 3 -->
-            <!--Col 2 -->
-            <!--Location -->
+            &lt;!&ndash;Row 3 &ndash;&gt;
+            &lt;!&ndash;Col 2 &ndash;&gt;
+            &lt;!&ndash;Location &ndash;&gt;
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -382,7 +382,7 @@
                         android:padding="10dp"
                         android:src="@drawable/location4" />
 
-                    <!--<TextView
+                    &lt;!&ndash;<TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
@@ -390,7 +390,7 @@
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:text="Location"
-                        />-->
+                        />&ndash;&gt;
 
 
                 </LinearLayout>
@@ -399,9 +399,9 @@
             </androidx.cardview.widget.CardView>
 
 
-            <!--Row 4 -->
-            <!--Col 1 -->
-            <!--WEBSITE -->
+            &lt;!&ndash;Row 4 &ndash;&gt;
+            &lt;!&ndash;Col 1 &ndash;&gt;
+            &lt;!&ndash;WEBSITE &ndash;&gt;
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -432,14 +432,14 @@
                         android:padding="5dp"
                         android:src="@drawable/internet2" />
 
-                    <!--<TextView
+                    &lt;!&ndash;<TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pastor Bio"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
-                        android:textStyle="bold" />-->
+                        android:textStyle="bold" />&ndash;&gt;
 
 
                 </LinearLayout>
@@ -448,9 +448,9 @@
             </androidx.cardview.widget.CardView>
 
 
-            <!--Row 4 -->
-            <!--Col 2 -->
-            <!--Giving -->
+            &lt;!&ndash;Row 4 &ndash;&gt;
+            &lt;!&ndash;Col 2 &ndash;&gt;
+            &lt;!&ndash;Giving &ndash;&gt;
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -480,14 +480,14 @@
                         android:onClick="givingOnClick"
                         android:src="@drawable/money3" />
 
-                    <!-- <TextView
+                    &lt;!&ndash; <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Giving"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
-                        android:textStyle="bold" /> -->
+                        android:textStyle="bold" /> &ndash;&gt;
 
 
                 </LinearLayout>
@@ -496,9 +496,9 @@
             </androidx.cardview.widget.CardView>
 
 
-            <!--Row 5 -->
-            <!--Col 1 -->
-            <!--Previous Sermons -->
+            &lt;!&ndash;Row 5 &ndash;&gt;
+            &lt;!&ndash;Col 1 &ndash;&gt;
+            &lt;!&ndash;Previous Sermons &ndash;&gt;
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -530,14 +530,14 @@
                         android:onClick="previousSermonsOnClick"
                         android:src="@drawable/videoplaylist2" />
 
-                    <!--<TextView
+                    &lt;!&ndash;<TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pastor Bio"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
-                        android:textStyle="bold" />-->
+                        android:textStyle="bold" />&ndash;&gt;
 
 
                 </LinearLayout>
@@ -545,10 +545,10 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!--Row 5 -->
-            <!--Col 2 -->
-            <!--Phone Call -->
-<!--
+            &lt;!&ndash;Row 5 &ndash;&gt;
+            &lt;!&ndash;Col 2 &ndash;&gt;
+            &lt;!&ndash;Phone Call &ndash;&gt;
+&lt;!&ndash;
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -592,11 +592,11 @@
 
 
             </androidx.cardview.widget.CardView>
--->
+&ndash;&gt;
 
-            <!--Row 6 -->
-            <!--Col 1 -->
-            <!--Crest -->
+            &lt;!&ndash;Row 6 &ndash;&gt;
+            &lt;!&ndash;Col 1 &ndash;&gt;
+            &lt;!&ndash;Crest &ndash;&gt;
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -631,14 +631,14 @@
                         android:onClick="crestOnClick"
                         android:src="@drawable/defense2" />
 
-                    <!-- <TextView
+                    &lt;!&ndash; <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Call"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
-                        android:textStyle="bold" />-->
+                        android:textStyle="bold" />&ndash;&gt;
 
 
                 </LinearLayout>
@@ -647,9 +647,9 @@
             </androidx.cardview.widget.CardView>
 
 
-            <!--Row 6 -->
-            <!--Col 2 -->
-            <!--7R Concept-->
+            &lt;!&ndash;Row 6 &ndash;&gt;
+            &lt;!&ndash;Col 2 &ndash;&gt;
+            &lt;!&ndash;7R Concept&ndash;&gt;
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -679,14 +679,14 @@
                         android:onClick="sevenROnClick"
                         android:src="@drawable/rconcept96" />
 
-                    <!--<TextView
+                    &lt;!&ndash;<TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="7 R Concept"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
-                        android:textStyle="bold" /> -->
+                        android:textStyle="bold" /> &ndash;&gt;
 
 
                 </LinearLayout>
@@ -701,7 +701,7 @@
 
 
     </LinearLayout>
-
+-->
 
 
 
