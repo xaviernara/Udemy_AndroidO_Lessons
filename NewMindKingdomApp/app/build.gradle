@@ -59,10 +59,10 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
     implementation 'com.google.firebase:firebase-database:16.0.4'
     implementation 'com.google.firebase:firebase-messaging:17.3.4'
-    implementation 'androidx.preference:preference:1.1.0'
+    implementation 'androidx.preference:preference:1.1.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    androidTestImplementation 'androidx.test:runner:1.1.0-alpha3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
+    androidTestImplementation 'androidx.test:runner:1.4.0-alpha04'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0-alpha04'
 
     // add the Firebase SDK for Google Analytics
     // add SDKs for any other desired Firebase products
@@ -72,10 +72,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.4.31'
 
 
-    def nav_version = "2.3.3"
+    def nav_version = '2.3.4'
 
     // Java navigation implementation
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
@@ -87,14 +87,14 @@ dependencies {
 
     //moshi and OKHttp
     kapt("com.squareup.moshi:moshi-kotlin-codegen:1.11.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
+    implementation('com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2')
 
     //retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-moshi:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
     implementation "androidx.fragment:fragment-ktx:1.3.0"
 
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1'
 
 
 }
