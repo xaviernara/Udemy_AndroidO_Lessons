@@ -8,7 +8,7 @@
     android:alpha=".9"
     android:orientation="vertical"
     android:id="@+id/nestedScroll"
-    tools:context=".AboutUs">
+    tools:context="fragments.AboutFragment">
 
 
     <RelativeLayout
@@ -73,67 +73,67 @@
             app:layout_constraintTop_toBottomOf="@id/linearLayout1">
 
 
-        <!--facebook image-->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="@color/gray"
-            android:orientation="vertical">
-
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="match_parent"
-                android:layout_height="91dp"
-                android:onClick="facebookWebsiteLink"
-                android:backgroundTint="@color/gray"
-                android:layout_gravity="center_vertical"
-                app:srcCompat="@mipmap/facebook_icon" />
-
-
-        </LinearLayout>
-
-
-        <!--instagram image-->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="@color/gray"
-            android:orientation="vertical">
-
-            <ImageButton
-                android:layout_width="fill_parent"
-                android:layout_height="83dp"
+            <!--facebook image-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_weight="1"
                 android:background="@color/gray"
-                android:backgroundTint="@color/gray"
-                android:onClick="instagramWebsiteLink"
-                android:src="@mipmap/instagram_icon" />
+                android:orientation="vertical">
 
-        </LinearLayout>
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="91dp"
+                    android:onClick="facebookWebsiteLink"
+                    android:backgroundTint="@color/gray"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@mipmap/facebook_icon" />
 
-        <!--twitter image-->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="@color/gray"
-            android:orientation="vertical">
 
-            <ImageButton
-                android:layout_width="fill_parent"
-                android:layout_height="88dp"
+            </LinearLayout>
+
+
+            <!--instagram image-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_weight="1"
                 android:background="@color/gray"
-                android:backgroundTint="@color/gray"
-                android:onClick="twitterWebsiteLink"
-                android:src="@mipmap/twitter_icon" />
+                android:orientation="vertical">
 
-        </LinearLayout>
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="83dp"
+                    android:layout_gravity="center"
+                    android:background="@color/gray"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="instagramWebsiteLink"
+                    android:src="@mipmap/instagram_icon" />
+
+            </LinearLayout>
+
+            <!--twitter image-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="88dp"
+                    android:layout_gravity="center"
+                    android:background="@color/gray"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="twitterWebsiteLink"
+                    android:src="@mipmap/twitter_icon" />
+
+            </LinearLayout>
 
 
             <!--youtube image-->

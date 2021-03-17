@@ -36,8 +36,8 @@ public class AboutUs extends Activity {
         viewFlipper = findViewById(R.id.viewFlipper);
 
         //for image looping
-        for(int i = 0; i<images.length;i++){
-            flipperImages(images[i]);
+        for (int image : images) {
+            flipperImages(image);
 
         }
 

@@ -21,11 +21,6 @@
         android:label="activity_home"
         tools:layout="@layout/activity_home" />
     <fragment
-        android:id="@+id/aboutUsFragment"
-        android:name="com.example.xaviernara.newmindapp.fragments.AboutUsFragment"
-        android:label="fragment_about_us"
-        tools:layout="@layout/fragment_about_us" />
-    <fragment
         android:id="@+id/crestInfoFragment"
         android:name="com.example.xaviernara.newmindapp.fragments.CrestInfoFragment"
         android:label="fragment_crest_info"
@@ -71,7 +66,20 @@
             android:id="@+id/action_homeFragment2_to_crestInfoFragment"
             app:destination="@id/crestInfoFragment" />
         <action
-            android:id="@+id/action_homeFragment2_to_aboutUsFragment"
-            app:destination="@id/aboutUsFragment" />
+            android:id="@+id/action_homeFragment2_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_clockFragment"
+            app:destination="@id/clockFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.xaviernara.newmindapp.fragments.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/clockFragment"
+        android:name="com.example.xaviernara.newmindapp.fragments.ClockFragment"
+        android:label="fragment_clock"
+        tools:layout="@layout/fragment_clock" />
 </navigation>
