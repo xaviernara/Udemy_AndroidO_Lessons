@@ -71,6 +71,15 @@
         <action
             android:id="@+id/action_homeFragment2_to_clockFragment"
             app:destination="@id/clockFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_beliefsFragment"
+            app:destination="@id/beliefsFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_locationActivity"
+            app:destination="@id/locationActivity" />
+        <action
+            android:id="@+id/action_homeFragment2_to_givingFragment"
+            app:destination="@id/givingFragment" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
@@ -82,4 +91,18 @@
         android:name="com.example.xaviernara.newmindapp.fragments.ClockFragment"
         android:label="fragment_clock"
         tools:layout="@layout/fragment_clock" />
+    <fragment
+        android:id="@+id/beliefsFragment"
+        android:name="com.example.xaviernara.newmindapp.fragments.BeliefsFragment"
+        android:label="BeliefsFragment" />
+    <activity
+        android:id="@+id/locationActivity"
+        android:name="com.example.xaviernara.newmindapp.LocationActivity"
+        android:label="activity_location"
+        tools:layout="@layout/activity_location" />
+    <fragment
+        android:id="@+id/givingFragment"
+        android:name="com.example.xaviernara.newmindapp.fragments.GivingFragment"
+        android:label="fragment_giving"
+        tools:layout="@layout/fragment_giving" />
 </navigation>

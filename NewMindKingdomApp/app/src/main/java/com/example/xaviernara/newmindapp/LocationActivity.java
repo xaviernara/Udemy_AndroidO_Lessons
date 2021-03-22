@@ -17,8 +17,6 @@ import androidx.fragment.app.FragmentActivity;
 
 public class LocationActivity extends FragmentActivity implements OnMapReadyCallback {
 
-    private GoogleMap mMap;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +24,7 @@ public class LocationActivity extends FragmentActivity implements OnMapReadyCall
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
+        assert mapFragment != null;
         mapFragment.getMapAsync(this);
     }
 
@@ -41,16 +40,15 @@ public class LocationActivity extends FragmentActivity implements OnMapReadyCall
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
         //Latitude: 41.600539, Longitude: -87.461559
         LatLng churchLocation = new LatLng(41.600539, -87.461559);
-        mMap.addMarker(new MarkerOptions().position(churchLocation).title("6213 C Kennedy Ave")).setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_VIOLET));
+        googleMap.addMarker(new MarkerOptions().position(churchLocation).title("6213 C Kennedy Ave")).setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_VIOLET));
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(churchLocation,10));
         //googleMap.addTileOverlay()
-        mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(churchLocation,10));
+        googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(churchLocation,10));
 
     }
 }

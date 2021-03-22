@@ -82,14 +82,8 @@ public class HomeFragment extends Fragment {
     }
 
     public void previousSermonsOnClick(View view) {
-        //Intent intent = new Intent(getApplicationContext(), PreviousMessages.class);
-        /*Intent intent = new Intent(getApplicationContext(), Store.class);
-        startActivity(intent);*/
-
         intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/channel/UCyu_YbjuDswWIPD8YD4YR8w"));
         startActivity(intent);
-
-        //finish();
     }
 
     public void websiteOnClick(View view) {
@@ -99,52 +93,52 @@ public class HomeFragment extends Fragment {
     }
 
     public void sevenROnClick(View view) {
-        action = HomeFragmentDirections.Companion.actionHomeFragment2ToSevenRFragment();
+        action = HomeFragmentDirections.actionHomeFragment2ToSevenRFragment();
         Navigation.findNavController(view).navigate(action);
     }
 
     public void clockOnClick(View view) {
-        /*action = HomeFragmentDirections.Companion.;
-        Navigation.findNavController(view).navigate(action);*/
+        action = HomeFragmentDirections.actionHomeFragment2ToClockFragment();
+        Navigation.findNavController(view).navigate(action);
     }
 
     public void visionOnClick(View view) {
-        action = HomeFragmentDirections.Companion.actionHomeFragment2ToSevenRFragment();
+        action = HomeFragmentDirections.actionHomeFragment2ToSevenRFragment();
         Navigation.findNavController(view).navigate(action);
         // finish();
     }
 
     public void crestOnClick(View view) {
-        action = HomeFragmentDirections.Companion.actionHomeFragment2ToCrestInfoFragment();
+        action = HomeFragmentDirections.actionHomeFragment2ToCrestInfoFragment();
         Navigation.findNavController(view).navigate(action);
     }
 
     public void givingOnClick(View view) {
-        /*action = HomeFragmentDirections.Companion.;
-        Navigation.findNavController(view).navigate(action);*/
+        action = HomeFragmentDirections.actionHomeFragment2ToGivingFragment();
+        Navigation.findNavController(view).navigate(action);
     }
 
     public void pastorOnClick(View view) {
-        action = HomeFragmentDirections.Companion.actionHomeFragment2ToPastorBioFragment();
+        action = HomeFragmentDirections.actionHomeFragment2ToPastorBioFragment();
         Navigation.findNavController(view).navigate(action);
     }
 
     public void beliefsOnClick(View view) {
-        /*action = HomeFragmentDirections.Companion.;
-        Navigation.findNavController(view).navigate(action);*/
+        action = HomeFragmentDirections.actionHomeFragment2ToBeliefsFragment();
+        Navigation.findNavController(view).navigate(action);
     }
 
     public void locationOnClick(View view){
-        intent = new Intent(getApplicationContext(), LocationActivity.class);
-        startActivity(intent);
-        //finish();
+
+        action = HomeFragmentDirections.actionHomeFragment2ToLocationActivity();
+        Navigation.findNavController((View) action);
     }
 
     //https://www.tutorialspoint.com/android/android_phone_calls.htm
     public void phoneOnClick(View view) {
         Intent callIntent = new Intent(Intent.ACTION_CALL);
         callIntent.setData(Uri.parse("tel: +2198032331"));
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(binding.getRoot().getContext(), Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
             // here to request the missing permissions, and then overriding
